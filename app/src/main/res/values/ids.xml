@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="tag_relation" type="id" />
+    <item name="tag_relation2" type="id" />
+    <item name="tag_relation3" type="id" />
+
+    <dimen name="toolbar">44dp</dimen>
+    <dimen name="statusBar">24dp</dimen>
+
+
+    <dimen name="auth_dialog_width">270dp</dimen>
+
+
+    <dimen name="login_edit_height">50dp</dimen>
+    <dimen name="x_10dp">10dp</dimen>
+    <dimen name="y_10dp">10dp</dimen>
+    <dimen name="x_15dp">15dp</dimen>
+    <dimen name="x_13dp">13dp</dimen>
+    <dimen name="y_15dp">15dp</dimen>
+    <dimen name="x_16dp">16dp</dimen>
+    <dimen name="y_16dp">16dp</dimen>
+    <dimen name="x_25dp">25dp</dimen>
+    <dimen name="y_25dp">25dp</dimen>
+    <dimen name="y_44dp">44dp</dimen>
+</resources>

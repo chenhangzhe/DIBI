@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="20dp"
+    android:background="@drawable/sp2_solid_white_t88">
+    <cn.suozhi.DiBi.common.custom.Quadrangle
+        android:id="@+id/q_loading0"
+        android:layout_width="10dp"
+        android:layout_height="10dp"
+        app:quadColor="@color/color_1888FE"/>
+    <cn.suozhi.DiBi.common.custom.Quadrangle
+        android:id="@+id/q_loading1"
+        android:layout_width="10dp"
+        android:layout_height="10dp"
+        app:quadColor="@color/color_1888FE"/>
+    <cn.suozhi.DiBi.common.custom.Quadrangle
+        android:id="@+id/q_loading2"
+        android:layout_width="10dp"
+        android:layout_height="10dp"
+        app:quadColor="@color/color_1888FE"/>
+</LinearLayout>

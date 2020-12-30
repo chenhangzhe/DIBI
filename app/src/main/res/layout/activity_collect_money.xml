@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/gyF9"
+    tools:context="cn.suozhi.DiBi.home.view.CollectMoneyActivity">
+
+    <include layout="@layout/toolbar_left"/>
+
+
+    <RelativeLayout
+        android:id="@+id/rly_bank"
+        android:background="@color/white"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+        <ImageView
+            android:id="@+id/iv_bank"
+            android:layout_centerVertical="true"
+            android:src="@mipmap/bank"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:layout_marginLeft="6dp"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/iv_bank"
+            android:text="@string/str_bank"
+            android:textColor="@color/text_color_dark"
+            android:textSize="16sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/tv_bank"
+            android:drawableRight="@mipmap/arrow_right"
+            android:layout_centerVertical="true"
+          android:layout_alignParentRight="true"
+            android:text="@string/str_un_bind"
+            android:textColor="@color/gy8A"
+            android:textSize="14sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <View
+            android:layout_alignParentBottom="true"
+            android:background="@color/gy8A"
+            android:layout_width="match_parent"
+            android:layout_height="1px"/>
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/rly_alipay"
+        android:background="@color/white"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+        <ImageView
+            android:id="@+id/iv_alipay"
+            android:layout_centerVertical="true"
+            android:src="@mipmap/alipay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:layout_marginLeft="6dp"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/iv_alipay"
+            android:text="@string/str_alipay"
+            android:textColor="@color/text_color_dark"
+            android:textSize="16sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/tv_alipay"
+            android:drawableRight="@mipmap/arrow_right"
+            android:layout_centerVertical="true"
+          android:layout_alignParentRight="true"
+            android:text="@string/str_un_bind"
+            android:textColor="@color/gy8A"
+            android:textSize="14sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <View
+            android:layout_alignParentBottom="true"
+            android:background="@color/gy8A"
+            android:layout_width="match_parent"
+            android:layout_height="1px"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rly_wechat"
+        android:background="@color/white"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+        <ImageView
+            android:id="@+id/iv_wechat"
+            android:layout_centerVertical="true"
+            android:src="@mipmap/wechat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:layout_marginLeft="6dp"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/iv_wechat"
+            android:text="@string/str_wechat"
+            android:textColor="@color/text_color_dark"
+            android:textSize="16sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/tv_wechat"
+            android:drawableRight="@mipmap/arrow_right"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:text="@string/str_un_bind"
+            android:textColor="@color/gy8A"
+            android:textSize="14sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </RelativeLayout>
+</LinearLayout>

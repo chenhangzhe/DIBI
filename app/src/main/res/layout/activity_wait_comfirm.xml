@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/drawable_dibi"
+    tools:context="cn.suozhi.DiBi.c2c.view.WaitComfirmActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/rly_header"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp">
+
+            <ImageView
+                android:id="@+id/iv_back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/x_15dp"
+                android:src="@mipmap/back_white" />
+
+            <TextView
+                android:id="@+id/tv_record"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/x_15dp"
+                android:text="@string/str_trade_kown"
+                android:textColor="@color/white"
+                android:textSize="14sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/tv_pay_status"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/x_15dp"
+                android:layout_marginTop="8dp"
+                android:text="@string/str_wait_comfirm"
+                android:textColor="@color/white"
+                android:textSize="28sp" />
+
+            <TextView
+                android:id="@+id/tv_contract"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginLeft="@dimen/x_15dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginRight="15dp"
+                android:drawableTop="@mipmap/contract"
+                android:drawablePadding="3dp"
+                android:text="@string/str_contract_business"
+                android:textColor="@color/white"
+                android:textSize="12sp" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_pay_status"
+                android:layout_marginLeft="@dimen/x_15dp"
+                android:layout_marginTop="8dp"
+                android:text="@string/str_order_wait_comfirm"
+                android:textColor="@color/color_99ffffff"
+                android:textSize="15sp" />
+        </RelativeLayout>
+
+
+        <include layout="@layout/layout_wait_comfirm" />
+
+
+
+        <cn.suozhi.DiBi.c2c.widget.TimerTextView
+            android:id="@+id/tv_countdown"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="23dp"
+            android:layout_marginRight="20dp"
+            android:gravity="center"
+            android:text=""
+            android:textColor="@color/white"
+            android:textSize="13sp" />
+
+        <!--买方待确认-->
+        <LinearLayout
+            android:visibility="gone"
+            android:id="@+id/lly_buyer_comfirm"
+            android:layout_marginTop="@dimen/y_25dp"
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:layout_marginLeft="58dp"
+            android:layout_marginRight="58dp">
+
+            <TextView
+                android:id="@+id/tv_compalint"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/drawable_dibi"
+                android:gravity="center"
+                android:text="@string/str_commit_complaint"
+                android:textColor="@color/white"
+                android:textSize="17sp" />
+        </LinearLayout>
+        <!--卖方 待确认-->
+        <LinearLayout
+            android:visibility="gone"
+            android:id="@+id/lly_bussiness_comfirm"
+            android:layout_marginTop="@dimen/y_25dp"
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp">
+
+            <TextView
+                android:layout_marginRight="@dimen/x_15dp"
+                android:id="@+id/tv_apply_compalint"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/sp_solid_purple_3dp"
+                android:gravity="center"
+                android:text="@string/str_complaint"
+                android:textColor="@color/white"
+                android:textSize="17sp" />
+
+            <TextView
+                android:id="@+id/tv_comfirm_collect"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/sp_solid_purple_oval_3dp"
+                android:gravity="center"
+                android:text="@string/str_comfirm_collected_money"
+                android:textColor="@color/white"
+                android:textSize="17sp" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_marginBottom="35dp"
+            android:paddingLeft="22dp"
+            android:paddingRight="22dp"
+            android:paddingBottom="14dp"
+            android:paddingTop="14dp"
+            android:orientation="vertical"
+            android:background="@drawable/drawable_dibi"
+            android:layout_marginTop="97dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/str_attetion"
+                android:textColor="@color/white"
+                android:textSize="15sp" />
+
+            <TextView
+                android:layout_marginTop="5dp"
+                android:lineSpacingExtra="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/str_wait_comfirm_hint"
+                android:textColor="@color/white"
+                android:textSize="12sp" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+</androidx.core.widget.NestedScrollView>
+
+

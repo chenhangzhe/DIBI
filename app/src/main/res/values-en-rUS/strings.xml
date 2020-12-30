@@ -1,0 +1,1210 @@
+<resources>
+    <string name="app_name">DiBi</string>
+    <string name="verifyLimit">0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ+-*/#</string>
+    <string name="passwordLimit">0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ</string>
+    <string name="numDecimalLimit">0123456789.</string>
+    <string name="numberLimit">0123456789</string>
+
+    <string name="homeTab0">Home</string>
+    <string name="homeTab1">Markets</string>
+    <string name="homeTab2">Fiat</string>
+    <string name="homeTab3">Exchange</string>
+    <string name="homeTab4">Asset</string>
+
+    <string name="permDeny">Permission denied</string>
+    <string name="emptyData">No relevant data</string>
+    <string name="loading">Loading&#8230;</string>
+    <string name="noMoreUpdate">Full data loaded</string>
+    <string name="pressExit">Press again to exit</string>
+    <string name="dataAbnormal">Abnormal data</string>
+    <string name="uploading">Uploading</string>
+    <string name="uploadFail">Upload failed</string>
+    <string name="needInstallPerm">Need install permissions</string>
+    <string name="downloading">Downloading</string>
+    <string name="install">Install</string>
+
+    <string name="code">Code</string>
+    <string name="code0">Success</string>
+    <string name="code_1">Failure</string>
+    <string name="code200">OK</string>
+    <string name="code401">Token does not exist</string>
+    <string name="code11001">Parameter error</string>
+    <string name="code11002">Incorrect parameter type</string>
+    <string name="code11003">Parameter is empty</string>
+    <string name="code11004">Sorry, the system is abnormal.</string>
+    <string name="code11005">Illegal operation</string>
+    <string name="code12000">Verification code failed to send</string>
+    <string name="code12001">verification code is required</string>
+    <string name="code12002">Incorrect verification code</string>
+    <string name="code12003">The type of verification code is required</string>
+    <string name="code12004">The verification code should be 6 digits</string>
+    <string name="code12005">Google verification code should be 6 digits</string>
+    <string name="code1010001">Account is required</string>
+    <string name="code1010002">The password format is incorrect</string>
+    <string name="code1010003">E-mail format is incorrect</string>
+    <string name="code1010004">Email address or phone number is incorrect</string>
+    <string name="code1010005">Password is required</string>
+    <string name="code1010006">Email account is required</string>
+    <string name="code1010007">Mobile area code is required</string>
+    <string name="code1010008">Phone area code format is incorrect</string>
+    <string name="code1010009">Phone number is required</string>
+    <string name="code1010010">This account is already registered</string>
+    <string name="code1010011">Verification code type does not exist</string>
+    <string name="code1010012">The invitation code does not exist</string>
+    <string name="code1010013">Sorry, please try again</string>
+    <string name="code1010014">Registration source is required</string>
+    <string name="code1010015">Please pull the slider to check</string>
+    <string name="code1010016">Verification failed, please try again</string>
+    <string name="code1020001">The account does not exist</string>
+    <string name="code1020002">User has been disabled, please contact customer service</string>
+    <string name="code1020003">Google verification code is incorrect</string>
+    <string name="code1020004">Login password is incorrect</string>
+    <string name="code1020005">The phone number is enabled. If you need to replace it, please submit the request.</string>
+    <string name="code1020006">The E-mail is enabled. If you need to replace it, please submit the request.</string>
+    <string name="code1030005">Nickname cannot exceed 20 words</string>
+    <string name="code1040001">The ID number has been verified</string>
+    <string name="code1040002">Information does not match</string>
+    <string name="code1040003">Operation type is required</string>
+    <string name="code1040004">Name is required</string>
+    <string name="code1040005">ID number is required</string>
+    <string name="code1040006">Nationality is required</string>
+    <string name="code1040007">Please upload a portrait page photo</string>
+    <string name="code1040008">Please upload the photo of the national emblem page</string>
+    <string name="code1040009">Please upload a hand-held documents photo</string>
+    <string name="code1040010">You have submitted ID verification documents, please be patient and wait for the result</string>
+    <string name="code1050001">Google verification code is required</string>
+    <string name="code1050002">The account is already registered</string>
+    <string name="code1060003">Anti-phishing code length must not exceed 20 words</string>
+    <string name="code1070004">API Key remark is required</string>
+    <string name="code1070005">API Key ID is required</string>
+    <string name="code1070006">API Key Remarks must not exceed 20 words in length</string>
+    <string name="code1070007">API Key does not exist</string>
+    <string name="code1070008">Each user can use at most 4 IPs</string>
+    <string name="code1070009">Each user can create up to 5 API Keys</string>
+    <string name="code1070010">IP address format is incorrect</string>
+    <string name="code1080001">Account type is required</string>
+    <string name="code1080002">Bank of deposit is required</string>
+    <string name="code1080003">Receipt QR code is required</string>
+    <string name="code1080004">Please complete C1 certification first.</string>
+    <string name="code1080005">Please complete C2 certification first.</string>
+    <string name="code1080006">Account name up to 15 words</string>
+    <string name="code1090001">Order ID is required</string>
+    <string name="code1100002">Transaction pair does not exist</string>
+    <string name="code1100003">Order does not exist</string>
+    <string name="code1100004">Cannot find record of order lock funds</string>
+    <string name="code1100005">The remaining locked funds are less than 0</string>
+    <string name="code1110001">Please refresh and try again</string>
+    <string name="code1210001">Currency is required</string>
+    <string name="code1210002">Remark is required</string>
+    <string name="code1210003">The coin address is required</string>
+    <string name="code1210004">Memo/Tag/Payment ID is required</string>
+    <string name="code1210005">Coin does not exist or is disabled</string>
+    <string name="code1210006">Withdrawal amount is required</string>
+    <string name="code1210007">Change security settings for less than 24 hours, temporarily not allowed to withdraw coins</string>
+    <string name="code1210008">This coin does not support deposit now.</string>
+    <string name="code1210009">The coin does not support withdrawal now.</string>
+    <string name="code1210010">The amount of withdrawal cannot be less than the minimum limit</string>
+    <string name="code1210011">Insufficient balance</string>
+    <string name="code1210012">The amount of withdrawal is more than the limit of today\'s limit, recommended amount:</string>
+    <string name="code1210013">Device type is required</string>
+    <string name="code1210014">Failed to get the deposit address</string>
+    <string name="code1210015">The withdraw address is incorrect. Please enter correct address.</string>
+    <string name="code1210016">This account is abnormal, withdrawal is not allowed.</string>
+    <string name="code1210017">The amount of withdrawal cannot be greater than the maximum limit</string>
+    <string name="code1210018">The fee is greater than the amount of withdraw, and the withdraw fails.</string>
+    <string name="code1210019">This coin don\'t need Memo/Tag/Payment ID information</string>
+    <string name="code1210020">Please enable your SMS authentication first.</string>
+    <string name="code1210021">The fiat transaction buys USDT less than 24H, and the balance of the assets after the withdrawal must greater than the purchase amount of fiat transaction</string>
+    <string name="code1210022">The fiat transaction buys USDT less than 24H. If you need to withdraw USDT, please complete C3 verification first.</string>
+    <string name="code1210023">Current account is temporarily not allowed to withdrawal</string>
+    <string name="code1210024">Please complete the advanced Verification first.</string>
+    <string name="code1220001">Please select at least one record to delete</string>
+    <string name="code1230001">Insufficient balance available on the account</string>
+    <string name="code1230002">Insufficient freeze amount</string>
+    <string name="code1230003">Freeze failed, please try again later</string>
+    <string name="code1230004">Thaw failed, please try again later</string>
+    <string name="code1230005">Failed to transfer, please try again later</string>
+    <string name="code1230006">Account does not exist</string>
+    <string name="code1240001">Configuration item code is required</string>
+    <string name="code1250001">Verification ID is required</string>
+    <string name="code1250002">You have completed the advanced verification</string>
+    <string name="code1250003">Please complete the primary verification first</string>
+    <string name="code1250004">Verification failed, please try again</string>
+    <string name="code2010001">Order service is not available</string>
+    <string name="code2010002">Request timed out</string>
+    <string name="code2010003">Pair is incorrect</string>
+    <string name="code2010004">Pair does not exist</string>
+    <string name="code2010005">Pair trading suspend</string>
+    <string name="code2010006">Insufficient funds</string>
+    <string name="code2010007">The order quantity is too small</string>
+    <string name="code2010008">The order quantity is too large</string>
+    <string name="code2010009">The price of the order is too small</string>
+    <string name="code2010010">The price of the order is too large</string>
+    <string name="code2010011">The total amount of the order is too large</string>
+    <string name="code2010012">Limit price cannot be higher than 110% of the stop price</string>
+    <string name="code2010013">Limit price cannot be lower than 90% of the stop price</string>
+    <string name="code2010014">Order does not exist</string>
+    <string name="code2010015">Freezing funds is insufficient</string>
+    <string name="code2010016">BAR type error</string>
+    <string name="code2010017">No relevant data</string>
+    <string name="code2010018">User not logged in</string>
+    <string name="code2010019">Partition does not exist</string>
+    <string name="code2010021">requestId is required</string>
+    <string name="code2010022">The total amount of the order is too small</string>
+    <string name="code2010024">Amount needs to be a multiple of %s</string>
+    <string name="code2010025">The maximum number of positions must not exceed %s</string>
+    <string name="code2010026">Amount needs to be a multiple of %s</string>
+    <string name="code2010027">Transaction type is not open yet</string>
+    <string name="code3010001">The fiat market does not support this currency</string>
+    <string name="code3010002">Currency type error</string>
+    <string name="code3010003">Payment method is incorrect</string>
+    <string name="code3010004">The number of decimal places is too long</string>
+    <string name="code3010005">Can\'t post ads without business qualifications</string>
+    <string name="code3010006">Please enable at least one payment method before advertising.</string>
+    <string name="code3020001">Only merchants can post ads</string>
+    <string name="code3020002">Ad does not exist</string>
+    <string name="code3020003">Current ad is complete, editing is not supported</string>
+    <string name="code3020004">The same type of ad is only allowed to publish one</string>
+    <string name="code3020005">Insufficient remaining amount</string>
+    <string name="code3020006">Ad has been removed</string>
+    <string name="code3030001">Can\'t trade with ads you post</string>
+    <string name="code3030002">Please complete the C2 certification first.</string>
+    <string name="code3030003">Please enable your phone number to receive order information.</string>
+    <string name="code3030004">There is unfinished order</string>
+    <string name="code3030005">The order price is not within the limit</string>
+    <string name="code3030006">The order quantity is not within the limit</string>
+    <string name="code3030007">This payment method is not supported now.</string>
+    <string name="code3030008">Failed to submit order</string>
+    <string name="code3030009">Order confirmation failed</string>
+    <string name="code3030010">Cancellation of orders has reached the limit，unable to trade in fiat market today</string>
+    <string name="code3030011">Payment method is disabled</string>
+    <string name="code3030012">Order does not exist</string>
+    <string name="code3030013">Seller cannot cancel order</string>
+    <string name="code3030014">Order appeal has been submitted</string>
+    <string name="code3030015">Order quantity calculation error</string>
+    <string name="code3030016">Order amount calculation error</string>
+    <string name="code3030020">The fiat transaction buys USDT less than 24H. If you need to sold USDT, please complete C3 verification first.</string>
+    <string name="code3030021">The fiat transaction buys USDT less than 24H, and the balance of the assets after the sold must greater than the purchase amount of fiat transaction</string>
+    <string name="code3030022">Current account is temporarily not allowed to sell USDT</string>
+    <string name="code3030023">Users in mainland China need to complete advanced verification</string>
+    <string name="code4010001">Don\'t repeat click</string>
+    <string name="code5010001">Transaction pair format is incorrect </string>
+    <string name="code5010002">ApiKey does not exist or has been deleted</string>
+    <string name="code5010003">Signature error or the APIKey status is abnormal</string>
+    <string name="code5010004">Order direction parameter error</string>
+    <string name="code5010005">Date format error</string>
+    <string name="code5010006">Query direction parameter error</string>
+    <string name="code5010007">Query record is greater than 100</string>
+    <string name="code5010008">Order type error</string>
+    <string name="code5010009">Trigger price is required</string>
+    <string name="code5010010">The server is running out, please try again later.</string>
+    <string name="code5010011">accessKey is required</string>
+    <string name="code5010012">Client IP error</string>
+    <string name="code5010013">Cancel failure</string>
+    <string name="code5010014">Buy at market best price, the total amount is required</string>
+    <string name="code5020001">Game not registered</string>
+    <string name="code5020002">Please set the game nickname first.</string>
+    <string name="code5030002">Data has been deleted</string>
+
+    <!-- 首页 -->
+    <string name="foreContract">Forecast contract</string>
+    <string name="foreContractTips">High Yield, Low Threshold</string>
+    <string name="gameZone">Game Area</string>
+    <string name="gameZoneTips">Most abundant &amp; fun Game</string>
+    <string name="newRank">Newest Listed</string>
+    <string name="riseRank">Top Gainers</string>
+    <string name="fallRank">Falling List</string>
+    <string name="coinPair">Pair</string>
+    <string name="newestPrice">Last price</string>
+    <string name="riseFall">Change</string>
+    <string name="setGameNameFirst">Please set your game nickname first.</string>
+    <string name="aliasHint12">Please enter a nickname</string>
+    <string name="logoutGameQ">Confirm to quit the game?</string>
+    <string name="returnColon">return:</string>
+
+    <string name="systemNotify">Notification</string>
+    <string name="notifyDetail">Announcement details</string>
+    <string name="browse">View</string>
+    <string name="versionTitle">The %s version debut, download to experience</string>
+    <string name="updateImm">Get New Version</string>
+
+    <!-- 行情 -->
+    <string name="zoneMain">Main</string>
+    <string name="zoneOpen">Open</string>
+    <string name="zoneInnovate">Innovation</string>
+    <string name="zoneSuperMine">DiBi Launch</string>
+    <string name="favorite">Favourites</string>
+    <string name="market">Market</string>
+    <string name="rate24h">24H Change</string>
+    <string name="volume24h">24H Vol</string>
+    <string name="searchByKey">Enter key word</string>
+    <string name="historyRecord">History records</string>
+    <string name="searchResult">Search results</string>
+    <string name="emptyHistory">No records</string>
+    <string name="clearHistoryQ">Confirm clear records?</string>
+
+    <!-- 币币 -->
+    <string name="buying">Buy</string>
+    <string name="selling">Sell</string>
+    <string name="currentEntrust">Open Orders</string>
+    <string name="historyEntrust">Order History</string>
+    <string name="historyTrade">Trade History</string>
+    <string name="price">Price</string>
+    <string name="amount">Amount</string>
+    <string name="limitPrice">Limit</string>
+    <string name="marketPrice">Market</string>
+    <string name="targetProfit">Stop-limit</string>
+    <string name="avail">Available</string>
+    <string name="total">Total</string>
+    <string name="newDeal">Filled</string>
+    <string name="unfold">Unfold</string>
+    <string name="fold">Fold</string>
+    <string name="time">Time</string>
+    <string name="targetTips">A stop-limit order is an order to buy or sell a coin once the price reaches a specified price.</string>
+    <string name="check">View</string>
+    <string name="targetHelpTitle">Stop-limit Introduction</string>
+    <string name="marketPriceHint">The best market price</string>
+    <string name="touchPrice">Stop</string>
+    <string name="inputTradeTotal">Please enter the total</string>
+    <string name="buyingAfterLogin">Buy after login</string>
+    <string name="sellingAfterLogin">Sell after login</string>
+    <string name="inputTouchPrice">Please enter the trigger price</string>
+    <string name="inputPrice">Please enter price</string>
+    <string name="inputAmount">Please enter amount</string>
+    <string name="touchPriceTips110">Price must not be higher than 110% of the trigger price</string>
+    <string name="touchPriceTips90">Price must not be less than 90% of the trigger price</string>
+    <string name="availLess">Insufficient balance</string>
+    <string name="placeOrderSuc">success</string>
+
+    <string name="all">All</string>
+    <string name="buy">Buy</string>
+    <string name="sell">Sell</string>
+    <string name="deal">Filled%</string>
+    <string name="retreat">Cancel</string>
+    <string name="totalPrice">Total</string>
+    <string name="dealVolume">Executed</string>
+    <string name="touch">Trigger</string>
+    <string name="login">Log in</string>
+    <string name="totalVolume">Amount</string>
+    <string name="dealAverage">Average</string>
+    <string name="dealPercent">Filled%</string>
+    <string name="touchCondition">Trigger conditions</string>
+    <string name="entrustTime">Time</string>
+    <string name="orderStatus1">Cancelled</string>
+    <string name="orderStatus2">Processing</string>
+    <string name="orderStatus3">Completed</string>
+    <string name="orderStatus4">No deal</string>
+    <string name="orderStatus5">Partial deal</string>
+    <string name="orderStatusS">Processing</string>
+    <string name="orderStatusP">Partial deal</string>
+    <string name="orderStatusF">Completed</string>
+    <string name="orderStatusC">Cancelled</string>
+    <string name="orderStatusCP">Cancelled</string>
+    <string name="orderStatusE">Error</string>
+    <string name="orderStatusEP">Partial Error</string>
+    <string name="orderStatusD">No deal</string>
+    <string name="orderStatusDP">Partial deal</string>
+    <string name="fee">Fee</string>
+
+    <!-- K线 -->
+    <string name="high">High</string>
+    <string name="low">Low</string>
+    <string name="divideMin">Line</string>
+    <string name="min1">1M</string>
+    <string name="min5">5M</string>
+    <string name="min15">15M</string>
+    <string name="min30">30M</string>
+    <string name="hour1">1H</string>
+    <string name="hour4">4H</string>
+    <string name="day1">1D</string>
+    <string name="week1">1W</string>
+    <string name="month1">1Mon</string>
+    <string name="more">More</string>
+    <string name="entrustOrder">Market Orders</string>
+    <string name="buyAmount">Buy Amount</string>
+    <string name="sellAmount">Amount Sell</string>
+
+    <!-- 预测合约 -->
+    <string name="contractHelpTitle">EGIC Option analysis and tutorial</string>
+    <string name="tradeGoing">Trading</string>
+    <string name="tradeStop">Stop trading</string>
+    <string name="preClose">Last</string>
+    <string name="currentPrice">Current</string>
+    <string name="trade">Trade</string>
+    <string name="deliverAlready">Settled</string>
+    <string name="deliverWaited">To be Settled</string>
+    <string name="flow">Capital flow</string>
+    <string name="analysis">Analysis</string>
+    <string name="getMoreAfterLogin">See more information after logging in</string>
+    <string name="goLogin">Login</string>
+    <string name="backCommission">Commission</string>
+    <string name="expectIncome">Expected Profit</string>
+    <string name="expectRise">Higher</string>
+    <string name="expectFall">Lower</string>
+    <string name="orderMoney">Order amount</string>
+    <string name="deliverMoney">Settled amount</string>
+    <string name="status">Status</string>
+    <string name="deliverDone">Settled</string>
+    <string name="deliverPart">Partial Settled</string>
+    <string name="deliverWait">Pending</string>
+    <string name="inputAmo">Please enter the amount</string>
+    <string name="contractStatusS">Submitted</string>
+    <string name="contractStatusW">To be Settled</string>
+    <string name="contractStatusP">Partial Settled</string>
+    <string name="contractStatusF">Settled</string>
+    <string name="contractStatusE">Order error</string>
+    <string name="contractStatusR">Returned</string>
+    <string name="clickLoadMore">Click to load more</string>
+    <string name="closePre">Closed/Last</string>
+    <string name="deliveryEntrust">Settle/Order</string>
+    <string name="directionResult">Direction/Result</string>
+    <string name="flowStatusFB">Freezing</string>
+    <string name="flowStatusFR">Return order</string>
+    <string name="flowStatusFS">Settled</string>
+    <string name="flowStatusFU">Return</string>
+    <string name="flowStatusFC">Commission</string>
+    <string name="contractResult0">Right</string>
+    <string name="contractResult1">Wrong</string>
+    <string name="contractResult2">Draw</string>
+    <string name="contractResult3">Unopened</string>
+    <string name="contractResult4">--</string>
+    <string name="thisDay">1D</string>
+    <string name="thisWeek">1W</string>
+    <string name="thisMonth">1M</string>
+    <string name="draw">Draw</string>
+    <string name="win">Win</string>
+    <string name="lose">Lose</string>
+    <string name="xTimes">%d times</string>
+    <string name="income">Income</string>
+    <string name="outcome">Expenditure</string>
+    <string name="amountTo">Total</string>
+
+    <!-- 个人中心 -->
+    <string name="retryAfterRefresh">Please refresh and try again</string>
+    <string name="goIdentify">Unverified</string>
+    <string name="idLevel1">C1 Verified</string>
+    <string name="idLevel2">C2 Verified</string>
+    <string name="idLevel3">C3 Verified</string>
+    <string name="idLevel2Ing">C1 Verified</string>
+    <string name="idLevel2Fail">C1 Verified</string>
+    <string name="junior">Primary</string>
+    <string name="senior">Advanced</string>
+    <string name="juniorIdentify">Primary Verify</string>
+    <string name="seniorIdentify">Advanced Verify</string>
+    <string name="securityTips">Please do not disclose your password, SMS, email or Google verification code to anyone, including DiBi staff.</string>
+    <string name="identify">ID Verify</string>
+    <string name="securityCenter">Security</string>
+    <string name="inviteFriend">Invite friends</string>
+    <string name="gatherAccount">Collection methods</string>
+    <string name="setting">Setting</string>
+    <string name="contactUs">Contact Us</string>
+    <string name="helpCenter">Help</string>
+    <string name="onlineChat">Online customer service</string>
+    <string name="submit_the_repair_order">Submit the repair order</string>
+
+    <string name="editAlias">Edit nickname</string>
+    <string name="aliasHint">Please enter a nickname</string>
+    <string name="confirm">Confirm</string>
+    <string name="changeAvatar">Change avatar</string>
+    <string name="takePicture">Take a photo</string>
+    <string name="chooseFromAlbum">Select from album</string>
+    <string name="cancel">Cancel</string>
+    <string name="waitUploading">Image is being uploaded, please try again later</string>
+
+    <!-- C1认证 -->
+    <string name="nation">Country / region</string>
+    <string name="selectNation">Choose nationality</string>
+    <string name="china">China</string>
+    <string name="name">Name</string>
+    <string name="lastName">Last name (pinyin)</string>
+    <string name="firstName">Name (pinyin)</string>
+    <string name="inputName">Please enter your name</string>
+    <string name="inputLastName">Please enter your last name</string>
+    <string name="inputFirstName">Please enter your name</string>
+    <string name="idType">Certificate Type </string>
+    <string name="idCard">ID card</string>
+    <string name="passport">Passport</string>
+    <string name="idNumber">ID no.</string>
+    <string name="inputIdNumber">Please enter the ID no.</string>
+    <string name="idNumberError">ID card no. format is incorrect</string>
+    <string name="submit">Submit</string>
+    <string name="c1Title">Your C1 verification audit was successful</string>
+    <string name="c1Tips">Complete C2 verification for Fiat transactions and withdrawal operations (one-day withdraw limit of 1 million RMB)</string>
+    <string name="c1Next">Go for C2 verification</string>
+    <string name="juniorTitle">Your primary verification review was successful</string>
+    <string name="juniorTips">Complete advanced verification to conduct fiat transactions, token withdrawal operations (with a limit of 5 million RMB per day), and apply to become a merchant</string>
+    <string name="juniorNext">Advanced Verify</string>
+
+    <!-- C2、C3认证 -->
+    <string name="c2CardName0">Portrait page</string>
+    <string name="c2CardName1">National emblem page</string>
+    <string name="c2CardName2">Hand-held ID photo + official website + date</string>
+    <string name="c2PassName0">Portrait page</string>
+    <string name="c2PassName1">National emblem page</string>
+    <string name="c2PassName2">Hand-held ID photo + official website + date</string>
+    <string name="goBackTips">Return to the previous page?</string>
+    <string name="pleaseUploadId0">Please complete the photo upload first.</string>
+    <string name="pleaseUploadId1">Please complete the photo upload first.</string>
+    <string name="pleaseUploadId2">Please complete the photo upload first.</string>
+    <string name="c2sTitle">Your C2 verification audit was successful</string>
+    <string name="c2sTips">Complete the C3 verification to apply to become a merchant, one-day withdraw limit is raised to 5 million RMB</string>
+    <string name="c2sNext">Go for C3 verification</string>
+    <string name="c2fTitle">Your C2 verification audit failed</string>
+    <string name="c2fTips">Please be sure to upload your true and clear verification photos and resubmit your certification.</string>
+    <string name="c2fNext">Reverification</string>
+    <string name="c2lTitle">Please wait patiently during the review</string>
+    <string name="c2lTips">We will review it within one working day, please be patient</string>
+    <string name="c3Title">C3 verification success</string>
+    <string name="seniorTitle">You have completed the advanced verification</string>
+    <string name="notIdentify">Verification is not completed.</string>
+    <string name="notIdentify_1">Verification is not completed. Reason: The user voluntarily quits during the verification process.</string>
+    <string name="notIdentify_3001">Verification is not completed.  Reason: The verification token is invalid or has expired.</string>
+    <string name="notIdentify_3101">Verification is not completed.  Reason: The user name and ID verification do not match.</string>
+    <string name="notIdentify_3102">Verification is not completed.  Reason: The  verification ID number does not exist.</string>
+    <string name="notIdentify_3103">Verification is not completed.  Reason: The verification ID number is invalid.</string>
+    <string name="notIdentify_3104">Verification is not completed.  Reason: The verification has been passed and the submission is repeated.</string>
+    <string name="notIdentify_3204">Verification is not completed.  reason: not account user operation.</string>
+    <string name="notIdentify_3206">Verification is not completed.  reason: not account user operation.</string>
+    <string name="notIdentify_3208">Verification is not completed.  Reason: The public security network has no relevant information.</string>
+
+    <!-- 安全中心 -->
+    <string name="phoneVerify">SMS Authentication</string>
+    <string name="emailVerify">E-mail Authentication</string>
+    <string name="googleVerify">Google Authentication</string>
+    <string name="loginPassword">Login Password</string>
+    <string name="antiFish">Anti-phishing code</string>
+    <string name="bind">Disable</string>
+    <string name="unbind">Enable</string>
+    <string name="reset">Reset</string>
+    <string name="set">Setting</string>
+    <string name="update">Change</string>
+    <string name="inputNum6">6 digit authentication code</string>
+
+    <!-- 手机绑定 -->
+    <string name="phoneBind">Enable Phone</string>
+    <string name="phoneNumber">Phone no.</string>
+    <string name="inputPhoneNumber">Please enter your phone number</string>
+    <string name="inputFormatPhone">Please enter the correct phone number</string>
+    <string name="smsCode">SMS authentication code</string>
+    <string name="inputSmsCode">Please enter SMS authentication code</string>
+    <string name="inputCorrectCode">Please enter correct verify code</string>
+    <string name="sendCode">Send</string>
+    <string name="resend">Resend</string>
+    <string name="enable">Enable</string>
+    <string name="phoneBindSuc">Mobile phone enable successfully</string>
+
+    <!-- 邮箱绑定 -->
+    <string name="emailBind">Enable E-mail</string>
+    <string name="emailAddress">E-mail address</string>
+    <string name="inputEmailAddress">E-mail address</string>
+    <string name="inputFormatEmail">Please enter the correct email address</string>
+    <string name="emailCode">E-mail authentication code</string>
+    <string name="inputEmailCode">E-mail authentication code</string>
+    <string name="emailBindSuc">E-mail enable successfully</string>
+
+    <!-- 谷歌验证 -->
+    <string name="download">Download</string>
+    <string name="open">Open</string>
+    <string name="bindGoogleTitle1">Download Google Authenticator APP</string>
+    <string name="bindGoogleInfo1">Click the download button to go to the app store, download the Google Authenticator, or search for "Google Authenticator" in the app store.</string>
+    <string name="bindGoogleTitle2">Add a key and back up in Google Authenticator</string>
+    <string name="bindGoogleInfo2">Open Google Authenticator and click "+" Select to manually enter the following key to add authentication token. &lt;font color=#E86240&gt;The key is used to retrieve the Google Authenticator when the phone is replaced or lost. Be sure to save the following key backup before enable.&lt;/font&gt;</string>
+    <string name="bindGoogleTitle3">Enter authentication code in Google Authenticator</string>
+    <string name="copy">Copy</string>
+    <string name="inputGoogleCode">Please enter GA code</string>
+    <string name="copyDone">Copied</string>
+    <string name="securityVerify">Safety Check</string>
+    <string name="numCode6">Authentication code</string>
+    <string name="googleBindSuc">Google authentication enable successfully</string>
+    <string name="disableGoogle">Disable Google Authentication</string>
+    <string name="inputLoginPassword">Please enter your password</string>
+    <string name="inputCorrectLoginPassword">Please enter the correct login password</string>
+    <string name="googleCode">GA code</string>
+    <string name="sure">Confirm</string>
+    <string name="googleUnbindSuc">Google authentication disable successfully</string>
+
+    <!-- 登录密码、防钓鱼码 -->
+    <string name="resetNewPassword">Reset login password</string>
+    <string name="newLoginPassword">New login password</string>
+    <string name="passwordTips">Password is 6&#8211;21 digits and letter combination</string>
+    <string name="confirmPassword">Confirm the new password</string>
+    <string name="inputPassword">Please enter your password</string>
+    <string name="inputConfirmPassword">Please enter your new login password again</string>
+    <string name="passwordNoMatch">The two passwords entered doesn\'t match, please re-enter</string>
+    <string name="passwordResetSuc">Password reset succeeded</string>
+    <string name="inputYourAntiFish">Please enter the anti-phishing code you want to set.</string>
+    <string name="antiFishTips">Anti-phishing code is 4&#8211;10 non-special characters</string>
+    <string name="antiFishSetSuc">Anti-phishing code set successfully</string>
+    <string name="antiFishUpdateSuc">Anti-phishing code was successfully modified.</string>
+    <string name="currentAntiFish">Current anti-phishing code</string>
+    <string name="newAntiFish">New anti-phishing code</string>
+
+    <!-- 邀请好友 -->
+    <string name="friendList">Friends List</string>
+    <string name="commissionRecord">Commission</string>
+    <string name="inviteCodeColon">Referral ID:</string>
+    <string name="invitePoster">Exclusive Poster</string>
+    <string name="save2Album">Save to album</string>
+    <string name="saveSuc">Saved</string>
+    <string name="saveFail">Save failed</string>
+    <string name="comTodayUSD">Commission Today (USDT)</string>
+    <string name="comTotalUSD">Total (USDT)</string>
+    <string name="comType_exchange">Exchange Commission</string>
+    <string name="comType_game">Game Commission</string>
+    <string name="comType_agent">Agent Commission</string>
+    <string name="comType_future">Option Commission</string>
+
+    <!-- 设置 -->
+    <string name="language">Language</string>
+    <string name="clearCache">Clean up cache</string>
+    <string name="currentVersion">Current version</string>
+    <string name="openNotifyPerm">Turn on notification</string>
+    <string name="logout">Log out</string>
+    <string name="clearCacheDone">Cache cleanup completed</string>
+    <string name="logoutMark">Confirm to log out?</string>
+
+    <!-- 工单 -->
+    <string name="vvbtc_messge">Notification</string>
+    <string name="myWorkOrder">My request</string>
+    <string name="submitWorkOrder">Submit request</string>
+    <string name="workOrderType">Work order type</string>
+    <string name="vvbtc_title_hint">Please enter a title of no more than 20 characters</string>
+    <string name="vvbtc_content_hint">Please describe the problem you are experiencing, we will solve it for you as soon as possible.</string>
+    <string name="vvbtc_commit_pic_hint">Please upload the image, upload in JPG/JPEG/PNG format, the size is no more than 5M, and you can upload up to 3 pictures.</string>
+    <string name="vvbtc_commit_sfz">Hand-held ID photo + original phone number / original email address</string>
+    <string name="vvbtc_sele_order_type">Please select request type</string>
+    <string name="vvbtc_tost_input_title">Please enter request title</string>
+    <string name="vvbtc_toast_content">Please enter request description</string>
+    <string name="vvbtc_work_order_commit_sucess">Request submitted successfully</string>
+
+    <string name="replyWait">Pending reply</string>
+    <string name="replyDone">Replied</string>
+    <string name="tv_work_order_detail_title">Work order details</string>
+    <string name="commonQuestion">Common problem</string>
+    <string name="vvbtc_q_to_commit">Didn\'t find the answer you wanted? You can </string>
+    <string name="vvbtc_is_help">Was this article helpful?</string>
+    <string name="vvbtc_yes">Yes</string>
+    <string name="NO">No</string>
+    <string name="vvbtc_help_num">%2$d out of %1$d found this helpful</string>
+
+
+    <!--登录 开始-->
+    <string name="str_login_title">Login to DiBi</string>
+    <string name="str_edit_phone_number_or_email">Please enter your phone/E-mail</string>
+    <string name="str_edit_password">Please enter your password</string>
+    <string name="str_login">Login</string>
+    <string name="str_forget_psw">Forget password</string>
+    <string name="str_phone_regist">Phone Register</string>
+    <string name="str_email_regist">E-mail Register</string>
+    <string name="str_edit_phone_number">Please enter the phone no.</string>
+    <string name="str_edit_msg_code" >Authentication code</string>
+    <string name="str_get_msg_code" >Send </string>
+    <string name="str_edit_6_to_21_psw">6-21 numbers &amp; letters</string>
+    <string name="str_edit_comfirm_psw">Confirm password</string>
+    <string name="str_invite_code">Referral ID</string>
+    <string name="str_register">Register</string>
+    <string name="str_edit_email_account">Please enter your E-mail </string>
+    <string name="str_edit_email_code">Please enter the E-mail authentication code</string>
+    <string name="str_edit_correct_email">Please enter the correct  email address</string>
+    <string name="str_comfirm">Confirm</string>
+    <string name="str_find_by_email">E-mail</string>
+    <string name="str_find_by_phone">Phone </string>
+    <string name="str_find_password">Reset Password</string>
+    <string name="str_login_right_now">Login </string>
+    <string name="str_login_vvbtc">Login to DiBi</string>
+    <string name="str_edit_two_validation">Please enter 2FA Authentication code</string>
+    <string name="str_edit_two_validation_hint">You have enabled 2FA Authentication\nPlease enter your Authy/Google Authentication code</string>
+    <string name="lostGoogleVerifyQ">Lost Google authentication code?</string>
+    <string name="str_not_recieve_code">Can\'t receive the authentication code ?</string>
+    <string name="str_edit_correct_email_or_phone">Please enter the correct phone number or email address</string>
+    <string name="str_edit_correct_phone">Please enter correct phone</string>
+    <string name="str_psw_6_to_21">6-21 numbers &amp; letters</string>
+
+    <string name="str_resend">reSend</string>
+    <string name="str_edit_phone_code">Please enter SMS authentication code</string>
+    <string name="str_edit_phone_code_two">Authentication code has been sent to your phone！</string>
+    <string name="str_edit_email_code_two">Authentication code has been sent to your Email!</string>
+
+    <string name="str_use_protocol">Terms Of Us</string>
+    <string name="str_use_protocol_two">Terms Of Us</string>
+    <string name="str_secret_protocol"> Privacy Statement</string>
+    <string name="str_secret_protocol_two"> Privacy Statement</string>
+    <string name="str_read_and_agree">Register agree</string>
+    <string name="str_have_account">Already Registered</string>
+    <string name="str_go_login"> Login</string>
+    <string name="str_and">&amp;</string>
+    <string name="str_manage_address">address management</string>
+    <string name="str_account_order">Bill</string>
+    <string name="str_search_coin">Search currency</string>
+
+    <string name="str_charge_coin">Currency</string>
+    <string name="str_get_coin">Money</string>
+    <string name="str_transfer_accounts">Transfer</string>
+    <string name="str_charge_coin_record">Currency record</string>
+    <string name="str_save_photo">Save image to album</string>
+    <string name="str_copy_address">Copy address</string>
+
+    <string name="str_copy_memo">Copy Memo</string>
+
+    <string name="str_get_coin_record">Money record</string>
+    <string name="str_charge_get_coin_record">deposit &amp; withdrawal records</string>
+    <string name="str_address_list">Address list</string>
+    <string name="str_add_address">Add address</string>
+    <string name="str_coin_type">Coins</string>
+    <string name="str_note">note name</string>
+    <string name="str_get_coin_address">Withdraw address</string>
+    <string name="str_memo">Memo</string>
+    <string name="str_delete">delete</string>
+    <string name="str_comfir_delete_address">Confirm delete the coin address?</string>
+    <string name="confirm_two">Confirm</string>
+    <string name="str_please_edit_key">Please enter a keyword</string>
+    <string name="str_bank">Bank card</string>
+    <string name="str_un_bind">Enable</string>
+    <string name="str_wechat">WeChat</string>
+    <string name="str_alipay">Alipay</string>
+    <string name="str_auth_hint">Please complete the C2 ID verification before withdraw coins.</string>
+    <string name="str_auth_hint1">Please complete the C2 ID verification before transfer coins.</string>
+    <string name="transferNeedSeniorPrimary">Please complete the C1 ID verification before transfer coins.</string>
+    <string name="withdrawNeedSenior">Please complete the advanced verification before withdraw coins.</string>
+    <string name="transferNeedSenior">Please complete the advanced verification before transfer coins.</string>
+    <string name="str_go_auth">Verify</string>
+    <string name="thinkAgain">Cancel</string>
+    <string name="str_collect_money_hint">Please complete the C1 verification before setting up the payment.</string>
+    <string name="str_account">Account</string>
+    <string name="str_edit_account">Please enter account</string>
+    <string name="str_upload_pic_hint">Please upload your collection QR code image (*.jpg/*.png/*jpeg)</string>
+    <string name="str_account_bank">Bank account</string>
+    <string name="str_edit_account_bank">Bank Name (required)</string>
+    <string name="str_edit_account_branch_bank">Please enter the branch name</string>
+    <string name="str_bank_number">Bank card account</string>
+    <string name="str_account_branch_bank">Branch</string>
+    <string name="str_edit_bank_number">Bank card account</string>
+    <string name="str_collet_type">Payment Method</string>
+    <string name="str_bank_bind">Enable Bank Card</string>
+    <string name="str_alipay_bind">Enable Alipay</string>
+    <string name="str_wechat_bind">Enable WeChat Payment</string>
+    <string name="str_add_photo">add image</string>
+    <string name="str_enable_edit_hint">There is an processing order. Please complete all orders and then edit the collection information!</string>
+    <string name="str_go_handle">To handle</string>
+    <string name="str_fiat_trade">fiat trading</string>
+    <string name="str_current_order">Processing</string>
+    <string name="str_history_order">Completed &amp; Cancelled</string>
+    <string name="str_report_order">Appeal</string>
+    <string name="str_sell">Sell</string>
+    <string name="str_buy">Buy</string>
+    <string name="str_all">All</string>
+    <string name="str_buy_usdt">Buy USDT</string>
+    <string name="str_sell_usdt">Sell USDT</string>
+    <string name="str_my_order">My Orders</string>
+    <string name="str_my_advance">My ad</string>
+    <string name="str_up">On</string>
+    <string name="str_down">Off</string>
+    <string name="str_edit">Edit</string>
+    <string name="str_c2c_coin_type">Currency</string>
+    <string name="str_pay_type">Payment Method</string>
+    <string name="str_edit_money">Please enter the total</string>
+    <string name="str_edit_amount">Please enter the amount</string>
+    <string name="str_select_pay_way">Please select the payment method</string>
+    <string name="str_wechat_pay">WeChat payment</string>
+    <string name="str_buy_info">Details</string>
+    <string name="str_bussiness">Merchant</string>
+    <string name="str_c2c_price">Price</string>
+    <string name="str_c2c_rest_nums">Remaining</string>
+    <string name="str_c2c_limit_amount">Limit</string>
+    <string name="str_bussiness_note">Remarks</string>
+    <string name="str_comfirm_order">Confirm </string>
+    <string name="publish_advance">Post ad</string>
+    <string name="str_c2c_coin">Currency </string>
+    <string name="str_amount">Amount</string>
+    <string name="str_edit_min_success_amount">Limit</string>
+    <string name="str_single_amount">Limit</string>
+    <string name="str_edit_max_success_amount">Max</string>
+    <string name="str_note_none">Remarks</string>
+    <string name="str_edit_note_info">Please enter the Remarks</string>
+    <string name="str_collect_money_type">collection method</string>
+    <string name="str_set_edit">Set/Edit payment information</string>
+    <string name="str_apply_complaint">Initiate an appeal</string>
+    <string name="str_complaint_info">Appeal Information</string>
+    <string name="str_edit_less_than_50">Please enter a title of no more than 50 characters</string>
+    <string name="str_edit_less_than_500">Describe your problem, the more detailed the better (within 100 words)</string>
+    <string name="str_upload_pic_hint_two">Please upload the appeal material, upload in JPG/JPEG/PNG format, the size does not exceed 1M, and up to 3 can be uploaded.</string>
+    <string name="comfirm_submit">Confirm</string>
+    <string name="str_order_info">Order Information</string>
+    <string name="str_order_nmber">Order no.</string>
+    <string name="str_trade_money">Total</string>
+    <string name="str_order_time">Time</string>
+    <string name="str_title">title</string>
+    <string name="str_sumary">describe</string>
+    <string name="str_compalint_result">Result</string>
+    <string name="str_compalint_order">Appeal </string>
+    <string name="str_c2c_trade_hint">Please enable your SMS authentication before the fiat transaction. The phone number will be used to receive notification information.</string>
+    <string name="str_go_bind">Enable  </string>
+    <string name="str_c2c_trade_hint_two">Please complete the C2 ID verification before starting a fiat transaction. </string>
+    <string name="c2cTradeNeedSenior"> Advanced verification is required before fiat transaction. Please complete the advanced verification first!</string>
+    <string name="str_my_think_argin">Cancel</string>
+    <string name="str_trade_kown">Trading instructions</string>
+    <string name="str_wait_pay">To be paid</string>
+    <string name="str_order_wait_pay">Order status：to be paid</string>
+    <string name="str_contract_business">Contact Seller</string>
+    <string name="str_order_total_amount">Total</string>
+    <string name="str_trade_amount">Amount</string>
+    <string name="str_trade_price">Price</string>
+    <string name="str_name">Name</string>
+    <string name="str_c2c_bank">Bank</string>
+    <string name="str_c2c_branch_bank">Branch</string>
+    <string name="str_c2c_bank_number">Account</string>
+    <string name="str_cancel_order">Cancel order</string>
+    <string name="str_payed_money">transferred</string>
+    <string name="str_c2c_qrcode">QR code</string>
+    <string name="str_c2c_collect_qrcode">Look QR code</string>
+    <string name="str_wait_comfirm">To be confirmed</string>
+    <string name="str_order_wait_comfirm">order to be confirmed</string>
+    <string name="str_commit_complaint">File a complaint</string>
+    <string name="str_attetion">Note</string>
+    <string name="str_wait_comfirm_hint">1. If the payee has not confirmed the payment within 15 minutes, you will have the right to file a complaint.\n2. If you do not transfer money to the payee, the payee will have the right to appeal to you. </string>
+    <string name="str_completed">Completed</string>
+    <string name="str_order_completed">Order has been completed</string>
+    <string name="str_collected_money">confirm collection</string>
+    <string name="str_comfir_pay_money">Confirm that the transfer has been completed</string>
+    <string name="str_comfir_collect_money">Confirm receipt of buyer \'s transfer</string>
+    <string name="_str_add_address_suc">success</string>
+    <string name="str_search_keyword">Please enter a keyword</string>
+    <string name="str_other_none">other : no</string>
+    <string name="str_address">address ：</string>
+    <string name="_str_delete_address_suc">success</string>
+    <string name="str_chager_qrcode">Deposit address</string>
+    <string name="str_saved">saved</string>
+    <string name="str_save_failure">save fail</string>
+    <string name="str_copyed">copyed</string>
+    <string name="str_charge">currency</string>
+    <string name="str_get_coin_amount">Number of coins</string>
+    <string name="str_paste_address">Enter or long press the paste address</string>
+    <string name="str_actual_account">Actual arrival</string>
+    <string name="str_fee">Miner fee</string>
+    <string name="str_avlible_amount">Available Balance ：</string>
+    <string name="_str_get_coin_suc">success</string>
+    <string name="str_update">Change</string>
+    <string name="str_copy">copy</string>
+    <string name="str_delete_this_picture">Confirm delete the photo?</string>
+    <string name="str_alipay_qrcode">Alipay QR code</string>
+    <string name="str_wechat_qrcode">weChat QR code</string>
+    <string name="str_suc_create_nums">Orders</string>
+    <string name="str_suc_use_time">time%sM</string>
+    <string name="str_c2c_limit_amount_two">Limit</string>
+    <string name="str_canceled">Cancelled </string>
+    <string name="str_finished">Completed</string>
+    <string name="str_complainting">Appeal</string>
+    <string name="str_nick">Nick</string>
+    <string name="str_order_canceled">Order cancelled</string>
+    <string name="str_c2c_account_number">Account</string>
+    <string name="str_comfir_cancel_order">Confirm cancel</string>
+    <string name="str_buy_comfirm_info">Paid, wait for the payee confirming</string>
+    <string name="str_complaint">File a complaint</string>
+    <string name="str_comfirm_collected_money">Confirm collection</string>
+    <string name="str_compalinting">Processing</string>
+    <string name="str_compalinting_info">Please be patient while the complaint is being processed.</string>
+    <string name="str_buy_win">The buyer wins the case and the order is completed;</string>
+    <string name="str_buy_win_info">The buyer wins the case and the order is completed;</string>
+    <string name="str_sell_win_info">The seller wins the case and the order is cancelled;</string>
+    <string name="str_sell_win">Seller Wins</string>
+    <string name="str_c2c_coin_selected">Currency</string>
+    <string name="str_uping">On</string>
+    <string name="str_downed">Off</string>
+    <string name="str_ck_price">Price</string>
+    <string name="edit_advance">Edit ad</string>
+    <string name="str_wait_check">pending</string>
+    <string name="str_suc">success</string>
+    <string name="str_not_check">Failed</string>
+    <string name="str_dist_comfirm">Blockchain pending</string>
+    <string name="str_dist_comfirm_suc">success</string>
+    <string name="str_dist_comfirm_fail">Failed</string>
+
+
+    <string name="str_cancel_order_hint">%s orders have been cancelled today, you cannot trade in fiat today after canceling this order. Please confirm that you need to cancel this order.。</string>
+
+    <string name="my_message">My Message</string>
+    <string name="str_contract_buy">Contact Buyer</string>
+    <string name="str_code_hint_601">Please complete the payment as soon as possible!</string>
+    <string name="str_code_hint_602">Buyers place a successful order, please wait for the buyer to pay</string>
+    <string name="str_code_hint_603">Please wait for the buyer to pay</string>
+    <string name="str_code_hint_604">The seller placed the order successfully, please complete the payment as soon as possible!</string>
+    <string name="str_code_hint_605">Please wait for the seller to confirm the payment.</string>
+    <string name="str_code_hint_606">Please confirm the payment as soon as possible!</string>
+    <string name="str_code_hint_607">Please confirm the payment as soon as possible!</string>
+    <string name="str_code_hint_608">Please wait for the seller to confirm the payment.</string>
+    <string name="str_code_hint_609">Transaction complete</string>
+    <string name="str_code_hint_610">Order cancelled</string>
+    <string name="str_code_hint_611">Order has been cancelled by the buyer</string>
+    <string name="str_code_hint_612">Timeout not paid, order cancelled</string>
+    <string name="str_code_hint_613">Buyer has not paid and the order has been cancelled</string>
+
+    <string name="str_scan">Scan</string>
+    <string name="str_look_order_detail">View order details＞</string>
+    <string name="_str_register_suc">success</string>
+    <string name="_str_agree_protocol">Register Agree Terms Of Use &amp; Privacy Statement</string>
+    <string name="str_small_coin_hint">Balances valued &lt;0.0001BTC</string>
+    <string name="str_edit_pay_account">Please enter your account no.</string>
+    <string name="str_edit_pay_name">Please enter your name</string>
+    <string name="str_edit_pay_pic">Please upload your collection QR code image </string>
+    <string name="str_update_suc">success</string>
+    <string name="str_wechat_bind_suc">success</string>
+    <string name="str_alipay_bind_suc">success</string>
+    <string name="str_edit_pay_bank">Please enter the bank name</string>
+    <string name="str_edit_pay_accountNumber">Bank card account (required)</string>
+    <string name="str_bank_update_suc">success</string>
+    <string name="str_bank_bind_suc">success</string>
+    <string name="str_sell_info">Sell Information</string>
+    <string name="str_bind_pay_hint">The collection information does not match. Please set the corresponding information first!</string>
+    <string name="str_code_hint_614">In the order appeal, please wait for the result of the appeal;</string>
+    <string name="str_code_hint_615">The buyer wins the case and the order is completed;</string>
+    <string name="str_code_hint_616">The seller wins the case and the order is cancelled;</string>
+    <string name="str_edit_order_hint">The entered quantity or amount is not within the limit, please re-enter</string>
+    <string name="str_upload_complaint_info">Please upload the appeal material</string>
+    <string name="str_edit_title">Please enter the title</string>
+    <string name="str_edit_summary">Please enter the description</string>
+    <string name="str_complaint_suc">success</string>
+    <string name="str_edit_price">Please enter the price</string>
+    <string name="str_edit_correct_money">Please enter the correct limit</string>
+    <string name="str_edit_get_amount">Please enter the number of coins</string>
+    <string name="str_edit_get_address">Please enter the address of coins</string>
+    <string name="str_not_enough_money">Insufficient Available Balance</string>
+    <string name="str_ad_edit_suc">success</string>
+    <string name="str_ad_publish_suc">success</string>
+    <string name="str_not_empty_coin">coins</string>
+    <string name="str_edit_note_name">Please enter a note name</string>
+    <string name="str_edit_address">Please enter the address</string>
+    <string name="str_memo_hint">Please enter the Memo</string>
+    <string name="str_tag_hint">Please enter the Tag</string>
+    <string name="str_payment_hint">Please enter the %s</string>
+    <string name="str_not_enough_amount">Insufficient Remaining</string>
+    <string name="str_select_get_coin">Choose currency</string>
+    <string name="str_select_transfer_coin">Choose transfer currency</string>
+    <string name="str_select_charge_coin">Choose a currency</string>
+    <string name="str_slider_verify">passed sliding validation fail</string>
+    <string name="str_select_one_pay">Please select the payment method</string>
+    <string name="str_select_one_collecty">Please select the payment method</string>
+    <string name="str_no_accout">No Account</string>
+    <string name="str_register_now">Register now</string>
+    <string name="str_have">hold</string>
+    <string name="str_useable">Available Balance</string>
+    <string name="str_frozen">locking</string>
+    <string name="str_get_coin_two">withdraw</string>
+    <string name="str_buy_collect_info">Buyer Collection Account</string>
+    <string name="str_sell_collect_info">Seller Collection Account</string>
+    <string name="str_login_hint">Your information has been protected by 256-bit SGC encryption for secure data transmission</string>
+    <string name="str_edit_correct_psw">The password is incorrect, please re-enter</string>
+    <string name="str_psw_diffrent">The two passwords entered doesn\'t match, please re-enter</string>
+    <string name="str_phone_distrct">Select phone number attribution</string>
+    <string name="str_hide_small_amount_coin">Hide &lt;0.0001BTC balance</string>
+    <string name="str_publish_max">Amount exceeds balance</string>
+    <string name="str_day">days</string>
+    <string name="str_hour">hours</string>
+    <string name="str_minutes">minutes</string>
+    <string name="str_seconds">seconds</string>
+    <string name="str_bind">Disable</string>
+    <string name="str_comfirm_hint">The buyer has transferred the money</string>
+    <string name="str_comfirm_hint_two">please confirm whether you have received the buyer\'s payment in</string>
+    <string name="str_comfirm_hint_three">The buyer has transferred the money please confirm whether you have received the buyer\'s payment in</string>
+    <string name="str_get_coin_1210012_hint">The amount of withdrawal is more than the limit of today\'s limit, recommended amount:</string>
+    <string name="str_amount_less_than_minAmount">The amount of withdrawal cannot be less than the minimum limit</string>
+    <string name="_str_look">View</string>
+    <string name="str_edit_buy_hint">The amoun can\'t be lower than the min limit</string>
+    <string name="str_edit_ad_sell_hint">The total amountcan\'t be lower than the min limit</string>
+    <string name="str_add_address_hint">Please enter a note name no more than 20 characters</string>
+    <string name="str_code_resend">Resend after %s seconds</string>
+    <string name="str_edit_order_hint_two">The entered quantity or amount is not within the limit, please re-enter</string>
+
+    <string name="waitPayCountBuyHead">To be paid, please pay %s to seller within </string>
+    <string name="waitPayCountBuyFoot">.%s</string>
+    <string name="waitPayCountSellHead">Waiting for the buyer pays, payer will pay you %s within </string>
+    <string name="waitPayCountSellFoot">, please wait.%s</string>
+    <string name="waitPayBuyTips">Please &lt;font color=#E89940&gt;remark any information for the order.&lt;/font&gt;  when transferring money! After transferred, please &lt;font color=#E89940&gt;click the Transferred button&lt;/font&gt; to complete the payment.</string>
+
+    <string name="assetTotal">Total account assets(BTC)</string>
+    <string name="warmTipsColon">Tips:</string>
+    <string name="c2cTips1">(1) In order to prevent lawless money laundering, if the USDT purchased from fiat market within 24 hours need to be withdraw or sold, the balance of the wallet assets must be higher than the equivalent assets purchased form fiat market, and there is no limit after 24 hours.</string>
+    <string name="c2cTips2">(2) Remember: Please do not note USDT or DIC when transferring money, otherwise you and the merchant\'s account may be frozen!</string>
+    <string name="c2cTips3">(3) Fiat merchant online time: 9:00~23:00</string>
+    <string name="chainTypeInfo">Chain Type: </string>
+    <string name="coinCannotRecharge">This coin does not support deposit now.</string>
+    <string name="coinCannotWithdraw">The coin does not support withdrawal now.</string>
+
+    <!--登录 结束-->
+
+    <string name="assetManagement">Asset management</string>
+    <string name="consensusExchange">Consensus Exchange</string>
+    <string name="consensusExchangeText">Consensus Exchange</string>
+    <string name="coinIntro">Introduction</string>
+    <string name="payment_account">Account</string>
+    <string name="enter_account">Please enter the account number</string>
+    <string name="enter_transfer_number">Please enter the transfer number</string>
+    <string name="transfer_number">transfer number</string>
+    <string name="str_transfer_record">transfer records</string>
+    <string name="str_transfer_check_code">Verification code</string>
+    <string name="transfer_success">Transfer success</string>
+    <string name="str_transfer_c2c">Internal transfer</string>
+    <string name="str_transfer_record_title">Internal transfer record</string>
+    <string name="str_transfer_tip1">1、For the safety of your funds, please carefully check whether your transfer information is correct.</string>
+    <string name="str_transfer_tip2">2、Do not disclose your account, password and other important information.</string>
+    <string name="str_transfer_tip3">3、Once confirmed, the transfer will not be revoked! The platform is not responsible for any loss of assets.</string>
+    <string name="str_transfer_tip4">4、After the limit of the number of transfers is reached, you can still transfer money by way of withdrawal.</string>
+    <string name="find_target_account">Check account</string>
+    <string name="transfer_d">Into</string>
+    <string name="transfer_w">Out</string>
+
+    <string name="c2c_buy">Buy</string>
+    <string name="c2c_sell">Sell</string>
+    <string name="c2c_orders">Orders</string>
+    <string name="c2c_advert">Advert</string>
+
+    <string name="coinIntro_date">Issue date</string>
+    <string name="coinIntro_quantity">Total amount</string>
+    <string name="coinIntro_circulate_quantity">Total circulation</string>
+    <string name="coinIntro_price">Price</string>
+    <string name="coinIntro_white_paper">White pager</string>
+    <string name="coinIntro_website">Website</string>
+    <string name="coinIntro_blockchain_explorer">Blockchain explorer</string>
+
+    <string name="consensus_exchange_not_open">This function is not yet open</string>
+
+    <string name="code3020011">You need to remove the AD before you can edit it</string>
+    <string name="code3020010">You can not transfer money to yourself</string>
+    <string name="code1010017">The user does not exist</string>
+    <string name="code1080007">Transfer to account must complete C1 authentication</string>
+    <string name="code3020007">You have submitted your application, please wait patiently</string>
+    <string name="code3020008">You are a merchant, please do not repeat the application</string>
+    <string name="code3020009">You are not a merchant, no permission operation</string>
+
+    <string name="iir1">Date</string>
+    <string name="iir2">Invitee</string>
+    <string name="iir3">Reward</string>
+    <string name="iir4">Status</string>
+
+    <string name="tra_ada_1">User</string>
+    <string name="tra_ada_2">Transfer number</string>
+
+    <string name="consensus_details">Consensus details</string>
+    <string name="apply_for_progress">Progress</string>
+    <string name="unit_price">Unit price</string>
+    <string name="purchase_amount">Purchase amount</string>
+    <string name="apply_amount">Purchase money</string>
+    <string name="number_of_participants">Number of participants</string>
+    <string name="apply_coin">Explain the currency</string>
+    <string name="number_of_applications">Number of applications</string>
+    <string name="number_of_applications_hint">Please enter the quantity of subscription</string>
+    <string name="amout_of_applications_hint">Please enter the subscription amount</string>
+    <string name="available">Available</string>
+    <string name="min_apply">Minimum subscription</string>
+    <string name="total_amount_of_personal">Total amount of personal subscription</string>
+    <string name="quantity_available_for_purchase">Quantity available for purchase</string>
+    <string name="rules">Rules</string>
+    <string name="invite_record">Record</string>
+    <string name="ieo_intro">Introduction</string>
+    <string name="ieo_danger_intro">Risk</string>
+
+    <string name="aao_1">Transaction records</string>
+    <string name="aao_2">Exchange records</string>
+    <string name="aao_3">Fiat records</string>
+    <string name="aao_4">Recommended commission</string>
+    <string name="aao_5">For records</string>
+    <string name="aao_6">Agent reward</string>
+
+    <string name="cel_1">Purchase</string>
+    <string name="cel_2">Will begin</string>
+    <string name="cel_3">Start time</string>
+    <string name="cel_4">Ongoing</string>
+    <string name="cel_5">End time</string>
+    <string name="cel_6">Finished</string>
+    <string name="cel_7">In the settlement</string>
+    <string name="cel_8">Completed</string>
+    <string name="cel_9">Finished</string>
+    <string name="cel_10">Total subscription fund</string>
+    <string name="cel_11">To view</string>
+    <string name="cel_12">Purchase now</string>
+    <string name="cel_13">From start</string>
+    <string name="cel_14">To finish</string>
+
+    <string name="showTips">Hint</string>
+    <string name="goApply">Are you sure to apply for it？</string>
+    <string name="cannotApply">Current period cannot explain buy</string>
+    <string name="apply_success">Successful applications</string>
+
+    <string name="accountRecord">Assets record</string>
+
+    <string name="flow_coin_name">Currency：</string>
+    <string name="flow_amout">Amout：</string>
+    <string name="flow_reason">Reason：</string>
+    <string name="flow_type">Type：</string>
+    <string name="flow_cdate">Date：</string>
+
+    <string name="flow_type_F">Freeze</string>
+    <string name="flow_type_U">Unfreeze</string>
+    <string name="flow_type_IA">A capital increase</string>
+    <string name="flow_type_DF">Reducition of frozen</string>
+    <string name="flow_type_DA">The action</string>
+
+    <!-- 资产变更原因 -->
+    <string name="flow_reason_D">Golden</string>
+
+    <string name="flow_reason_WF">The gold lock</string>
+    <string name="flow_reason_WC">The gold cancel</string>
+    <string name="flow_reason_WS">The gold finish</string>
+    <string name="flow_reason_WE">Gold failed to roll back</string>
+
+    <string name="flow_reason_BF">Buy order lock</string>
+    <string name="flow_reason_BS">Clinch a deal to buy</string>
+    <string name="flow_reason_BC">Buy cancelled</string>
+    <string name="flow_reason_BE">Buy failure rollback</string>
+
+    <string name="flow_reason_SF">Sell order lock</string>
+    <string name="flow_reason_SS">Clinch a deal to sell</string>
+    <string name="flow_reason_SC">Sell to cancel</string>
+    <string name="flow_reason_SE">Sell failure rollback</string>
+
+    <string name="flow_reason_TF">The lock</string>
+    <string name="flow_reason_TS">Transfer success</string>
+    <string name="flow_reason_TC">Turn out to cancel</string>
+    <string name="flow_reason_TE">Rollback on rollout failure</string>
+
+    <string name="flow_reason_TI">Into</string>
+    <string name="flow_reason_EP">Activity bonus</string>
+    <string name="flow_reason_AD">Drop</string>
+    <string name="flow_reason_LW">The winning</string>
+    <string name="flow_reason_CR">Commission</string>
+
+    <string name="flow_reason_CI">C2C into gold</string>
+    <string name="flow_reason_CO">C2C out gold</string>
+    <string name="flow_reason_CF">C2C sell lock</string>
+    <string name="flow_reason_CC">C2C sell cancel</string>
+
+    <string name="flow_reason_FB">Buy the lock</string>
+    <string name="flow_reason_FR">Return the principal</string>
+    <string name="flow_reason_FS">The successful delivery</string>
+    <string name="flow_reason_FC">Contract commission</string>
+    <string name="flow_reason_FU">Contract return water</string>
+    <string name="flow_reason_FT">Commission to thaw</string>
+    <string name="flow_reason_FD">Deposit to be returned to the</string>
+    <string name="flow_reason_FM">Deductions for return</string>
+
+    <string name="flow_reason_VS">VVBANK bought the deal</string>
+    <string name="flow_reason_VC">VVBANK buy cancel</string>
+    <string name="flow_reason_VE">VVBANK earnings</string>
+    <string name="flow_reason_VL">VVBANK loss</string>
+    <string name="flow_reason_VR">VVBANK pays back the principal</string>
+    <string name="flow_reason_VB">VVBANK commission</string>
+
+    <string name="flow_reason_OI">Institutions into the currency</string>
+    <string name="flow_reason_OO">Agencies of the coin</string>
+
+    <string name="flow_reason_OT">OTC roll-out</string>
+    <string name="flow_reason_OC">OTC Turn out to cancel</string>
+    <string name="flow_reason_OD">OTC Roll-out refused to</string>
+    <string name="flow_reason_OF">OTC Transfer confirmation</string>
+
+    <string name="flow_reason_IP">IEO snap up payment</string>
+    <string name="flow_reason_IFR">IEO exchange is frozen</string>
+    <string name="flow_reason_IS">IEO For successful</string>
+    <string name="flow_reason_IR">IEO commission</string>
+    <string name="flow_reason_IF">IEO Buy back failed</string>
+
+    <string name="flow_reason_US">C2C The user to sell</string>
+    <string name="flow_reason_UC">C2C Customer cancellation</string>
+
+    <string name="flow_reason_AT">C2C Account transfer</string>
+
+    <string name="flow_reason_STR">Return of non - profit order is frozen</string>
+    <string name="flow_reason_BAD">The background into the gold</string>
+
+    <string name="flow_reason_CAF">C2C applies for merchant freeze</string>
+    <string name="flow_reason_CAUF">C2C applies for cancellation of merchant thaw</string>
+    <string name="flow_reason_CAC">C2C defrost ads</string>
+    <string name="flow_reason_CCA">C2C issues AD freeze</string>
+    <string name="flow_reason_UTF">USDT transfer</string>
+
+    <string name="ieo_transfer_in">Into</string>
+    <string name="ieo_transfer_out">Out</string>
+    <string name="ieo_transfer_selected">Choose the transfer currency</string>
+    <string name="ieo_transfer_title">More solution one transfer</string>
+    <string name="ieo_transfer_get_failed">Failed to get multiple solution one message</string>
+    <string name="code1260008">Multiple solutions and one currency do not match</string>
+
+    <string name="flow_reason_STF">Give it a spin</string>
+    <string name="flow_reason_SFD">More solution more freeze</string>
+    <string name="flow_reason_SUF">Defrost more</string>
+
+    <string name="wallet_ieo_transfer">DiBi Launch Transfer</string>
+    <string name="mto">L</string>
+    <string name="ieo_t_f">In lock：</string>
+
+    <string name="maxR">Max price：</string>
+    <string name="maxF">Min price：</string>
+    <string name="RFHint">The price must be between the range</string>
+
+    <string name="code2010028">The current remaining buying quantity is %s</string>
+    <string name="code1260009">Need to hold more than one account lock</string>
+
+    <string name="every_week_vote">Votes Weekly</string>
+    <string name="dibi_ieo">DiBi Future</string>
+    <string name="vote_coin">Vote currency</string>
+    <string name="currency_application">Currency application</string>
+    <string name="sign_in">Sign in</string>
+
+    <string name="dibi_launch_tip">
+        1、DiBi Launch is the innovative trading zone of this trading platform. Please transfer funds after you have a detailed understanding of the trading rules.\n\n
+        2、Once the digital currency asset is transferred into the Launch innovation trading zone, you will be allowed to lock the asset by default. The locked asset cannot be transferred out directly,
+        but must be unlocked through the Launch trading zone.\n\n
+        3、The digital currency assets unlocked through Launch transaction can be transferred out.\n\n
+        4、For the safety of your funds, please carefully check whether your transfer information is correct. Once the transfer is confirmed, it cannot be undone!
+        The platform is not responsible for the loss of assets caused by wrong operation.\n\n
+        5、Please do not disclose your account password or other important information, and bear the loss of asset disclosure caused by your personal behavior.
+    </string>
+
+    <string name="wsl">Currency Assets</string>
+    <string name="wsr">Launch Assets</string>
+
+    <string name="now_votes">votes</string>
+    <string name="coin_intro">Currency introduce</string>
+    <string name="do_vote">To vote</string>
+    <string name="vote_ranks">Thermal value</string>
+
+    <string name="vote_page_top1">Vote for you support</string>
+
+    <string name="vote_status1">The vote has not yet begun</string>
+    <string name="vote_status2">Vote in progress</string>
+    <string name="vote_status3">Voting finish</string>
+    <string name="vote_status4">The vote has been settled</string>
+
+    <string name="vote_num"> Round</string>
+    <string name="vote_end"> </string>
+
+    <string name="dg_vote_dialog_title">Currency：</string>
+    <string name="dg_vote_dialog_edit_hint">Please enter your ballot number</string>
+    <string name="dg_vote_dialog_tip">Your remaining votes:</string>
+
+    <string name="vote_show_1">You did not vote</string>
+    <string name="vote_show_2">Stay tuned as the polls roll</string>
+    <string name="vote_show_3">Congratulations! The project you participated in won!</string>
+    <string name="vote_show_winner">The winner is：</string>
+    <string name="vote_show_winner_votes">To win votes：</string>
+
+    <string name="flow_reason_VFD">Voted to freeze</string>
+    <string name="flow_reason_VUF">Vote to thaw</string>
+    <string name="flow_reason_VOS">Vote to win</string>
+
+    <string name="vote_history_records">Records</string>
+
+    <string name="vote_history_take_part">Participation：</string>
+    <string name="vote_history_get_votes">Total votes：</string>
+    <string name="vote_history_end_time">Finish time：</string>
+
+    <string name="vote_history_details_title">Past details</string>
+
+    <string name="vote_vote_rules">1、DiBi community votes uniformly use the DiBi token;\n\n
+        2、By throwing your negotiable DiBi token to the project you support, the project gets a thermal value;\n\n
+        3、1 DiBi token corresponds to 1 point thermal value. The higher the thermal value, the higher the ranking of the project;\n\n
+        4、The item with the highest thermal value per week will receive 40 per cent of the trading area\'s fee income the following week;\n\n
+        5、The DiBi token corresponding to the item with the first thermal value will be destroyed;\n\n
+        6、DiBi reserves the right of final interpretation.
+    </string>
+
+</resources>

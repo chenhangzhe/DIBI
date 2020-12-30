@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gyF9"
+    tools:context=".c2c.view.PlaceOrderActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/rly_header"
+                android:layout_width="match_parent"
+                android:layout_height="239dp"
+                android:background="@drawable/drawable_dibi"
+                android:paddingRight="@dimen/x_15dp">
+
+                <ImageView
+                    android:id="@+id/iv_back"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/x_15dp"
+                    android:layout_marginTop="40dp"
+                    android:src="@mipmap/back_white"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+
+                <TextView
+                    android:id="@+id/tv_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/x_15dp"
+                    android:layout_marginTop="4dp"
+                    android:textColor="@color/white"
+                    android:textSize="28sp"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/iv_back" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/x_15dp"
+                android:layout_marginRight="@dimen/x_15dp"
+                android:layout_marginTop="110dp"
+                android:background="@drawable/charge_coin_radius_10dp_all_bg"
+                android:orientation="vertical"
+                android:paddingBottom="18dp">
+
+                <!--币种顺序-->
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/x_15dp"
+                    android:layout_marginRight="@dimen/x_15dp"
+                    android:layout_marginTop="18dp"
+                    android:background="@drawable/c2c_coin_repalce_bg"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="12dp"
+                        android:layout_toLeftOf="@+id/iv_repalce"
+                        android:orientation="vertical">
+
+                        <RelativeLayout
+                            android:id="@+id/rly_money"
+                            android:layout_width="match_parent"
+                            android:layout_height="45dp">
+
+                            <EditText
+                                android:id="@+id/et_money"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_centerVertical="true"
+                                android:paddingStart="20dp"
+                                android:background="@null"
+                                android:hint="@string/str_edit_money"
+                                android:inputType="numberDecimal"
+                                android:digits="@string/numDecimalLimit"
+                                android:singleLine="true"
+                                android:imeOptions="actionNext"
+                                android:maxLength="20"
+                                android:textColor="@color/text_color_dark"
+                                android:textColorLink="@color/gy8A"
+                                android:textSize="14sp"
+                                android:layout_toLeftOf="@+id/tv_coin_one" />
+
+
+                            <TextView
+                                android:id="@+id/tv_coin_one"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentRight="true"
+                                android:layout_centerVertical="true"
+                                android:text="CNY"
+                                android:textColor="@color/gy8A"
+                                android:textSize="14sp" />
+                        </RelativeLayout>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1px"
+                            android:layout_marginLeft="20dp"
+                            android:background="@color/gyF9" />
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="45dp">
+
+                            <EditText
+                                android:id="@+id/et_amount"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_centerVertical="true"
+                                android:paddingStart="20dp"
+                                android:background="@null"
+                                android:hint="@string/str_edit_amount"
+                                android:inputType="numberDecimal"
+                                android:digits="@string/numDecimalLimit"
+                                android:singleLine="true"
+                                android:imeOptions="actionGo"
+                                android:maxLength="20"
+                                android:textColor="@color/text_color_dark"
+                                android:textColorLink="@color/gy8A"
+                                android:textSize="14sp"
+                                android:layout_toLeftOf="@+id/tv_coin_two" />
+
+
+                            <TextView
+                                android:id="@+id/tv_coin_two"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentRight="true"
+                                android:layout_centerVertical="true"
+                                android:textColor="@color/gy8A"
+                                android:textSize="14sp" />
+                        </RelativeLayout>
+
+                    </LinearLayout>
+
+                    <ImageView
+                        android:id="@+id/iv_repalce"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="10dp"
+                        android:src="@mipmap/replace" />
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/tv_poError"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="18dp"
+                    android:layout_marginRight="18dp"
+                    android:textColor="@color/redE0"
+                    android:textSize="12sp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/x_15dp"
+                    android:layout_marginTop="18dp"
+                    android:text="@string/str_select_pay_way"
+                    android:textColor="@color/gy8A"
+                    android:textSize="13sp" />
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rv_pay_type"
+                    android:paddingLeft="@dimen/x_15dp"
+                    android:paddingRight="@dimen/x_15dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+            </LinearLayout>
+        </RelativeLayout>
+        <!--购买信息-->
+        <include layout="@layout/layout_buy_info" />
+
+        <TextView
+            android:id="@+id/tv_poConfirm"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="40dp"
+            android:background="@drawable/drawable_dibi"
+            android:gravity="center"
+            android:text="@string/str_comfirm_order"
+            android:textColor="@color/white"
+            android:textSize="17sp" />
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>
+
+

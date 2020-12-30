@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <View
+        android:id="@+id/v_tip0"
+        android:layout_width="0dp"
+        android:layout_height="1px"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@+id/v_tipIndicator"
+        app:layout_constraintHorizontal_weight="0.1"/>
+    <View
+        android:id="@+id/v_tipIndicator"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/sls_bg_purple_trans"
+        app:layout_constraintLeft_toRightOf="@id/v_tip0"
+        app:layout_constraintRight_toLeftOf="@+id/v_tip1"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_weight="0.06"/>
+    <View
+        android:id="@+id/v_tip1"
+        android:layout_width="0dp"
+        android:layout_height="1px"
+        app:layout_constraintLeft_toRightOf="@id/v_tipIndicator"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintHorizontal_weight="0.1"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:autoLink="phone|email|web"
+    android:gravity="center_vertical|left"
+    android:includeFontPadding="false"
+    android:maxWidth="@dimen/max_text_bubble_width"
+    android:id="@+id/ll_msg_order"
+    android:padding="5dp"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tv_order_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/text_color_dark"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/tv_detail"
+
+        android:layout_width="wrap_content"
+        android:layout_marginTop="3dp"
+        android:layout_height="wrap_content"
+        android:textColor="@color/text_color_dark"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/tv_order_content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:textColor="@color/text_color_dark"
+        android:textSize="12sp" />
+
+</LinearLayout>

@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<cn.suozhi.DiBi.common.custom.SwipeMenuLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/swipeMenuLayout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/gyF9"
+    android:clickable="true"
+    android:paddingTop="@dimen/y_10dp"
+    android:paddingRight="@dimen/x_15dp"
+    app:ios="false"
+    app:leftSwipe="true"
+    app:swipeEnable="true">
+
+
+    <LinearLayout
+        android:id="@+id/lly_item_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <View
+            android:id="@+id/v_one"
+            android:layout_width="@dimen/x_15dp"
+            android:layout_height="match_parent"
+            android:background="@color/gyF9" />
+
+        <View
+            android:id="@+id/v_left"
+            android:layout_width="5dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/red01_left_3dp_bg" />
+
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:id="@+id/layout_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/white_right_3dp_bg"
+            android:focusable="true"
+            android:focusableInTouchMode="true">
+
+            <RelativeLayout
+                android:id="@+id/rly_coin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="14dp"
+                android:gravity="center_vertical"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <TextView
+                    android:id="@+id/tv_coin"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:textColor="@color/text_color_dark"
+                    android:textSize="16sp"/>
+
+                <TextView
+                    android:id="@+id/tv_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginLeft="@dimen/x_10dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_toRightOf="@+id/tv_coin"
+                    android:gravity="right"
+                    android:textColor="@color/gy8A"
+                    android:textSize="14sp"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"/>
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="9dp"
+                    android:textColor="@color/gy8A"
+                    android:textSize="12sp"
+                    android:text="@string/str_address" />
+                <TextView
+                    android:id="@+id/tv_address"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="9dp"
+                    android:layout_marginRight="20dp"
+                    android:textColor="@color/gy8A"
+                    android:textSize="12sp"/>
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_marginBottom="13dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/tv_memo_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="9dp"
+                    android:textColor="@color/gy8A"
+                    android:textSize="12sp"
+                    tools:text="@string/str_address" />
+                <TextView
+                    android:id="@+id/tv_memo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="9dp"
+                    android:layout_marginRight="20dp"
+                    android:textColor="@color/gy8A"
+                    android:textSize="12sp"/>
+
+            </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:background="@color/gyF9"
+        android:paddingLeft="@dimen/x_10dp">
+
+        <TextView
+            android:id="@+id/tv_item_delete"
+            android:layout_width="70dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/red01_3dp_bg"
+            android:enabled="true"
+            android:gravity="center"
+            android:text="@string/str_delete"
+            android:textColor="@color/white" />
+
+
+    </RelativeLayout>
+
+
+</cn.suozhi.DiBi.common.custom.SwipeMenuLayout>

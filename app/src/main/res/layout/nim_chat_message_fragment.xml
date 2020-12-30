@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/messageActivityLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_message_default_bg"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:id="@+id/message_activity_list_view_container"
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_weight="1">
+
+        <com.netease.nim.uikit.business.session.helper.MsgBkImageView
+            android:id="@+id/message_activity_background"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <FrameLayout
+                android:id="@+id/team_notify_bar_panel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:visibility="gone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="22dp"
+                    android:text="订单编号：20168457544  查看订单详情＞"
+                    android:textColor="@color/text_color_dark"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:visibility="gone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="8dp"
+                    android:text="您已成功下单，请尽快完成付款！   "
+                    android:textColor="@color/text_color_dark"
+                    android:textSize="12sp" />
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:layout_marginTop="8dp"
+                    android:id="@+id/messageListView"
+                    style="@style/recycler_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </FrameLayout>
+    <!--//底部-->
+    <RelativeLayout
+        android:id="@+id/textMessageLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/nim_message_view_bottom"
+        android:paddingBottom="@dimen/bottom_component_margin_vertical"
+        android:paddingTop="@dimen/bottom_component_margin_vertical">
+
+
+            <ImageView
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="20dp"
+                android:layout_centerVertical="true"
+                android:id="@+id/iv_photo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@mipmap/select_photo"
+                android:scaleType="center" />
+
+
+
+        <EditText
+            android:layout_marginLeft="13dp"
+            android:id="@+id/editTextMessage"
+            android:textCursorDrawable="@null"
+            android:textColor="@color/black"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/bottom_component_margin_horizontal"
+            android:layout_toLeftOf="@+id/sendLayout"
+            android:layout_toRightOf="@+id/iv_photo"
+            android:autoLink="web|email|phone"
+            android:background="@drawable/sp2_edit_chat_bg_3f"
+            android:maxHeight="72dip"
+            android:maxLines="4"
+            android:paddingLeft="17dp"
+            android:hint="请输入消息"
+            android:textSize="15sp" />
+        <FrameLayout
+            android:layout_centerVertical="true"
+            android:id="@+id/sendLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/audioTextSwitchLayout"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/bottom_component_margin_horizontal">
+
+            <ImageView
+                android:id="@+id/buttonMoreFuntionInText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@drawable/nim_message_button_bottom_add_selector"
+                android:contentDescription="@string/empty"
+                android:scaleType="center" />
+
+            <TextView
+                android:id="@+id/buttonSendMessage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@drawable/nim_message_button_bottom_send_selector"
+                android:contentDescription="@string/empty"
+                android:gravity="center"
+                android:text="@string/send"
+                android:textColor="@color/white"
+                android:textSize="14sp" />
+        </FrameLayout>
+
+    </RelativeLayout>
+
+</LinearLayout>

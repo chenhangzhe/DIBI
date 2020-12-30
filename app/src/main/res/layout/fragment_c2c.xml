@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <TextView
+        android:id="@+id/tv_marketTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="15dp"
+        android:paddingTop="8dp"
+        android:paddingRight="15dp"
+        android:paddingBottom="8dp"
+        android:text="@string/str_fiat_trade"
+        android:textColor="@color/bk2C"
+        android:textSize="26sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/iv_pick"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:paddingLeft="14dp"
+        android:paddingRight="14dp"
+        android:src="@mipmap/pick"
+        app:layout_constraintBottom_toBottomOf="@id/tv_marketTitle"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@id/tv_marketTitle" />
+
+    <ImageView
+        android:id="@+id/iv_tip"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:paddingLeft="14dp"
+        android:paddingRight="14dp"
+        android:src="@mipmap/exclamation_orange"
+        app:layout_constraintBottom_toBottomOf="@id/tv_marketTitle"
+        app:layout_constraintRight_toLeftOf="@+id/iv_pick"
+        app:layout_constraintTop_toTopOf="@id/tv_marketTitle" />
+
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/tl_marketCoin"
+        android:layout_width="0dp"
+        android:layout_height="46dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_marketTitle"
+        app:tabIndicatorHeight="0dp"
+        app:tabMode="fixed"
+        app:tabPaddingEnd="10dp"
+        app:tabPaddingStart="10dp"
+        app:tabRippleColor="@color/trans"
+        app:tabTextAppearance="@style/TabText16" />
+
+    <View
+        android:id="@+id/l_market1"
+        android:layout_width="0dp"
+        android:layout_height="2px"
+        android:background="@color/gyFD"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tl_marketCoin" />
+
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/tl_c2c_tab"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/l_market1"
+        app:tabIndicatorHeight="0dp"
+        app:tabMode="scrollable"
+        app:tabRippleColor="@color/trans"/>
+
+    <View
+        android:id="@+id/l_market2"
+        android:layout_width="0dp"
+        android:layout_height="2px"
+        android:background="@color/gyFD"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tl_c2c_tab" />
+
+    <LinearLayout
+        android:id="@+id/ll_tip"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="6dp"
+        android:background="@drawable/sp3_solid_brown_f4"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/l_market2">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:drawablePadding="8dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="10dp"
+            android:text="@string/warmTipsColon"
+            android:textSize="12sp"
+            android:textColor="@color/redE0"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="15dp"
+            android:layout_marginTop="2dp"
+            android:lineSpacingMultiplier="1.2"
+            android:text="@string/c2cTips1"
+            android:textSize="12sp"
+            android:textColor="@color/redE0"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="15dp"
+            android:layout_marginTop="2dp"
+            android:lineSpacingMultiplier="1.2"
+            android:text="@string/c2cTips2"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            android:textColor="@color/redE0"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="15dp"
+            android:layout_marginTop="2dp"
+            android:layout_marginBottom="10dp"
+            android:lineSpacingMultiplier="1.2"
+            android:visibility="gone"
+            android:text="@string/c2cTips3"
+            android:textSize="12sp"
+            android:textColor="@color/redE0"/>
+
+    </LinearLayout>
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/view_pager"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/ll_tip" />
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="14dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="parent">
+
+        <RelativeLayout
+            android:visibility="gone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+
+            <ImageView
+                android:id="@+id/iv_messge"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/message" />
+
+            <TextView
+                android:visibility="gone"
+                android:id="@+id/tv_msg_hint"
+                android:layout_width="19dp"
+                android:layout_height="17dp"
+                android:layout_alignRight="@+id/iv_messge"
+                android:background="@mipmap/msg_hint"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:textSize="10sp" />
+
+        </RelativeLayout>
+
+
+        <ImageView
+            android:id="@+id/iv_add_advance"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/add_advance"
+            android:visibility="gone" />
+
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,268 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/y_25dp">
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/x_15dp"
+            android:text="@string/assetManagement"
+            android:textColor="@color/text_color_dark"
+            android:textSize="28sp" />
+
+        <TextView
+            android:id="@+id/tv_manage_address"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/x_15dp"
+            android:layout_marginRight="@dimen/x_15dp"
+            android:text="@string/str_manage_address"
+            android:textColor="@color/text_color_dark"
+            android:textSize="14sp" />
+    </RelativeLayout>
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="130dp"
+        android:layout_marginLeft="@dimen/x_15dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginRight="@dimen/x_15dp"
+        android:background="@mipmap/wallet_header_bg"
+        android:orientation="vertical"
+        android:paddingLeft="28dp">
+
+        <TextView
+            android:id="@+id/tv_all_assert"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/y_25dp"
+            android:text="@string/assetTotal"
+            android:textColor="@color/color_66ffffff"
+            android:textSize="12sp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+        <ImageView
+            android:id="@+id/iv_is_visible"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="13dp"
+            android:layout_marginTop="22dp"
+            android:src="@mipmap/eye_visible"
+            app:layout_constraintLeft_toRightOf="@+id/tv_all_assert"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tv_coin_amount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="13dp"
+            android:textColor="@color/white"
+            android:textSize="25sp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_all_assert" />
+
+        <TextView
+            android:id="@+id/tv_cny_amount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:textColor="@color/white"
+            android:textSize="12sp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_coin_amount" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="13dp">
+
+        <TextView
+            android:id="@+id/tv_account_order"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawableTop="@mipmap/account_order"
+            android:gravity="center"
+            android:text="@string/str_account_order"
+            android:textColor="@color/text_color_dark"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/tv_charge_coin"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawableTop="@mipmap/charge_coin"
+            android:gravity="center"
+            android:text="@string/str_charge_coin"
+            android:textColor="@color/text_color_dark"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/tv_get_coin"
+            android:layout_width="0dp"
+            android:layout_height="37dp"
+            android:layout_weight="1"
+            android:drawableTop="@mipmap/get_coin"
+            android:gravity="center"
+            android:text="@string/str_get_coin"
+            android:textColor="@color/text_color_dark"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/tv_wallet_ieo_transfer"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawableTop="@mipmap/get_coin"
+            android:gravity="center"
+            android:text="@string/wallet_ieo_transfer"
+            android:textFontWeight="600"
+            android:textColor="@color/text_color_dark" />
+
+        <TextView
+            android:id="@+id/tv_transfer_accounts"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawableTop="@mipmap/transfer_coin"
+            android:gravity="center"
+            android:text="@string/str_transfer_accounts"
+            android:textColor="@color/text_color_dark"
+            android:textSize="14sp" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="8dp"
+        android:layout_marginTop="12dp"
+        android:background="@color/gyF9" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv_wsl"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:text="@string/wsl"
+            android:textColor="@color/black"
+            android:layout_marginStart="@dimen/x_15dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginEnd="@dimen/x_15dp"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"/>
+
+        <TextView
+            android:id="@+id/tv_wsr"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:text="@string/wsr"
+            android:textColor="@color/black"
+            android:layout_marginStart="@dimen/x_15dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginEnd="@dimen/x_15dp"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"/>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="@dimen/x_15dp"
+        android:paddingTop="8dp"
+        android:paddingRight="@dimen/x_15dp"
+        android:paddingBottom="8dp">
+
+        <LinearLayout
+            android:layout_width="150dp"
+            android:layout_height="25dp"
+            android:layout_centerVertical="true"
+            android:background="@drawable/search_coin_bg"
+            android:gravity="center_vertical"
+            android:paddingRight="5dp">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/x_15dp"
+                android:src="@mipmap/search" />
+
+            <EditText
+                android:id="@+id/et_search_coin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:background="@null"
+                android:hint="@string/str_search_coin"
+                android:imeOptions="actionSearch"
+                android:singleLine="true"
+                android:textColor="@color/text_color_dark"
+                android:textColorHint="@color/color_abb1cb"
+                android:textSize="12sp" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:gravity="center_vertical">
+
+            <CheckBox
+                android:id="@+id/cb_protocol"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:button="@drawable/slc_login_protocol"
+                android:gravity="center_vertical" />
+
+            <TextView
+                android:id="@+id/tv_small_coin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:text="@string/str_hide_small_amount_coin"
+                android:textColor="@color/text_color_dark"
+                android:textSize="10sp" />
+            <ImageView
+                android:id="@+id/iv_help"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:src="@mipmap/problem" />
+        </LinearLayout>
+    </RelativeLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/gyF9" />
+</LinearLayout>

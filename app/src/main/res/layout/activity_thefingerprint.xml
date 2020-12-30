@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+    <LinearLayout
+        android:id="@+id/lin_zhiwen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+
+        >
+        <TextView
+            android:layout_width="72dp"
+            android:layout_height="67dp"
+            android:layout_gravity="center"
+            android:background="@drawable/biometricprompt_ic_finger_print"
+            />
+        <TextView
+            android:id="@+id/tv_zhiwen"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="点击进行指纹验证"
+            android:layout_marginTop="32dp"
+            />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginBottom="91dp"
+
+        >
+        <TextView
+            android:id="@+id/tv_login_pw"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="密码登录"
+            />
+        <TextView
+            android:id="@+id/tv_login_shu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="手势登录"
+            android:layout_marginLeft="38dp"
+            />
+
+    </LinearLayout>
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/lin_zhiwen"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="@dimen/dp_size_200"
+        >
+        <TextView
+            android:id="@+id/tv_login_paw"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toLeftOf="@id/tv_login_shou"
+            app:layout_constraintTop_toTopOf="parent"
+            android:text="@string/tv_login_pas"
+            />
+
+        <View
+            android:id="@+id/tv_View"
+            android:visibility="gone"
+            android:layout_width="@dimen/dp_size_1"
+            android:layout_height="@dimen/dp_10"
+            android:background="@color/color_c6c9de"
+            android:layout_marginTop="@dimen/dp_size_5"
+            app:layout_constraintLeft_toLeftOf="@id/tv_login_paw"
+            app:layout_constraintRight_toRightOf="@id/tv_login_shou"
+            app:layout_constraintTop_toTopOf="parent"></View>
+
+
+        <TextView
+            android:id="@+id/tv_login_shou"
+            android:layout_width="wrap_content"
+            android:visibility="gone"
+            android:layout_height="wrap_content"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintLeft_toRightOf="@id/tv_login_paw"
+            app:layout_constraintTop_toTopOf="parent"
+            android:text="@string/tv_login_shou"
+            />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

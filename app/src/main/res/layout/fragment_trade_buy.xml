@@ -1,0 +1,435 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+    <LinearLayout
+        android:id="@+id/ll_tb"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+            android:id="@+id/srl_tb"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <!-- 最大 最低成交价 -->
+                    <LinearLayout
+                        android:id="@+id/ll_maxRF"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:paddingTop="2dp"
+                        android:paddingBottom="2dp"
+                        android:paddingStart="6dp"
+                        android:paddingEnd="6dp">
+
+                        <TextView
+                            android:id="@+id/tv_max_r"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="start"
+                            android:textSize="14sp"
+                            android:textColor="@color/bk2C"/>
+
+                        <TextView
+                            android:id="@+id/tv_max_f"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="end"
+                            android:textSize="14sp"
+                            android:textColor="@color/bk2C"/>
+
+                    </LinearLayout>
+
+                    <!-- 分 左右两块 -->
+                    <LinearLayout
+                        android:id="@+id/ll_fragment_trade_buy_top"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:background="@color/white"
+                        android:paddingBottom="6dp">
+                        <!-- 左边 -->
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:paddingTop="6dp"
+                            android:paddingBottom="6dp"
+                            android:paddingLeft="10dp"
+                            android:paddingRight="10dp"
+                            android:layout_weight="8">
+
+                            <View
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="2dp"/>
+                            <include layout="@layout/item_price_tab"/>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="6dp">
+                                <include layout="@layout/item_price_target"/>
+                            </LinearLayout>
+
+                            <include layout="@layout/item_price_limit"/>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+                                <include layout="@layout/item_buy_market"/>
+                            </LinearLayout>
+
+                            <!-- 总额 -->
+                            <androidx.constraintlayout.widget.ConstraintLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="8dp"
+                                android:focusable="true"
+                                android:focusableInTouchMode="true">
+                                <LinearLayout
+                                    android:id="@+id/ll_tbTotal"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="vertical"
+                                    android:background="@drawable/sp2_solid_gy_f9"
+                                    app:layout_constraintLeft_toLeftOf="parent"
+                                    app:layout_constraintTop_toTopOf="parent">
+                                    <TextView
+                                        android:id="@+id/tv_tbTotalName"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginStart="14dp"
+                                        android:layout_marginTop="8dp"
+                                        android:text="@string/total"
+                                        android:textSize="12sp"
+                                        android:textColor="@color/gy8A"/>
+                                    <TextView
+                                        android:id="@+id/tv_tbTotal"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginStart="14dp"
+                                        android:layout_marginEnd="14dp"
+                                        android:layout_marginBottom="6dp"
+                                        android:textSize="18sp"
+                                        android:textStyle="bold"
+                                        android:textColor="@color/bk2C"/>
+                                </LinearLayout>
+
+                                <EditText
+                                    android:id="@+id/et_tbTotal"
+                                    android:layout_width="0dp"
+                                    android:layout_height="0dp"
+                                    android:background="@drawable/sp2_stroke_gy_8a_t80"
+                                    android:paddingStart="14dp"
+                                    android:paddingEnd="14dp"
+                                    android:inputType="numberDecimal"
+                                    android:digits="@string/numDecimalLimit"
+                                    android:singleLine="true"
+                                    android:imeOptions="actionGo"
+                                    android:maxLength="20"
+                                    android:hint="@string/inputTradeTotal"
+                                    android:textSize="14sp"
+                                    android:textColor="@color/bk2C"
+                                    android:textColorHint="@color/gy8A"
+                                    android:visibility="invisible"
+                                    app:layout_constraintLeft_toLeftOf="@id/ll_tbTotal"
+                                    app:layout_constraintRight_toRightOf="@id/ll_tbTotal"
+                                    app:layout_constraintTop_toTopOf="@id/ll_tbTotal"
+                                    app:layout_constraintBottom_toBottomOf="@id/ll_tbTotal"/>
+
+                                <TextView
+                                    android:id="@+id/tv_tbBuy"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="8dp"
+                                    android:paddingTop="8dp"
+                                    android:paddingBottom="8dp"
+                                    android:gravity="center"
+                                    android:background="@drawable/sp2_solid_green_3f"
+                                    android:text="@string/buying"
+                                    android:textSize="15sp"
+                                    android:textColor="@color/white"
+                                    app:layout_constraintWidth_percent="0.35"
+                                    app:layout_constraintLeft_toLeftOf="parent"
+                                    app:layout_constraintTop_toBottomOf="@id/ll_tbTotal"/>
+
+                                <TextView
+                                    android:id="@+id/tv_tbTotalError"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginEnd="8dp"
+                                    android:textSize="10sp"
+                                    android:textColor="@color/redE0"
+                                    app:layout_constraintLeft_toLeftOf="parent"
+                                    app:layout_constraintTop_toBottomOf="@id/tv_tbBuy"/>
+                            </androidx.constraintlayout.widget.ConstraintLayout>
+
+                        </LinearLayout>
+
+                        <!-- 右边 -->
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:layout_weight="5" >
+
+                            <include layout="@layout/title_trade"/>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:layout_marginEnd="10dp">
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="vertical">
+                                    <TextView
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginTop="6dp"
+                                        android:layout_marginBottom="6dp"
+                                        android:text="1"
+                                        android:textSize="11sp"
+                                        android:textColorHint="@color/gy8A"
+                                        tools:ignore="Suspicious0dp"/>
+                                    <TextView
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginTop="6dp"
+                                        android:layout_marginBottom="6dp"
+                                        android:text="2"
+                                        android:textSize="11sp"
+                                        android:textColorHint="@color/gy8A"
+                                        tools:ignore="Suspicious0dp"/>
+                                    <TextView
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginTop="6dp"
+                                        android:layout_marginBottom="6dp"
+                                        android:text="3"
+                                        android:textSize="11sp"
+                                        android:textColorHint="@color/gy8A"
+                                        tools:ignore="Suspicious0dp"/>
+                                    <TextView
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginTop="6dp"
+                                        android:layout_marginBottom="6dp"
+                                        android:text="4"
+                                        android:textSize="11sp"
+                                        android:textColorHint="@color/gy8A"
+                                        tools:ignore="Suspicious0dp"/>
+                                    <TextView
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginTop="6dp"
+                                        android:layout_marginBottom="6dp"
+                                        android:text="5"
+                                        android:textSize="11sp"
+                                        android:textColorHint="@color/gy8A"
+                                        tools:ignore="Suspicious0dp"/>
+                                </LinearLayout>
+
+                                <cn.suozhi.DiBi.common.custom.EntrustView
+                                    android:id="@+id/ev_tbSell"
+                                    android:layout_width="0dp"
+                                    android:layout_weight="0.1"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="vertical"
+                                    app:enLayout="@layout/entrust_right_amount_padding"
+                                    app:enCount="5"
+                                    app:enStart="top"
+                                    app:enSort="desc"
+                                    app:enBackDirection="right2left"
+                                    app:enLeftPrice="true"
+                                    app:enRemoveZero="false"
+                                    app:enPriceColor="@color/redE0"
+                                    app:enAmountColor="@color/bk2C_t80"
+                                    app:enBackColor="@color/redE0_t1A"/>
+
+
+                            </LinearLayout>
+
+                            <!-- 顶部价格 -->
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical"
+                                android:layout_marginTop="6dp"
+                                android:layout_marginBottom="6dp" >
+                                <TextView
+                                    android:id="@+id/tv_tbPrice"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:textSize="16sp"
+                                    android:textStyle="bold"
+                                    android:textColor="@drawable/sls_color_green_3f_red_e0"/>
+                                <TextView
+                                    android:id="@+id/tv_tbPriceCny"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:textSize="12sp"
+                                    android:textColor="@color/gy8A"/>
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:layout_marginEnd="10dp">
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="vertical">
+                                    <TextView
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginTop="6dp"
+                                        android:layout_marginBottom="6dp"
+                                        android:text="1"
+                                        android:textSize="11sp"
+                                        android:textColorHint="@color/gy8A"
+                                        tools:ignore="Suspicious0dp"/>
+                                    <TextView
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginTop="6dp"
+                                        android:layout_marginBottom="6dp"
+                                        android:text="2"
+                                        android:textSize="11sp"
+                                        android:textColorHint="@color/gy8A"
+                                        tools:ignore="Suspicious0dp"/>
+                                    <TextView
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginTop="6dp"
+                                        android:layout_marginBottom="6dp"
+                                        android:text="3"
+                                        android:textSize="11sp"
+                                        android:textColorHint="@color/gy8A"
+                                        tools:ignore="Suspicious0dp"/>
+                                    <TextView
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginTop="6dp"
+                                        android:layout_marginBottom="6dp"
+                                        android:text="4"
+                                        android:textSize="11sp"
+                                        android:textColorHint="@color/gy8A"
+                                        tools:ignore="Suspicious0dp"/>
+                                    <TextView
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginTop="6dp"
+                                        android:layout_marginBottom="6dp"
+                                        android:text="5"
+                                        android:textSize="11sp"
+                                        android:textColorHint="@color/gy8A"
+                                        tools:ignore="Suspicious0dp" />
+                                </LinearLayout>
+
+                                <cn.suozhi.DiBi.common.custom.EntrustView
+                                    android:id="@+id/ev_tbBuy"
+                                    android:layout_width="0dp"
+                                    android:layout_weight="0.1"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="vertical"
+                                    app:enLayout="@layout/entrust_right_amount_padding"
+                                    app:enCount="5"
+                                    app:enStart="top"
+                                    app:enSort="desc"
+                                    app:enBackDirection="right2left"
+                                    app:enLeftPrice="true"
+                                    app:enRemoveZero="false"
+                                    app:enPriceColor="@color/green3F"
+                                    app:enAmountColor="@color/bk2C_t80"
+                                    app:enBackColor="@color/green3F_t1A"/>
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:background="@color/color_f8f8fc"/>
+
+                    <!-- 当前委托、历史委托、历史成交 -->
+
+<!--                    <com.google.android.material.tabs.TabLayout-->
+<!--                        android:id="@+id/tl_tradeBuyTab"-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="44dp"-->
+<!--                        app:tabMode="scrollable"-->
+<!--                        app:tabRippleColor="@color/trans"-->
+<!--                        app:tabIndicatorHeight="0dp" />-->
+
+<!--                    <FrameLayout-->
+<!--                        android:id="@+id/fl_trade_buy"-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        app:layout_constraintLeft_toLeftOf="parent"-->
+<!--                        app:layout_constraintRight_toRightOf="parent"-->
+<!--                        app:layout_constraintTop_toBottomOf="@id/tl_tradeBuyTab" />-->
+
+                </LinearLayout>
+
+            </ScrollView>
+        </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cv_tbNewDeal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardBackgroundColor="@color/white"
+            app:cardCornerRadius="0dp"
+            app:cardElevation="3dp">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingStart="15dp"
+                android:paddingEnd="15dp"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:text="@string/newDeal"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                android:textColor="@color/bk2C"/>
+            <TextView
+                android:id="@+id/tv_tbUnfold"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="end|center_vertical"
+                android:gravity="center_vertical"
+                android:background="@drawable/sp1_stroke_gy_ab_t80"
+                android:drawableEnd="@mipmap/double_arrow_up_gray"
+                android:drawablePadding="4dp"
+                android:paddingStart="8dp"
+                android:paddingEnd="8dp"
+                android:layout_marginEnd="15dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:text="@string/unfold"
+                android:textSize="11sp"
+                android:textColor="@color/bk2C"/>
+        </androidx.cardview.widget.CardView>
+    </LinearLayout>
+    <include layout="@layout/item_new_deal"/>
+</RelativeLayout>

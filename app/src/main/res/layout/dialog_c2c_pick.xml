@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/spr15_2t_solid_white">
+
+    <LinearLayout
+        android:id="@+id/lly_c2c"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginRight="@dimen/x_15dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/str_c2c_coin_type"
+            android:textColor="@color/text_color_dark"
+            android:textSize="14sp" />
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/gv_coin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/x_15dp"
+            android:scrollbars="none" />
+
+
+    </LinearLayout>
+
+    <View
+        android:id="@+id/divider"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="17dp"
+        android:layout_marginRight="20dp"
+        android:background="@color/gy8A"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lly_c2c" />
+
+    <LinearLayout
+        android:id="@+id/lly_pay_way"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/divider">
+
+        <TextView
+            android:layout_width="56dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:text="@string/str_pay_type"
+            android:textColor="@color/text_color_dark"
+            android:textSize="14sp" />
+
+        <LinearLayout
+            android:layout_marginLeft="15dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/tv_all"
+                android:layout_width="58dp"
+                android:layout_height="28dp"
+                android:layout_gravity="center_vertical"
+                android:background="@drawable/slc_c2c_coin_pick_bg"
+                android:gravity="center"
+                android:text="@string/str_all"
+                android:textColor="@color/color_1888FE"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/tv_wechat"
+                android:layout_width="58dp"
+                android:layout_height="28dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="8dp"
+                android:background="@drawable/slc_c2c_coin_pick_bg"
+                android:gravity="center"
+                android:text="@string/str_wechat"
+                android:textColor="@color/color_1888FE"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/tv_bank"
+                android:layout_width="58dp"
+                android:layout_height="28dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="8dp"
+                android:background="@drawable/slc_c2c_coin_pick_bg"
+                android:gravity="center"
+                android:text="@string/str_bank"
+                android:textColor="@color/color_1888FE"
+                android:textSize="12sp" />
+
+
+            <TextView
+                android:id="@+id/tv_alipay"
+                android:layout_width="58dp"
+                android:layout_height="28dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="8dp"
+                android:background="@drawable/slc_c2c_coin_pick_bg"
+                android:gravity="center"
+                android:text="@string/str_alipay"
+                android:textColor="@color/color_1888FE"
+                android:textSize="12sp" />
+
+        </LinearLayout>
+
+
+
+
+    </LinearLayout>
+
+
+    <View
+        android:id="@+id/divider_two"
+        android:layout_marginTop="18dp"
+        app:layout_constraintTop_toBottomOf="@+id/lly_pay_way"
+        android:background="@color/gy8A"
+        android:layout_width="match_parent"
+        android:layout_height="5dp"/>
+
+
+    <TextView
+        android:id="@+id/tv_cpmfirm"
+        app:layout_constraintTop_toBottomOf="@+id/divider_two"
+        android:text="@string/confirm_two"
+        android:gravity="center"
+        android:textColor="@color/text_color_dark"
+        android:textSize="16sp"
+        android:layout_width="match_parent"
+        android:layout_height="55dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

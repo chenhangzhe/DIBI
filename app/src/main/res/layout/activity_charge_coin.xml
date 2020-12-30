@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/charge_coin_bg"
+    tools:context="cn.suozhi.DiBi.wallet.view.ChargeCoinActivity">
+
+    <LinearLayout
+        android:focusableInTouchMode="true"
+        android:focusable="true"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/rly_header"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp">
+
+            <ImageView
+                android:id="@+id/iv_back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/x_15dp"
+                android:src="@mipmap/back_white" />
+
+            <TextView
+                android:id="@+id/tv_record"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/x_15dp"
+                android:text="@string/str_charge_coin_record"
+                android:textColor="@color/white"
+                android:textSize="14sp" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/x_15dp"
+            android:layout_marginTop="8dp"
+            android:textColor="@color/white"
+            android:textSize="28sp" />
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/x_15dp"
+            android:layout_marginRight="@dimen/x_15dp"
+            android:layout_marginTop="14dp"
+            android:background="@mipmap/qrcode_bg">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                android:text="@string/str_select_charge_coin"
+                android:textColor="@color/text_color_dark"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/tv_selected_coin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="20dp"
+                android:drawableRight="@mipmap/arrow_right"
+                android:gravity="center_vertical"
+                android:textColor="@color/text_color_dark"
+                android:textSize="15sp" />
+        </RelativeLayout>
+        <!-- 链类型 -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="15dp"
+            android:background="@color/white"
+            android:paddingBottom="15dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_chain_type_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingStart="20dp"
+                android:textSize="13sp"
+                android:textColor="@color/gy4D"
+                android:background="@color/white"/>
+
+            <TextView
+                android:id="@+id/tv_rechargeType1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:layout_marginLeft="16dp"
+                android:textSize="13sp"
+                android:textColor="@color/gy4D"/>
+
+            <TextView
+                android:id="@+id/tv_rechargeType"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:layout_marginLeft="4dp"
+                android:textSize="13sp"
+                android:visibility="gone"
+                android:textColor="@color/gy4D"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center_horizontal"
+            android:background="@drawable/charge_coin_radius_8dp_bg"
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="15dp"
+            android:paddingBottom="20dp">
+
+            <ImageView
+                android:id="@+id/iv_address"
+                android:layout_width="134dp"
+                android:layout_height="134dp"
+                android:layout_gravity="center_horizontal" />
+
+            <TextView
+                android:id="@+id/tv_save"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="13dp"
+                android:text="@string/str_save_photo"
+                android:textColor="@color/color_1888FE"
+                android:textSize="12sp" />
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="18dp">
+
+                <TextView
+                    android:id="@+id/tv_address"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_toLeftOf="@+id/tv_copy_address"
+                    android:background="@drawable/charge_coin_address_5dp_bg"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="@dimen/x_15dp"
+                    android:paddingRight="@dimen/x_15dp"
+                    android:textColor="@color/text_color_dark" />
+
+                <TextView
+                    android:id="@+id/tv_copy_address"
+                    android:layout_width="90dp"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentRight="true"
+                    android:background="@drawable/charge_coin_copy_address_5dp_bg"
+                    android:gravity="center"
+                    android:textSize="12sp"
+                    android:text="@string/str_copy_address"
+                    android:textColor="@color/white" />
+
+
+            </RelativeLayout>
+            <!--充值EOS时才显示-->
+            <RelativeLayout
+                android:visibility="gone"
+                android:id="@+id/lly_special_coin"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="18dp">
+
+                <TextView
+                    android:id="@+id/tv_memo"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_toLeftOf="@+id/tv_copy_memo"
+                    android:background="@drawable/charge_coin_address_5dp_bg"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="@dimen/x_15dp"
+                    android:paddingRight="@dimen/x_15dp"
+                    android:textColor="@color/text_color_dark" />
+
+                <TextView
+                    android:id="@+id/tv_copy_memo"
+                    android:layout_width="90dp"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentRight="true"
+                    android:background="@drawable/charge_coin_copy_address_5dp_bg"
+                    android:gravity="center"
+                    android:textSize="12sp"
+                    android:text="@string/str_copy_memo"
+                    android:textColor="@color/white" />
+
+
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="7dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:background="@drawable/charge_coin_address_bottom_bg" />
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_hint"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="30dp"
+            android:layout_marginLeft="23dp"
+            android:layout_marginRight="23dp"
+            android:layout_marginTop="33dp"
+            android:nestedScrollingEnabled="false"
+            android:scrollbars="none" />
+
+    </LinearLayout>
+
+</androidx.core.widget.NestedScrollView>
+
+

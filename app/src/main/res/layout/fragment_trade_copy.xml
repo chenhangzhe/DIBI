@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+    <!-- 顶部 -->
+    <LinearLayout
+        android:id="@+id/ll_ft_top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/tv_tradeCoin"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:drawableStart="@mipmap/trade_change"
+                android:drawablePadding="12dp"
+                android:paddingStart="15dp"
+                android:paddingTop="6dp"
+                android:paddingEnd="15dp"
+                android:paddingBottom="6dp"
+                android:textColor="@color/bk2C"
+                android:textSize="26sp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintTop_toTopOf="parent"/>
+
+            <ImageView
+                android:id="@+id/iv_tradeKline"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:padding="15dp"
+                android:layout_gravity="center_vertical"
+                android:src="@mipmap/trade_kline"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintTop_toTopOf="parent"/>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </LinearLayout>
+
+    <!-- 中间 -->
+    <LinearLayout
+        android:id="@+id/ll_ft_middle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ll_ft_top">
+
+        <!-- 中间左边 -->
+        <LinearLayout
+            android:id="@+id/ll_ft_middle_left"
+            android:orientation="vertical"
+            android:background="@color/gy4C"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="4">
+
+            <!-- 中间左边顶部 -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <!-- 2个按钮 -->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/white"
+                    android:text="买入"
+                    android:gravity="center"
+                    android:layout_weight="1"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/white"
+                    android:text="卖出"
+                    android:gravity="center"
+                    android:layout_weight="1"/>
+
+            </LinearLayout>
+
+            <!-- 中间左边底部 -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="100dp">
+
+                <!-- 嵌套item -->
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <!-- 中间右边 -->
+        <LinearLayout
+            android:id="@+id/ll_ft_middle_right"
+            android:orientation="vertical"
+            android:background="@color/yellowD9"
+            android:layout_width="wrap_content"
+            android:layout_height="100dp"
+            android:layout_weight="3">
+
+        <!-- 交易条 -->
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <!-- 底部 -->
+
+</androidx.constraintlayout.widget.ConstraintLayout>

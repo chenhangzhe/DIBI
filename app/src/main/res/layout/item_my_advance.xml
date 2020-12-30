@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:paddingBottom="18dp">
+
+    <View
+        android:id="@+id/v_divider"
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:background="@color/color_f5f5f8"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_order"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/x_15dp"
+        android:layout_marginTop="13dp"
+        android:textColor="@color/text_color_dark"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/v_divider" />
+
+
+    <ImageView
+        android:id="@+id/iv_order_status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="4dp"
+        android:layout_marginTop="17dp"
+        android:src="@mipmap/sell"
+        app:layout_constraintLeft_toRightOf="@+id/tv_order"
+        app:layout_constraintTop_toBottomOf="@+id/v_divider" />
+
+
+    <TextView
+        android:id="@+id/tv_status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="11dp"
+        android:layout_marginRight="@dimen/x_15dp"
+        android:textColor="@color/redE0"
+        android:textSize="15sp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/v_divider" />
+
+
+    <TextView
+        android:id="@+id/tv_price_nums"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/x_15dp"
+        android:layout_marginTop="14dp"
+        android:textColor="@color/gy8A"
+        android:textSize="12sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_order" />
+
+    <TextView
+        android:id="@+id/tv_limit_amount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/x_15dp"
+        android:layout_marginTop="9dp"
+        android:textColor="@color/gy8A"
+        android:textSize="12sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_price_nums" />
+
+
+    <TextView
+        android:id="@+id/tv_amount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/x_15dp"
+        android:layout_marginTop="14dp"
+        android:layout_marginRight="15dp"
+        android:textColor="@color/gy8A"
+        android:textSize="12sp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_status" />
+
+
+    <TextView
+        android:id="@+id/tv_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/x_15dp"
+        android:layout_marginTop="9dp"
+        android:layout_marginRight="15dp"
+        android:textColor="@color/gy8A"
+        android:textSize="12sp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_amount" />
+
+
+    <LinearLayout
+        android:id="@+id/lly_payType"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/x_15dp"
+        android:layout_marginTop="11dp"
+        android:orientation="horizontal"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_limit_amount" />
+
+
+    <TextView
+        android:id="@+id/tv_up_down"
+        android:layout_width="65dp"
+        android:layout_height="25dp"
+        android:layout_marginLeft="@dimen/x_15dp"
+        android:layout_marginTop="9dp"
+        android:layout_marginRight="8dp"
+        android:background="@drawable/sls_c2c_usdt_advance_list_btn_bg"
+        android:enabled="true"
+        android:gravity="center"
+        android:text="@string/str_down"
+        android:textColor="@color/white"
+        android:textSize="12sp"
+        app:layout_constraintRight_toLeftOf="@+id/tv_edit"
+        app:layout_constraintTop_toBottomOf="@+id/tv_limit_amount" />
+
+
+    <TextView
+        android:id="@+id/tv_edit"
+        android:layout_width="65dp"
+        android:layout_height="25dp"
+        android:layout_marginLeft="@dimen/x_15dp"
+        android:layout_marginTop="9dp"
+        android:layout_marginRight="15dp"
+        android:background="@drawable/sls_c2c_usdt_advance_list_btn_bg"
+        android:gravity="center"
+        android:text="@string/str_edit"
+        android:textColor="@color/white"
+        android:textSize="12sp"
+        android:enabled="true"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_limit_amount" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

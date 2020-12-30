@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@color/white"
+    android:padding="20dp">
+    <TextView
+        android:id="@+id/tv_dgDownTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textSize="17sp"
+        android:textStyle="bold"
+        android:textColor="@color/bk2C"/>
+    <ProgressBar
+        style="@style/ProgressBarDownload"
+        android:id="@+id/pb_dgDown"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"/>
+    <TextView
+        android:id="@+id/tv_dgDownInstall"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:background="@drawable/sls_sp1_solid_purple_77_gy_ce"
+        android:layout_marginTop="15dp"
+        android:padding="10dp"
+        android:text="@string/downloading"
+        android:textSize="18sp"
+        android:textColor="@color/white"/>
+</LinearLayout>

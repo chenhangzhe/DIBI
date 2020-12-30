@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/dp_size_15"
+    android:background="@drawable/auth_dialog"
+    android:padding="@dimen/dp_size_20"
+   >
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/dp_size_15"
+        android:layout_marginTop="@dimen/dp_size_20"
+        android:text="@string/quick_title"
+        android:textColor="@color/black"
+        android:textSize="@dimen/dp_size_20"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+
+        />
+
+    <EditText
+        android:id="@+id/et_content"
+        style="@style/Login_edit_style"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/login_edit_height"
+        android:layout_below="@+id/tv_hint_one"
+        android:layout_marginTop="@dimen/dp_size_30"
+        android:hint="@string/str_edit_pas"
+
+        android:inputType="textPassword"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_title" />
+
+    <TextView
+        android:id="@+id/quck_cancel"
+        android:layout_width="@dimen/dp_size_100"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_size_15"
+        android:background="@drawable/quick_bg_cancel"
+        android:gravity="center"
+        android:padding="@dimen/dp_10"
+        android:text="@string/biometricprompt_cancel"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@id/quck_confirm"
+        app:layout_constraintTop_toBottomOf="@id/et_content" />
+
+    <TextView
+        android:id="@+id/quck_confirm"
+        android:layout_width="@dimen/dp_size_100"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_size_15"
+        android:background="@drawable/quick_bg1"
+        android:gravity="center"
+        android:padding="@dimen/dp_10"
+        android:text="@string/confirm_two"
+
+        android:textColor="@color/white"
+        app:layout_constraintLeft_toRightOf="@id/quck_cancel"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/et_content" />
+</androidx.constraintlayout.widget.ConstraintLayout>

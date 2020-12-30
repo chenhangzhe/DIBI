@@ -1,0 +1,556 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/cl_activity_income"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/bk1A"
+    android:visibility="gone"
+    android:focusable="true"
+    android:focusableInTouchMode="true">
+    <!-- 第一行币种 可用余额 -->
+<!--    <TextView-->
+<!--        android:id="@+id/tv_user_available"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginTop="15dp"-->
+<!--        android:text="可用余额："-->
+<!--        android:textColor="@color/white"-->
+<!--        app:layout_constraintLeft_toLeftOf="parent"-->
+<!--        app:layout_constraintTop_toTopOf="parent"/>-->
+
+<!--    <TextView-->
+<!--        android:id="@+id/tv_user_available_coin"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginTop="15dp"-->
+<!--        android:text="USDT"-->
+<!--        android:textColor="@color/white"-->
+<!--        app:layout_constraintRight_toRightOf="parent"-->
+<!--        app:layout_constraintTop_toTopOf="parent"/>-->
+
+<!--    &lt;!&ndash; 第二行输入框 &ndash;&gt;-->
+<!--    <EditText-->
+<!--        android:id="@+id/et_input_available"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="42dp"-->
+<!--        android:inputType="numberDecimal"-->
+<!--        android:maxLength="20"-->
+<!--        android:paddingLeft="8dp"-->
+<!--        android:layout_marginTop="8dp"-->
+<!--        android:hint="@string/number_of_applications_hint"-->
+<!--        android:textColorHint="@color/white"-->
+<!--        android:textSize="16dp"-->
+<!--        android:gravity="center_vertical"-->
+<!--        android:background="@drawable/drawable_dibi"-->
+<!--        android:focusable="true"-->
+<!--        android:focusableInTouchMode="true"-->
+<!--        app:layout_constraintLeft_toLeftOf="parent"-->
+<!--        app:layout_constraintRight_toRightOf="parent"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/tv_user_available"/>-->
+
+<!--    &lt;!&ndash; 拖动条 thumb属性表示滑动的图片 属性参考https://www.jianshu.com/p/475ebaa7152e &ndash;&gt;-->
+<!--    &lt;!&ndash; 样式参考https://www.cnblogs.com/xiaomo8086/p/4193662.html &ndash;&gt;-->
+<!--    &lt;!&ndash; 样式参考https://blog.csdn.net/qq_43377749/article/details/84841008 &ndash;&gt;-->
+<!--    &lt;!&ndash; 样式参考https://blog.csdn.net/qq_43377749/article/details/84839079 &ndash;&gt;-->
+<!--    <SeekBar-->
+<!--        android:id="@+id/skb_activity"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:minHeight="4dp"-->
+<!--        android:maxHeight="4dp"-->
+<!--        android:layout_marginTop="8dp"-->
+<!--        android:max="100"-->
+<!--        android:progress="0"-->
+<!--        android:progressDrawable="@drawable/drawable_seekbar"-->
+<!--        app:layout_constraintLeft_toLeftOf="parent"-->
+<!--        app:layout_constraintRight_toRightOf="parent"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/et_input_available"/>-->
+
+<!--    &lt;!&ndash; 进度条百分比 &ndash;&gt;-->
+<!--    <TextView-->
+<!--        android:id="@+id/tv_seekBar_percent"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="0%"-->
+<!--        android:hint=""-->
+<!--        android:textSize="16sp"-->
+<!--        android:textColor="@color/white"-->
+<!--        app:layout_constraintLeft_toLeftOf="parent"-->
+<!--        app:layout_constraintRight_toRightOf="parent"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/skb_activity"/>-->
+
+<!--    &lt;!&ndash; 看涨、看跌两个按钮 &ndash;&gt;-->
+<!--    <TextView-->
+<!--        android:id="@+id/tv_watch_up"-->
+<!--        android:layout_width="0dp"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:background="@drawable/sp20_solid_green_3f_2"-->
+<!--        android:layout_marginTop="8dp"-->
+<!--        android:padding="10dp"-->
+<!--        android:gravity="center"-->
+<!--        android:text="@string/expectRise"-->
+<!--        android:textSize="15sp"-->
+<!--        android:textStyle="bold"-->
+<!--        android:textColor="@color/white"-->
+<!--        app:layout_constraintLeft_toLeftOf="parent"-->
+<!--        app:layout_constraintRight_toLeftOf="@+id/tv_watch_down"-->
+<!--        app:layout_constraintTop_toBottomOf="@id/tv_seekBar_percent"/>-->
+
+<!--    <TextView-->
+<!--        android:id="@+id/tv_watch_down"-->
+<!--        android:layout_width="0dp"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginTop="8dp"-->
+<!--        android:background="@drawable/sp20_solid_red_e0_2"-->
+<!--        android:layout_marginStart="16dp"-->
+<!--        android:padding="10dp"-->
+<!--        android:gravity="center"-->
+<!--        android:text="@string/expectFall"-->
+<!--        android:textSize="15sp"-->
+<!--        android:textStyle="bold"-->
+<!--        android:textColor="@color/white"-->
+<!--        app:layout_constraintLeft_toRightOf="@id/tv_watch_up"-->
+<!--        app:layout_constraintRight_toRightOf="parent"-->
+<!--        app:layout_constraintTop_toBottomOf="@id/tv_seekBar_percent"/>-->
+
+    <!-- 2个收益率列表、进度条、下单量 -->
+
+    <EditText
+        android:id="@+id/et_tradeConAmount"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/sp18_solid_bk_16_stroke_bk_20"
+        android:layout_marginStart="22dp"
+        android:layout_marginEnd="22dp"
+        android:layout_marginTop="24dp"
+        android:paddingStart="40dp"
+        android:paddingEnd="40dp"
+        android:paddingTop="8dp"
+        android:paddingBottom="8dp"
+        android:gravity="center"
+        android:textSize="14sp"
+        android:inputType="numberDecimal"
+        android:digits="@string/numDecimalLimit"
+        android:singleLine="true"
+        android:imeOptions="actionGo"
+        android:maxLength="20"
+        android:hint="@string/amount"
+        android:textColor="@color/gy96"
+        android:textColorHint="@color/gy5A"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+    <TextView
+        android:id="@+id/tv_tradeConMinus"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_margin="4dp"
+        android:background="@drawable/sp14_solid_bk_27"
+        android:gravity="center"
+        android:text="－"
+        android:textSize="15sp"
+        android:textColor="@color/gy8A"
+        app:layout_constraintDimensionRatio="H,10:14"
+        app:layout_constraintLeft_toLeftOf="@id/et_tradeConAmount"
+        app:layout_constraintTop_toTopOf="@id/et_tradeConAmount"
+        app:layout_constraintBottom_toBottomOf="@id/et_tradeConAmount"/>
+    <TextView
+        android:id="@+id/tv_tradeConPlus"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_margin="4dp"
+        android:background="@drawable/sp14_solid_bk_27"
+        android:gravity="center"
+        android:text="＋"
+        android:textSize="15sp"
+        android:textColor="@color/gy8A"
+        app:layout_constraintDimensionRatio="H,10:14"
+        app:layout_constraintRight_toRightOf="@id/et_tradeConAmount"
+        app:layout_constraintTop_toTopOf="@id/et_tradeConAmount"
+        app:layout_constraintBottom_toBottomOf="@id/et_tradeConAmount"/>
+
+    <TextView
+        android:id="@+id/tv_tradeConAvailName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="6dp"
+        android:layout_marginTop="6dp"
+        android:text="@string/avail"
+        android:textSize="12sp"
+        android:textColor="@color/gy96"
+        app:layout_constraintLeft_toLeftOf="@id/et_tradeConAmount"
+        app:layout_constraintTop_toBottomOf="@id/et_tradeConAmount"/>
+    <TextView
+        android:id="@+id/tv_tradeConAvail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="7dp"
+        android:hint="0.00"
+        android:text="--"
+        android:textSize="12sp"
+        android:textColor="@color/gy96"
+        android:textColorHint="@color/trans"
+        app:layout_constraintLeft_toRightOf="@id/tv_tradeConAvailName"
+        app:layout_constraintBaseline_toBaselineOf="@id/tv_tradeConAvailName"/>
+    <TextView
+        android:id="@+id/tv_tradeConAvailCoin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="3dp"
+        android:hint="USDT"
+        android:textSize="12sp"
+        android:textColor="@color/gy5A"
+        android:textColorHint="@color/trans"
+        app:layout_constraintLeft_toRightOf="@id/tv_tradeConAvail"
+        app:layout_constraintBaseline_toBaselineOf="@id/tv_tradeConAvailName"/>
+    <View
+        android:id="@+id/v_tradeCon0"
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        app:layout_constraintWidth_percent="0.12"
+        app:layout_constraintLeft_toRightOf="@id/tv_tradeConAvailCoin"
+        app:layout_constraintTop_toTopOf="@id/tv_tradeConAvailName"/>
+
+    <TextView
+        android:id="@+id/tv_tradeConCommissionName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/backCommission"
+        android:textSize="12sp"
+        android:textColor="@color/gy96"
+        app:layout_constraintLeft_toRightOf="@id/v_tradeCon0"
+        app:layout_constraintBaseline_toBaselineOf="@id/tv_tradeConAvailName"/>
+    <TextView
+        android:id="@+id/tv_tradeConCommission"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="7dp"
+        android:text="--"
+        android:textSize="12sp"
+        android:textColor="@color/gy96"
+        android:textColorHint="@color/trans"
+        app:layout_constraintLeft_toRightOf="@id/tv_tradeConCommissionName"
+        app:layout_constraintBaseline_toBaselineOf="@id/tv_tradeConAvailName"/>
+    <TextView
+        android:id="@+id/tv_tradeConCommissionCoin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="3dp"
+        android:hint="USDT"
+        android:textSize="12sp"
+        android:textColor="@color/gy5A"
+        android:textColorHint="@color/trans"
+        app:layout_constraintLeft_toRightOf="@id/tv_tradeConCommission"
+        app:layout_constraintBaseline_toBaselineOf="@id/tv_tradeConAvailName"/>
+
+    <TextView
+        android:id="@+id/tv_tradeConPercent25"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:background="@drawable/sls_sp14_solid_purple_77_stroke_gy_4c"
+        android:layout_marginTop="18dp"
+        android:paddingStart="8dp"
+        android:paddingEnd="8dp"
+        android:paddingTop="4dp"
+        android:paddingBottom="4dp"
+        android:text="25%"
+        android:hint="100%"
+        android:textSize="12sp"
+        android:textColor="@drawable/sls_color_white_gy_96"
+        app:layout_constraintLeft_toLeftOf="@id/et_tradeConAmount"
+        app:layout_constraintTop_toBottomOf="@id/tv_tradeConAvailName"/>
+    <TextView
+        android:id="@+id/tv_tradeConPercent50"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:background="@drawable/sls_sp14_solid_purple_77_stroke_gy_4c"
+        android:layout_marginStart="10dp"
+        android:paddingStart="8dp"
+        android:paddingEnd="8dp"
+        android:paddingTop="4dp"
+        android:paddingBottom="4dp"
+        android:text="50%"
+        android:hint="100%"
+        android:textSize="12sp"
+        android:textColor="@drawable/sls_color_white_gy_96"
+        app:layout_constraintLeft_toRightOf="@id/tv_tradeConPercent25"
+        app:layout_constraintBaseline_toBaselineOf="@id/tv_tradeConPercent25"/>
+    <TextView
+        android:id="@+id/tv_tradeConPercent75"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:background="@drawable/sls_sp14_solid_purple_77_stroke_gy_4c"
+        android:layout_marginStart="10dp"
+        android:paddingStart="8dp"
+        android:paddingEnd="8dp"
+        android:paddingTop="4dp"
+        android:paddingBottom="4dp"
+        android:text="75%"
+        android:hint="100%"
+        android:textSize="12sp"
+        android:textColor="@drawable/sls_color_white_gy_96"
+        app:layout_constraintLeft_toRightOf="@id/tv_tradeConPercent50"
+        app:layout_constraintBaseline_toBaselineOf="@id/tv_tradeConPercent25"/>
+    <TextView
+        android:id="@+id/tv_tradeConPercent100"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:background="@drawable/sls_sp14_solid_purple_77_stroke_gy_4c"
+        android:layout_marginStart="10dp"
+        android:paddingStart="8dp"
+        android:paddingEnd="8dp"
+        android:paddingTop="4dp"
+        android:paddingBottom="4dp"
+        android:text="100%"
+        android:textSize="12sp"
+        android:textColor="@drawable/sls_color_white_gy_96"
+        app:layout_constraintLeft_toRightOf="@id/tv_tradeConPercent75"
+        app:layout_constraintBaseline_toBaselineOf="@id/tv_tradeConPercent25"/>
+
+    <TextView
+        android:id="@+id/tv_tradeConExpect"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/sp18_solid_bk_16_stroke_bk_20"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:padding="8dp"
+        android:hint="@string/expectIncome"
+        android:textColor="@color/gy96"
+        android:textColorHint="@color/gy5A"
+        app:layout_constraintLeft_toLeftOf="@id/et_tradeConAmount"
+        app:layout_constraintRight_toRightOf="@id/et_tradeConAmount"
+        app:layout_constraintTop_toBottomOf="@id/tv_tradeConPercent25"/>
+    <View
+        android:id="@+id/v_tradeCon1"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintDimensionRatio="H,9:1"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_tradeConExpect"/>
+    <TextView
+        android:id="@+id/tv_tradeConRise"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/sp20_solid_green_3f"
+        android:layout_marginStart="15dp"
+        android:padding="10dp"
+        android:gravity="center"
+        android:text="@string/expectRise"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@+id/tv_tradeConFall"
+        app:layout_constraintTop_toBottomOf="@id/v_tradeCon1"/>
+    <TextView
+        android:id="@+id/tv_tradeConFall"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/sp20_solid_red_e0"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="15dp"
+        android:padding="10dp"
+        android:gravity="center"
+        android:text="@string/expectFall"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        app:layout_constraintLeft_toRightOf="@id/tv_tradeConRise"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@id/tv_tradeConRise"/>
+    <View
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintDimensionRatio="H,4:1"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_tradeConRise"/>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="10dp"
+        app:layout_constraintTop_toBottomOf="@+id/tv_tradeConRise">
+
+        <View
+            android:id="@+id/v_now_v1"
+            android:layout_width="match_parent"
+            android:layout_height="8dp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"/>
+
+        <TextView
+            android:id="@+id/tv_now_green"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="当前收益率：22.5%"
+            android:textSize="15sp"
+            android:textColor="@color/green"
+            app:layout_constraintTop_toBottomOf="@id/v_now_v1"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toLeftOf="@+id/tv_now_red"/>
+
+        <TextView
+            android:id="@+id/tv_now_red"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:text="当前收益率：360%"
+            android:textSize="15sp"
+            android:textColor="@color/redE0"
+            android:layout_gravity="center"
+            app:layout_constraintTop_toBottomOf="@id/v_now_v1"
+            app:layout_constraintLeft_toRightOf="@+id/tv_now_green"
+            app:layout_constraintRight_toRightOf="parent" />
+
+        <View
+            android:id="@+id/v_now_v2"
+            android:layout_width="match_parent"
+            android:layout_height="8dp"
+            app:layout_constraintTop_toBottomOf="@+id/tv_now_green"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"/>
+
+        <LinearLayout
+            android:id="@+id/ll_recycler_temp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/v_now_v2"
+            app:layout_constraintRight_toRightOf="parent">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+
+                <!-- 左→列表 -->
+                <RelativeLayout
+                    android:id="@+id/rl_l1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintLeft_toLeftOf="parent">
+
+                    <TextView
+                        android:id="@+id/tv_ltime"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="时间"
+                        android:textColor="@color/white"
+                        android:layout_alignParentLeft="true"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="看涨下单量"
+                        android:layout_marginEnd="30dp"
+                        android:textColor="@color/white"
+                        android:layout_alignParentRight="true"/>
+
+                </RelativeLayout>
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rv_left"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintTop_toBottomOf="@+id/rl_l1"
+                    app:layout_constraintLeft_toLeftOf="parent"/>
+
+                <!-- 左→进度条 -->
+                <cn.suozhi.DiBi.hide.tools.VerticalProgressBar
+                    android:id="@+id/vp_left_progress"
+                    android:layout_width="24dp"
+                    android:layout_height="200dp"
+                    android:background="@color/white"
+                    android:layout_centerInParent="true"
+                    android:layout_marginStart="3dp"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/rl_l1"/>
+<!--                <cn.suozhi.DiBi.hide.tools.MyTempView-->
+<!--                    android:id="@+id/mtv_left_temp"-->
+<!--                    android:layout_width="12dp"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_marginEnd="2dp"-->
+<!--                    app:layout_constraintRight_toRightOf="parent"-->
+<!--                    app:layout_constraintBottom_toBottomOf="parent" />-->
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+
+                <RelativeLayout
+                    android:id="@+id/rl_l2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintLeft_toLeftOf="parent">
+
+                    <TextView
+                        android:id="@+id/tv_rtime"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="时间"
+                        android:layout_marginStart="30dp"
+                        android:textColor="@color/white"
+                        android:layout_alignParentLeft="true"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="看跌下单量"
+                        android:textColor="@color/white"
+                        android:layout_alignParentRight="true"/>
+
+                </RelativeLayout>
+
+                <!-- 右→进度条 -->
+                <cn.suozhi.DiBi.hide.tools.VerticalProgressBar
+                    android:id="@+id/vp_right_progress"
+                    android:layout_width="24dp"
+                    android:layout_height="200dp"
+                    android:background="@color/white"
+                    android:layout_centerInParent="true"
+                    android:layout_marginStart="3dp"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/rl_l2"/>
+<!--                <cn.suozhi.DiBi.hide.tools.MyTempView-->
+<!--                    android:id="@+id/mtv_right_temp"-->
+<!--                    android:layout_width="12dp"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_marginStart="2dp"-->
+<!--                    app:layout_constraintLeft_toLeftOf="parent"-->
+<!--                    app:layout_constraintBottom_toBottomOf="parent" />-->
+
+                <!-- 右→列表 -->
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rv_right"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/rl_l2"/>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </LinearLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <!-- 最下方TabLayout 历史合约、分析 -->
+
+</androidx.constraintlayout.widget.ConstraintLayout>

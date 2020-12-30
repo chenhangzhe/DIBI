@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_pressed="true" android:drawable="@drawable/sp3_grad0_blue_53_46"/>
+<!--    <item android:state_pressed="false" android:drawable="@drawable/sp3_grad0_blue_8e_4f"/>-->
+    <item android:state_pressed="false" android:drawable="@drawable/drawable_dibi"/>
+</selector>

@@ -1,0 +1,459 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gyF9"
+    android:orientation="vertical"
+    tools:context="cn.suozhi.DiBi.c2c.view.PublishAdvanceActivity">
+
+    <include layout="@layout/toolbar_left" />
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/x_15dp"
+                android:layout_marginTop="14dp"
+                android:layout_marginRight="@dimen/x_15dp"
+                android:background="@mipmap/qrcode_bg">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="13dp">
+
+
+                    <TextView
+                        android:id="@+id/tv_sell"
+                        android:layout_width="103dp"
+                        android:layout_height="30dp"
+                        android:background="@drawable/sls_c2c_advance_tab_sell_bg"
+                        android:gravity="center"
+                        android:text="@string/str_sell"
+                        android:textColor="@color/sls_c2c_advance_text_color_bg"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:id="@+id/tv_buy"
+                        android:layout_width="103dp"
+                        android:layout_height="30dp"
+                        android:background="@drawable/sls_c2c_advance_tab_buy_bg"
+                        android:gravity="center"
+                        android:text="@string/str_buy"
+                        android:textColor="@color/sls_c2c_advance_text_color_bg"
+                        android:textSize="12sp" />
+
+                </LinearLayout>
+
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/x_15dp"
+                android:layout_marginRight="@dimen/x_15dp"
+                android:background="@drawable/charge_coin_radius_8dp_bg"
+                android:orientation="vertical"
+                android:paddingBottom="33dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="@dimen/x_15dp"
+                    android:layout_marginTop="@dimen/x_10dp"
+                    android:layout_marginRight="@dimen/x_15dp"
+                    android:background="@drawable/login_edit_bg"
+                    android:paddingLeft="@dimen/x_15dp"
+                    android:paddingRight="@dimen/x_15dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:text="@string/str_c2c_coin"
+                        android:textColor="@color/text_color_dark"
+                        android:textSize="15sp" />
+
+                    <TextView
+                        android:id="@+id/tv_coin"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:text="DIC"
+                        android:gravity="center_vertical"
+                        android:drawablePadding="5dp"
+                        android:drawableRight="@mipmap/arrow_oval_down"
+                        android:textColor="@color/text_color_dark"
+                        android:textSize="16sp" />
+
+                </RelativeLayout>
+                <!--单价-->
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="@dimen/x_15dp"
+                    android:layout_marginTop="@dimen/x_10dp"
+                    android:layout_marginRight="@dimen/x_15dp"
+                    android:background="@drawable/login_edit_bg"
+                    android:paddingLeft="@dimen/x_15dp"
+                    android:paddingRight="@dimen/x_15dp">
+
+                    <TextView
+                        android:id="@+id/tv_master"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:text="@string/str_c2c_price"
+                        android:textColor="@color/text_color_dark"
+                        android:textSize="15sp" />
+
+
+                    <EditText
+                        android:inputType="numberDecimal"
+                        android:id="@+id/et_price"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="20dp"
+                        android:layout_toLeftOf="@+id/tv_price_coin"
+                        android:layout_toRightOf="@+id/tv_master"
+                        android:background="@null"
+                        android:gravity="right"
+                        android:digits="@string/numDecimalLimit"
+                        android:singleLine="true"
+                        android:textColor="@color/text_color_dark"
+                        android:textColorHint="@color/gy8A"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/tv_price_coin"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="15dp"
+                        android:text="CNY"
+                        android:textColor="@color/gy8A"
+                        android:textSize="12sp" />
+
+                </RelativeLayout>
+                <TextView
+                    android:id="@+id/tv_hint_one"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/et_password"
+                    android:layout_marginLeft="@dimen/x_25dp"
+                    android:layout_marginRight="@dimen/x_25dp"
+                    android:text="@string/str_edit_price"
+                    android:textColor="@color/redE0"
+                    android:textSize="12sp"
+                    android:visibility="gone" />
+                <!--数量-->
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="@dimen/x_15dp"
+                    android:layout_marginTop="@dimen/x_10dp"
+                    android:layout_marginRight="@dimen/x_15dp"
+                    android:background="@drawable/login_edit_bg"
+                    android:paddingLeft="@dimen/x_15dp"
+                    android:paddingRight="@dimen/x_15dp">
+
+                    <TextView
+                        android:id="@+id/tv_amount"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:text="@string/str_amount"
+                        android:textColor="@color/text_color_dark"
+                        android:textSize="15sp" />
+
+
+                    <EditText
+                        android:inputType="numberDecimal"
+                        android:id="@+id/et_amount"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="20dp"
+                        android:layout_toLeftOf="@+id/tv_amount_coin"
+                        android:layout_toRightOf="@+id/tv_amount"
+                        android:background="@null"
+                        android:gravity="right"
+                        android:hint="@string/str_edit_amount"
+                        android:singleLine="true"
+                        android:digits="@string/numDecimalLimit"
+                        android:textColor="@color/text_color_dark"
+                        android:textColorHint="@color/gy8A"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/tv_amount_coin"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="15dp"
+                        android:textColor="@color/gy8A"
+                        android:textSize="12sp" />
+
+                </RelativeLayout>
+                <TextView
+                    android:id="@+id/tv_hint_two"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/et_password"
+                    android:layout_marginLeft="@dimen/x_25dp"
+                    android:layout_marginRight="@dimen/x_25dp"
+                    android:text="@string/str_edit_amount"
+                    android:textColor="@color/redE0"
+                    android:textSize="12sp"
+                    android:visibility="gone" />
+                <!--全部数量-->
+                <RelativeLayout
+                    android:id="@+id/rl_all_amout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/x_15dp"
+                    android:layout_marginTop="7dp"
+                    android:visibility="visible"
+                    android:layout_marginRight="@dimen/x_15dp">
+
+                    <TextView
+                        android:id="@+id/tv_avalible_amount"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/gy8A"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:id="@+id/tv_all"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:text="@string/str_all"
+                        android:textColor="@color/color_1888FE"
+                        android:textSize="12sp" />
+
+
+                </RelativeLayout>
+                <!--最小单笔限额-->
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="@dimen/x_15dp"
+                    android:layout_marginTop="@dimen/x_10dp"
+                    android:layout_marginRight="@dimen/x_15dp"
+                    android:background="@drawable/login_edit_bg"
+                    android:paddingLeft="@dimen/x_15dp"
+                    android:paddingRight="@dimen/x_15dp">
+
+                    <TextView
+                        android:id="@+id/tv_single_limit"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:text="@string/str_single_amount"
+                        android:textColor="@color/text_color_dark"
+                        android:textSize="15sp" />
+
+
+                    <EditText
+                        android:inputType="number"
+                        android:id="@+id/et_small_amount"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="20dp"
+                        android:layout_toLeftOf="@+id/tv_single_coin"
+                        android:layout_toRightOf="@+id/tv_single_limit"
+                        android:background="@null"
+                        android:gravity="right"
+                        android:hint="@string/str_edit_min_success_amount"
+                        android:digits="@string/numberLimit"
+                        android:singleLine="true"
+                        android:textColor="@color/text_color_dark"
+                        android:textColorHint="@color/gy8A"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/tv_single_coin"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="15dp"
+                        android:text="CNY"
+                        android:textColor="@color/gy8A"
+                        android:textSize="12sp" />
+
+                </RelativeLayout>
+                <!--最大单笔限额-->
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="@dimen/x_15dp"
+                    android:layout_marginTop="@dimen/x_10dp"
+                    android:layout_marginRight="@dimen/x_15dp"
+                    android:background="@drawable/login_edit_bg"
+                    android:paddingLeft="@dimen/x_15dp"
+                    android:paddingRight="@dimen/x_15dp">
+
+                    <TextView
+                        android:id="@+id/tv_single_max_limit"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:text="@string/str_single_amount"
+                        android:textColor="@color/text_color_dark"
+                        android:textSize="15sp" />
+
+
+                    <EditText
+                        android:inputType="number"
+                        android:id="@+id/et_max_amount"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="20dp"
+                        android:layout_toLeftOf="@+id/tv_single_max_coin"
+                        android:layout_toRightOf="@+id/tv_single_max_limit"
+                        android:background="@null"
+                        android:gravity="right"
+                        android:hint="@string/str_edit_max_success_amount"
+                        android:digits="@string/numberLimit"
+                        android:singleLine="true"
+                        android:textColor="@color/text_color_dark"
+                        android:textColorHint="@color/gy8A"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/tv_single_max_coin"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="15dp"
+                        android:text="CNY"
+                        android:textColor="@color/gy8A"
+                        android:textSize="12sp" />
+
+                </RelativeLayout>
+                <!--备注-->
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="85dp"
+                    android:layout_marginLeft="@dimen/x_15dp"
+                    android:layout_marginTop="@dimen/x_10dp"
+                    android:layout_marginRight="@dimen/x_15dp"
+                    android:background="@drawable/login_edit_bg"
+                    android:paddingLeft="@dimen/x_15dp"
+                    android:paddingTop="15dp"
+                    android:paddingRight="@dimen/x_15dp"
+                    android:paddingBottom="@dimen/x_15dp">
+
+                    <TextView
+                        android:id="@+id/tv_note"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/str_note_none"
+                        android:textColor="@color/text_color_dark"
+                        android:textSize="15sp" />
+
+
+                    <EditText
+                        android:id="@+id/et_note"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginLeft="20dp"
+                        android:layout_toRightOf="@+id/tv_note"
+                        android:background="@null"
+                        android:gravity="right"
+                        android:hint="@string/str_edit_note_info"
+                        android:textColor="@color/text_color_dark"
+                        android:textColorHint="@color/gy8A"
+                        android:textSize="14sp" />
+
+                </RelativeLayout>
+                <!--收款方式-->
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/x_15dp"
+                    android:layout_marginTop="@dimen/x_10dp"
+                    android:layout_marginRight="@dimen/x_15dp"
+                    android:background="@drawable/login_edit_bg"
+                    android:orientation="vertical"
+                    android:paddingRight="@dimen/x_15dp"
+                    android:paddingBottom="12dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/x_10dp"
+                        android:layout_marginTop="12dp"
+                        android:text="@string/str_collect_money_type"
+                        android:textColor="@color/text_color_dark"
+                        android:textSize="14sp"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+
+                    <TextView
+                        android:id="@+id/tv_set_edit"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="14dp"
+                        android:layout_marginRight="@dimen/x_10dp"
+                        android:text="@string/str_set_edit"
+                        android:textColor="@color/color_1888FE"
+                        android:textSize="12sp"
+                        app:layout_constraintRight_toRightOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/rv_pay_type"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="11dp"
+                        android:paddingLeft="@dimen/x_10dp"
+                        android:paddingRight="@dimen/x_10dp"
+                        app:layout_constraintTop_toBottomOf="@+id/tv_set_edit" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <TextView
+
+                    android:id="@+id/tv_commit"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/login_edit_height"
+                    android:layout_marginLeft="@dimen/x_25dp"
+                    android:layout_marginTop="24dp"
+                    android:layout_marginRight="@dimen/x_25dp"
+                    android:background="@drawable/slp_sp3_grad0_blue"
+                    android:gravity="center"
+                    android:text="@string/publish_advance"
+                    android:textColor="@color/white"
+                    android:textSize="17sp" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+
+</LinearLayout>

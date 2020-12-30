@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <ImageView
+        android:id="@+id/iv_left_back"
+        android:layout_width="wrap_content"
+        android:layout_height="44dp"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:src="@mipmap/arrow_back"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/tv_marketTitle" />
+
+    <TextView
+        android:id="@+id/tv_marketTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="15dp"
+        android:paddingTop="8dp"
+        android:paddingRight="15dp"
+        android:paddingBottom="8dp"
+        android:text="@string/str_transfer_record_title"
+        android:textColor="@color/bk2C"
+        android:textSize="26sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/iv_left_back" />
+
+<!--    <View-->
+<!--        android:id="@+id/v_v1"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="1dp"-->
+<!--        app:layout_constraintLeft_toLeftOf="parent"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/tv_marketTitle"-->
+<!--        android:background="@color/gyCE"/>-->
+
+    <LinearLayout
+        android:id="@+id/ll_tr"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_marketTitle">
+
+        <TextView
+            android:id="@+id/tv_record_usdt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="USDT"
+            android:textSize="20dp"
+            android:textColor="@color/black"
+            android:gravity="center"/>
+
+        <TextView
+            android:id="@+id/tv_record_dic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="DIC"
+            android:textSize="20dp"
+            android:textColor="@color/black"
+            android:gravity="center"/>
+
+    </LinearLayout>
+
+    <View
+        android:id="@+id/v_1"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/gyAB"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ll_tr"/>
+
+<!--    <include layout="@layout/item_recycler"/>-->
+
+<!--    <com.google.android.material.tabs.TabLayout-->
+<!--        android:id="@+id/tl_marketCoin"-->
+<!--        android:layout_width="0dp"-->
+<!--        android:layout_height="46dp"-->
+<!--        app:layout_constraintLeft_toLeftOf="parent"-->
+<!--        app:layout_constraintRight_toRightOf="parent"-->
+<!--        app:layout_constraintTop_toBottomOf="@id/v_v1"-->
+<!--        app:tabPaddingEnd="10dp"-->
+<!--        app:tabPaddingStart="10dp"-->
+<!--        app:tabRippleColor="@color/trans"-->
+<!--        app:tabTextAppearance="@style/TabText16"-->
+<!--        app:tabIndicator="@color/purple77"-->
+<!--        app:tabIndicatorHeight="3dp"-->
+<!--        app:tabTextColor="@color/black"-->
+<!--        app:tabSelectedTextColor="@color/purple77"/>-->
+
+<!--    <View-->
+<!--        android:id="@+id/l_market1"-->
+<!--        android:layout_width="0dp"-->
+<!--        android:layout_height="1px"-->
+<!--        android:layout_marginTop="1px"-->
+<!--        android:background="@color/gyFD"-->
+<!--        app:layout_constraintLeft_toLeftOf="parent"-->
+<!--        app:layout_constraintRight_toRightOf="parent"-->
+<!--        app:layout_constraintTop_toBottomOf="@id/tl_marketCoin" />-->
+
+<!--    <androidx.viewpager.widget.ViewPager-->
+<!--        android:id="@+id/view_pager"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        app:layout_constraintLeft_toLeftOf="parent"-->
+<!--        app:layout_constraintRight_toRightOf="parent"-->
+<!--        app:layout_constraintTop_toBottomOf="@id/l_market1" />-->
+
+    <FrameLayout
+        android:id="@+id/fl_transfer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/v_1"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

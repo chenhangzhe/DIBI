@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- 联动ViewPager的圆点 -->
+    <declare-styleable name="IndicatorView">
+        <attr name="indSingleWidth" format="dimension"/>
+        <attr name="indBackColor" format="color"/>
+        <attr name="indColor" format="color"/>
+        <attr name="indCorner" format="dimension"/>
+        <!-- 总数为1时是否显示 默认true-->
+        <attr name="indShowOne" format="boolean"/>
+    </declare-styleable>
+
+    <!-- 平行四边形 -->
+    <declare-styleable name="Quadrangle">
+        <attr name="quadColor" format="color"/>
+    </declare-styleable>
+
+    <!-- 滚动的广告效果 -->
+    <declare-styleable name="ADTextView">
+        <!--文字进入与消失的时间-->
+        <attr name="adSpeed" format="integer"/>
+        <!--文字段数 每种颜色一段-->
+        <attr name="adNum" format="integer"/>
+        <!--文字停留在中心的时间-->
+        <attr name="adInterval" format="integer"/>
+        <!--内容文字大小-->
+        <attr name="adSize" format="dimension"/>
+    </declare-styleable>
+
+    <!-- 委托单 -->
+    <declare-styleable name="EntrustView">
+        <attr name="enLayout" format="reference"/>
+        <attr name="enCount" format="integer"/>
+        <attr name="enStart" format="enum">
+            <enum name="top" value="0"/>
+            <enum name="bottom" value="1"/>
+        </attr>
+        <attr name="enSort" format="enum">
+            <enum name="desc" value="0"/>
+            <enum name="asc" value="1"/>
+        </attr>
+        <attr name="enBackDirection" format="enum">
+            <enum name="left2right" value="0"/>
+            <enum name="right2left" value="1"/>
+        </attr>
+        <attr name="enLeftPrice" format="boolean"/>
+        <attr name="enRemoveZero" format="boolean"/>
+        <attr name="enPriceColor" format="color"/>
+        <attr name="enAmountColor" format="color"/>
+        <attr name="enBackColor" format="color"/>
+    </declare-styleable>
+
+    <!-- 带点的滑动进度条 -->
+    <declare-styleable name="TickSeekBar">
+        <attr name="tickBackHeight" format="dimension"/>
+        <attr name="tickBackCorner" format="dimension"/>
+        <attr name="tickWidth" format="dimension"/>
+        <attr name="tickColorBack" format="color"/>
+        <attr name="tickColorProgress" format="color"/>
+    </declare-styleable>
+
+    <!-- 环形倒计时 -->
+    <declare-styleable name="RingProgressBar">
+        <attr name="ringMax" format="integer"/>
+        <attr name="ringShadow" format="color"/>
+        <attr name="ringBackground" format="color"/>
+        <attr name="ringColor" format="color"/>
+        <attr name="ringTextSize" format="dimension"/>
+        <attr name="ringTextColor" format="color"/>
+        <attr name="ringWidthRate" format="float"/>
+        <attr name="ringStartAfterFinish" format="boolean"/>
+    </declare-styleable>
+
+    <!-- 环形倒计时 -->
+    <declare-styleable name="PieView">
+        <attr name="pieStartAngle" format="integer"/>
+        <attr name="pieDefaultColor" format="color"/>
+        <attr name="pieDefaultCount" format="integer"/>
+        <attr name="pieDrawNull" format="boolean"/>
+    </declare-styleable>
+
+
+    <!--验证码输入框-->
+    <declare-styleable name="SeparatedEditText">
+        <attr name="password" format="boolean" />
+        <attr name="showCursor" format="boolean" />
+        <attr name="separateType" format="reference|integer" />
+        <attr name="maxLength" format="integer" />
+        <attr name="corner" format="dimension" />
+        <attr name="borderColor" format="color|reference" />
+        <attr name="blockColor" format="color|reference" />
+        <attr name="text_Color" format="color|reference" />
+        <attr name="blockSpacing" format="dimension" />
+        <attr name="cursorDuration" format="integer" />
+        <attr name="cursorWidth" format="dimension" />
+        <attr name="cursorColor" format="color|reference" />
+        <attr name="borderWidth" format="dimension" />
+    </declare-styleable>
+
+    <integer name="type_hollow">1</integer>
+    <integer name="type_solid">2</integer>
+    <integer name="type_underline">3</integer>
+
+
+    <!--侧滑删除-->
+    <declare-styleable name="SwipeMenuLayout">
+        <attr name="swipeEnable" format="boolean"/>
+        <attr name="ios" format="boolean"/>
+        <attr name="leftSwipe" format="boolean"/>
+    </declare-styleable>
+    <declare-styleable name="Lock9View">
+        <attr name="lock9_nodeSrc" format="color|reference" />
+        <attr name="lock9_nodeOnSrc" format="color|reference" />
+        <attr name="lock9_node_error_OnSrc" format="color|reference" />
+        <attr name="lock9_nodeSize" format="dimension" />
+        <attr name="lock9_nodeAreaExpand" format="dimension" />
+        <attr name="lock9_nodeOnAnim" format="reference" />
+        <attr name="lock9_lineColor" format="color" />
+        <attr name="lock9_error_lineColor" format="color" />
+        <attr name="lock9_lineWidth" format="dimension" />
+        <attr name="lock9_padding" format="dimension" />
+        <attr name="lock9_spacing" format="dimension" />
+        <attr name="lock9_autoLink" format="boolean" />
+        <attr name="lock9_linkage" format="boolean" />
+        <attr name="lock9_enableVibrate" format="boolean" />
+        <attr name="lock9_vibrateTime" format="integer" />
+    </declare-styleable>
+
+</resources>

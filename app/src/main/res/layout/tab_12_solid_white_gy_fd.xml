@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+    <View
+        android:id="@+id/v_tab12SolidWg0"
+        android:layout_width="10dp"
+        android:layout_height="1dp"
+        android:visibility="gone"/>
+    <TextView
+        android:id="@+id/tv_tab12SolidWgName"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_gravity="center"
+        android:layout_marginStart="5dp"
+        android:layout_marginEnd="5dp"
+        android:paddingStart="5dp"
+        android:paddingEnd="5dp"
+        android:background="@drawable/sls_sp2_stroke_purple_77_solid_gy_fd"
+        android:gravity="center"
+        android:textSize="12sp"
+        android:textColor="@color/purple89"/>
+    <View
+        android:id="@+id/v_tab12SolidWg1"
+        android:layout_width="10dp"
+        android:layout_height="1dp"
+        android:visibility="gone"/>
+</LinearLayout>

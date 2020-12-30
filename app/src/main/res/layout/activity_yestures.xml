@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:baselineAligned="false"
+    android:fitsSystemWindows="true"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="200px"
+        android:layout_gravity="center"
+        android:gravity="center_horizontal">
+
+        <ImageView
+            android:id="@+id/user_icon_iv"
+            android:layout_width="140px"
+            android:layout_height="140px"
+            android:layout_gravity="center"
+            android:src="@drawable/head_cion"
+            android:visibility="gone" />
+
+        <cn.suozhi.DiBi.quick.uitls.LinkageGroup
+            android:id="@+id/linkage_parent_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center" />
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/hint_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="设置手势密码"
+        android:textColor="#2e2e2e"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/hint_desc_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="22px"
+        android:gravity="center"
+        android:text="绘制解锁图案"
+        android:textColor="#7e838a"
+        android:textSize="14sp" />
+
+    <cn.suozhi.DiBi.quick.uitls.Lock9View
+        android:id="@+id/lock_9_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="10dp"
+        app:lock9_autoLink="true"
+        app:lock9_enableVibrate="true"
+        app:lock9_error_lineColor="@color/red_light"
+        app:lock9_lineColor="@color/blue_light"
+        app:lock9_lineWidth="2px"
+        app:lock9_nodeAreaExpand="5dp"
+        app:lock9_nodeOnAnim="@anim/node_on_2"
+        app:lock9_nodeOnSrc="@drawable/node_active"
+        app:lock9_nodeSrc="@drawable/node_normal"
+        app:lock9_node_error_OnSrc="@drawable/node_error"
+        app:lock9_padding="28dp"
+        app:lock9_spacing="28dp"
+        app:lock9_vibrateTime="20" />
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                app:layout_constraintTop_toTopOf="parent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/tv_pasw"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintRight_toLeftOf="@id/tv_figre"
+                    android:text="密码登录"
+                    />
+                <View
+                    android:id="@+id/view"
+                    app:layout_constraintLeft_toLeftOf="@id/tv_pasw"
+                    android:layout_width="@dimen/dp_size_1"
+                    app:layout_constraintRight_toRightOf="@id/tv_figre"
+                    app:layout_constraintTop_toTopOf="parent"
+                    android:background="@color/black"
+                    android:visibility="gone"
+                    android:layout_marginTop="@dimen/dp_size_5"
+                    android:layout_height="@dimen/dp_10"/>
+
+                <TextView
+                    android:id="@+id/tv_figre"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintLeft_toRightOf="@id/tv_pasw"
+                    android:text="指纹登录"
+                    />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+</LinearLayout>

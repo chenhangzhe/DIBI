@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/gyF9"
+    tools:context=".home.view.C3Activity">
+    <include layout="@layout/toolbar_left"/>
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+        android:id="@+id/srl_c3"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <cn.suozhi.DiBi.common.custom.LollipopWebView
+            android:id="@+id/wv_c3"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layerType="software"/>
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+</LinearLayout>

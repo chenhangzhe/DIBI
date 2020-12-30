@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:context="cn.suozhi.DiBi.login.LoginActivity">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:id="@+id/rly_back"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/y_44dp"
+            android:layout_marginLeft="@dimen/x_15dp"
+            android:gravity="center_vertical">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/arrow_back" />
+        </RelativeLayout>
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/rly_back"
+            android:paddingLeft="@dimen/x_15dp"
+            android:text="@string/str_login_title"
+            android:textColor="@color/text_color_dark"
+            android:textSize="28sp" />
+
+        <EditText
+            android:id="@+id/et_account"
+            style="@style/Login_edit_style"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/login_edit_height"
+            android:layout_below="@+id/tv_title"
+            android:layout_marginLeft="@dimen/x_25dp"
+            android:layout_marginTop="@dimen/y_44dp"
+            android:layout_marginRight="@dimen/x_25dp"
+            android:hint="@string/str_edit_phone_number_or_email"
+            android:inputType="textEmailAddress" />
+        <TextView
+            android:id="@+id/tv_hint_one"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/et_account"
+            android:layout_marginLeft="@dimen/x_25dp"
+            android:layout_marginRight="@dimen/x_25dp"
+            android:text="@string/str_edit_correct_email_or_phone"
+            android:textColor="@color/redE0"
+            android:textSize="12sp"
+            android:visibility="gone" />
+        <EditText
+            android:id="@+id/et_password"
+            style="@style/Login_edit_style"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/login_edit_height"
+            android:layout_below="@+id/tv_hint_one"
+            android:layout_marginLeft="@dimen/x_25dp"
+            android:layout_marginTop="@dimen/y_10dp"
+            android:layout_marginRight="@dimen/x_25dp"
+            android:hint="@string/str_edit_password"
+            android:inputType="textPassword" />
+        <TextView
+            android:id="@+id/tv_hint_two"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/et_password"
+            android:layout_marginLeft="@dimen/x_25dp"
+            android:layout_marginRight="@dimen/x_25dp"
+            android:text="@string/str_edit_correct_psw"
+            android:textColor="@color/redE0"
+            android:textSize="12sp"
+            android:visibility="gone" />
+        <TextView
+            android:id="@+id/tv_forget_psw"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_hint_two"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="20dp"
+            android:padding="5dp"
+            android:text="@string/str_forget_psw"
+            android:textColor="@color/color_1888FE" />
+
+        <cn.suozhi.DiBi.common.custom.LollipopWebView
+            android:id="@+id/wv_loginScroll"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_forget_psw"
+            android:layout_marginStart="25dp"
+            android:layout_marginEnd="25dp"
+            android:layout_marginTop="10dp"/>
+        <TextView
+            android:id="@+id/tv_login"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/login_edit_height"
+            android:layout_below="@id/wv_loginScroll"
+            android:layout_marginLeft="@dimen/x_25dp"
+            android:layout_marginTop="@dimen/x_16dp"
+            android:layout_marginRight="@dimen/x_25dp"
+            android:background="@drawable/slp_sp3_grad0_blue"
+            android:gravity="center"
+            android:text="@string/str_login"
+            android:textColor="@color/white"
+            android:textSize="17sp" />
+        <TextView
+            android:id="@+id/tv_register"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_login"
+            android:layout_marginTop="@dimen/x_16dp"
+            android:gravity="center_horizontal"
+            android:text="没有账号? 马上注册"
+            android:textColor="@color/gy8A"
+            android:textSize="14sp" />
+    </RelativeLayout>
+    <TextView
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="40dp"
+        android:drawableLeft="@mipmap/safe"
+        android:drawablePadding="5dp"
+        android:gravity="center_vertical"
+        android:text="@string/str_login_hint"
+        android:textColor="@color/color_33385e"
+        android:textSize="14sp" />
+</RelativeLayout>

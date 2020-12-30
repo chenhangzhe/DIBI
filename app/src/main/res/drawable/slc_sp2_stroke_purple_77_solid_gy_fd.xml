@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_checked="true" android:drawable="@drawable/sp2_stroke_purple_77"/>
+    <item android:state_checked="false" android:drawable="@drawable/sp2_solid_gy_f0d"/>
+</selector>

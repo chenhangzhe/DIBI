@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#ffffff"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+        <ImageView
+            android:id="@+id/iv_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/x_15dp"
+            android:src="@mipmap/arrow_back" />
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:textColor="@color/text_color_dark"
+            android:textSize="17sp" />
+
+    </RelativeLayout>
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ListView
+            android:id="@+id/mainlist"
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            android:divider="@drawable/list_item_divider"
+            android:dividerHeight="1dip"
+            android:scrollbars="none" />
+
+        <TextView
+            android:id="@+id/main_tv01"
+            android:layout_width="match_parent"
+            android:layout_height="25dp"
+            android:background="@color/gyF9"
+            android:gravity="center_vertical"
+            android:paddingLeft="@dimen/x_15dp"
+            android:textColor="@color/color_1888FE"
+            android:textSize="16sp" />
+
+        <cn.suozhi.DiBi.login.adapter.MySideBar
+            android:id="@+id/myview"
+            android:layout_width="28dip"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right|center_vertical"
+            android:layout_marginBottom="50dp"
+            android:layout_marginTop="50dp" />
+    </FrameLayout>
+
+</LinearLayout>

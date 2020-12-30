@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tv_wechat"
+        android:layout_width="75dp"
+        android:layout_height="32dp"
+        android:layout_gravity="center_vertical"
+        android:background="@drawable/slc_c2c_coin_pick_bg"
+        android:gravity="center"
+        android:text="@string/str_wechat_pay"
+        android:textColor="@color/color_1888FE"
+        android:textSize="12sp" />
+</LinearLayout>

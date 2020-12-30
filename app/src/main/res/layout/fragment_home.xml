@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/iv_homeUser"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_marginRight="5dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:src="@mipmap/home_user"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/iv_homeLogo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:src="@mipmap/vv_logo"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="@+id/iv_homeMessage"
+            app:layout_constraintRight_toRightOf="@+id/iv_homeUser"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/iv_homeMessage"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:src="@mipmap/home_bell"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tv_language_choose"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:textColor="@color/bk2C"
+            android:background="@drawable/home_top_language_choose"
+            android:gravity="center_vertical"
+            android:layout_margin="5dp"
+            android:paddingRight="5dp"
+            android:paddingLeft="5dp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintRight_toLeftOf="@+id/iv_homeMessage"/>
+
+        <View
+            android:id="@+id/v_homeDot"
+            android:layout_width="7dp"
+            android:layout_height="7dp"
+            android:background="@drawable/spo_solid_red"
+            android:visibility="gone"
+            app:layout_constraintHorizontal_bias="0.65"
+            app:layout_constraintVertical_bias="0.25"
+            app:layout_constraintLeft_toLeftOf="@id/iv_homeMessage"
+            app:layout_constraintRight_toRightOf="@id/iv_homeMessage"
+            app:layout_constraintTop_toTopOf="@id/iv_homeMessage"
+            app:layout_constraintBottom_toBottomOf="@id/iv_homeMessage"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <include layout="@layout/item_recycler"/>
+</LinearLayout>

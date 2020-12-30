@@ -1,0 +1,1205 @@
+<resources>
+    <string name="app_name">DiBi</string>
+    <string name="verifyLimit">0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ+-*/#</string>
+    <string name="passwordLimit">0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ</string>
+    <string name="numDecimalLimit">0123456789.</string>
+    <string name="numberLimit">0123456789</string>
+
+    <string name="homeTab0">首頁</string>
+    <string name="homeTab1">行情</string>
+    <string name="homeTab2">法幣</string>
+    <string name="homeTab3">幣幣</string>
+    <string name="homeTab4">資產</string>
+
+    <string name="permDeny">權限被拒絕</string>
+    <string name="emptyData">暫無相關數據</string>
+    <string name="loading">加載中&#8230;</string>
+    <string name="noMoreUpdate">已加載完全部數據</string>
+    <string name="pressExit">再按一次退出</string>
+    <string name="dataAbnormal">數據異常</string>
+    <string name="uploading">上傳中</string>
+    <string name="uploadFail">上傳失敗</string>
+    <string name="needInstallPerm">需要安裝權限</string>
+    <string name="downloading">下載中</string>
+    <string name="install">安裝</string>
+
+    <string name="code">Code</string>
+    <string name="code0">成功</string>
+    <string name="code_1">失敗</string>
+    <string name="code200">OK</string>
+    <string name="code401">token不存在</string>
+    <string name="code11001">參數錯誤</string>
+    <string name="code11002">參數類型錯誤</string>
+    <string name="code11003">參數為空</string>
+    <string name="code11004">對不起,系統異常</string>
+    <string name="code11005">操作非法</string>
+    <string name="code12000">驗證碼發送失敗</string>
+    <string name="code12001">驗證碼不能為空</string>
+    <string name="code12002">驗證碼不正確</string>
+    <string name="code12003">驗證碼類型不能為空</string>
+    <string name="code12004">驗證碼應為6位數字</string>
+    <string name="code12005">谷歌驗證碼應為6位數字</string>
+    <string name="code1010001">賬號不能為空</string>
+    <string name="code1010002">密碼格式不正確</string>
+    <string name="code1010003">郵箱格式不正確</string>
+    <string name="code1010004">郵箱地址或手機號不正確</string>
+    <string name="code1010005">密碼不能為空</string>
+    <string name="code1010006">郵箱賬號不能為空</string>
+    <string name="code1010007">手機區號不能為空</string>
+    <string name="code1010008">手機區號格式不正確</string>
+    <string name="code1010009">手機號碼不能為空</string>
+    <string name="code1010010">該賬號已註冊</string>
+    <string name="code1010011">驗證碼類型不存在</string>
+    <string name="code1010012">該邀請碼不存在</string>
+    <string name="code1010013">對不起,請重試</string>
+    <string name="code1010014">註冊來源不能為空</string>
+    <string name="code1010015">請拉動滑塊進行校驗</string>
+    <string name="code1010016">校驗失敗,請重試</string>
+    <string name="code1020001">該賬號不存在</string>
+    <string name="code1020002">用戶已被禁用,請聯繫客服</string>
+    <string name="code1020003">谷歌驗證碼錯誤</string>
+    <string name="code1020004">登錄密碼不正確</string>
+    <string name="code1020005">該手機號碼已綁定,如需更換,請提交工單</string>
+    <string name="code1020006">該郵箱已綁定,如需更換,請提交工單</string>
+    <string name="code1030005">暱稱長度不得超過20個字</string>
+    <string name="code1040001">該身份證號已經綁定</string>
+    <string name="code1040002">信息不匹配</string>
+    <string name="code1040003">操作類型不能為空</string>
+    <string name="code1040004">姓名不能為空</string>
+    <string name="code1040005">證件號碼不能為空</string>
+    <string name="code1040006">國籍不能為空</string>
+    <string name="code1040007">請上傳人像頁照片</string>
+    <string name="code1040008">請上傳國徽頁照片</string>
+    <string name="code1040009">請上傳手持照片</string>
+    <string name="code1040010">您已提交實名審核,請耐心等待</string>
+    <string name="code1050001">谷歌驗證碼不能為空</string>
+    <string name="code1050002">該賬號已綁定</string>
+    <string name="code1060003">防釣魚碼長度不得超過20個字</string>
+    <string name="code1070004">API Key備註不能為空</string>
+    <string name="code1070005">API Key ID不能為空</string>
+    <string name="code1070006">API Key 備註長度不得超過20個字</string>
+    <string name="code1070007">API Key 不存在</string>
+    <string name="code1070008">每個用戶最多可以綁定4個IP</string>
+    <string name="code1070009">每個用戶最多可以創建5組API Key</string>
+    <string name="code1070010">IP地址格式不正確</string>
+    <string name="code1080001">賬戶類型不能為空</string>
+    <string name="code1080002">開戶銀行不能為空</string>
+    <string name="code1080003">收款二維碼不能為空</string>
+    <string name="code1080004">請先完成C1認證</string>
+    <string name="code1080005">請先完成C2認證</string>
+    <string name="code1080006">賬戶姓名最多為15個字</string>
+    <string name="code1090001">訂單ID不能為空</string>
+    <string name="code1100002">交易對不存在</string>
+    <string name="code1100003">訂單不存在</string>
+    <string name="code1100004">找不到訂單鎖定資金的記錄</string>
+    <string name="code1100005">剩餘鎖定資金小於0</string>
+    <string name="code1110001">請刷新後重試</string>
+    <string name="code1210001">幣種不能為空</string>
+    <string name="code1210002">備註名稱不能為空</string>
+    <string name="code1210003">提幣地址不能為空</string>
+    <string name="code1210004">Memo/Tag/Payment ID不能為空</string>
+    <string name="code1210005">幣種不存在或已禁用</string>
+    <string name="code1210006">提幣數量不能為空</string>
+    <string name="code1210007">修改安全設置不足24小時,暫不允許提幣</string>
+    <string name="code1210008">該幣種暫不支持充值</string>
+    <string name="code1210009">該幣種暫不支持提現</string>
+    <string name="code1210010">單筆提幣數量不能小於最小提幣限額</string>
+    <string name="code1210011">可用餘額不足</string>
+    <string name="code1210012">提幣數量超過今日提幣限額,建議提幣數量:</string>
+    <string name="code1210013">設備類型不能為空</string>
+    <string name="code1210014">獲取充幣地址失敗</string>
+    <string name="code1210015">提幣地址檢驗失敗,請確認無誤後重新輸入</string>
+    <string name="code1210016">賬戶異常,暫不允許提幣</string>
+    <string name="code1210017">單筆提幣數量不能大於最大提幣限額</string>
+    <string name="code1210018">手續費大於提幣數量,提幣失敗</string>
+    <string name="code1210019">該幣種無需Memo/Tag/Payment ID信息</string>
+    <string name="code1210020">需綁定手機號才能提幣</string>
+    <string name="code1210021">法幣交易買入USDT不足24H，提幣後資產餘額不得低於法幣交易購買金額</string>
+    <string name="code1210022">法幣交易買入USDT不足24H，如需提幣請先完成C3認證</string>
+    <string name="code1210023">當前賬戶暫不允許提幣</string>
+    <string name="code1210024">請先完成高級認證</string>
+    <string name="code1220001">請至少選擇一條記錄刪除</string>
+    <string name="code1230001">賬戶可用餘額不足</string>
+    <string name="code1230002">賬戶凍結餘額不足</string>
+    <string name="code1230003">凍結失敗,請稍後重試</string>
+    <string name="code1230004">解凍失敗,請稍後重試</string>
+    <string name="code1230005">劃轉失敗,請稍後重試</string>
+    <string name="code1230006">賬戶不存在</string>
+    <string name="code1240001">配置項編碼不能為空</string>
+    <string name="code1250001">認證ID不能為空</string>
+    <string name="code1250002">您已完成高級認證</string>
+    <string name="code1250003">請先完成初級認證</string>
+    <string name="code1250004">認證失敗，請重試</string>
+    <string name="code2010001">訂單服務不可用</string>
+    <string name="code2010002">請求超時</string>
+    <string name="code2010003">交易對不正確</string>
+    <string name="code2010004">交易對不存在</string>
+    <string name="code2010005">交易對暫停交易</string>
+    <string name="code2010006">資金不足</string>
+    <string name="code2010007">下單數量過少</string>
+    <string name="code2010008">下單數量過大</string>
+    <string name="code2010009">下單價格過小</string>
+    <string name="code2010010">下單價格過大</string>
+    <string name="code2010011">下單總額過大</string>
+    <string name="code2010012">委託價不能高於觸發價的110%</string>
+    <string name="code2010013">委託價不能低於觸發價的90%</string>
+    <string name="code2010014">訂單不存在</string>
+    <string name="code2010015">凍結資金不足</string>
+    <string name="code2010016">BAR類型錯誤</string>
+    <string name="code2010017">無相關數據</string>
+    <string name="code2010018">用戶未登錄</string>
+    <string name="code2010019">分區不存在</string>
+    <string name="code2010021">requestId不可為空</string>
+    <string name="code2010022">下單總額過小</string>
+    <string name="code2010024">買入需要為%s的倍數</string>
+    <string name="code2010025">最大持仓数量不得超过%s</string>
+    <string name="code2010026">賣出需要為%s的倍數</string>
+    <string name="code2010027">交易類型暫未開放</string>
+    <string name="code3010001">法幣交易市場不支持此幣種</string>
+    <string name="code3010002">法幣類型錯誤</string>
+    <string name="code3010003">支付方式錯誤</string>
+    <string name="code3010004">數量小數位過長</string>
+    <string name="code3010005">不具備商家資格，無法發布廣告</string>
+    <string name="code3010006">發布廣告之前請至少綁定一種收付款方式</string>
+    <string name="code3020001">只有商家才能發布廣告</string>
+    <string name="code3020002">廣告不存在</string>
+    <string name="code3020003">當前廣告已完成，不支持編輯</string>
+    <string name="code3020004">同類型廣告只允許發布一條</string>
+    <string name="code3020005">廣告剩餘數量不足</string>
+    <string name="code3020006">廣告已下架</string>
+    <string name="code3030001">不能與自己發布的廣告進行交易</string>
+    <string name="code3030002">請先完成C2等級實名認證</string>
+    <string name="code3030003">請先綁定手機號碼以接收訂單信息</string>
+    <string name="code3030004">存在未完成訂單</string>
+    <string name="code3030005">訂單價格不在單筆限額內</string>
+    <string name="code3030006">訂單數量不在單筆限額內</string>
+    <string name="code3030007">暫不支持此支付方式</string>
+    <string name="code3030008">提交訂單失敗</string>
+    <string name="code3030009">訂單確認失敗</string>
+    <string name="code3030010">取消訂單數量已達上限今日無法進行法幣交易</string>
+    <string name="code3030011">支付方式未啟用</string>
+    <string name="code3030012">訂單不存在</string>
+    <string name="code3030013">賣方不可以取消訂單</string>
+    <string name="code3030014">訂單已提交申訴</string>
+    <string name="code3030015">訂單數量計算錯誤</string>
+    <string name="code3030016">訂單金額計算錯誤</string>
+    <string name="code3030020">法幣交易買入USDT不足24H，如需出售請先完成C3認證；</string>
+    <string name="code3030021">法幣交易買入USDT不足24H，出售後資產餘額不得低於法幣交易購買金額；</string>
+    <string name="code3030022">當前賬戶暫不允許出售USDT</string>
+    <string name="code3030023">中國大陸地區用戶需完成高級認證</string>
+    <string name="code4010001">不要重複點擊</string>
+    <string name="code5010001">交易對格式不正確</string>
+    <string name="code5010002">ApiKey不存在或已刪除</string>
+    <string name="code5010003">簽名錯誤或該APIKey狀態異常</string>
+    <string name="code5010004">訂單買賣方向參數錯誤</string>
+    <string name="code5010005">日期格式錯誤</string>
+    <string name="code5010006">查詢方向參數錯誤</string>
+    <string name="code5010007">查詢記錄大於100條</string>
+    <string name="code5010008">訂單類型錯誤</string>
+    <string name="code5010009">觸發價不能為空</string>
+    <string name="code5010010">服務器開小差了,請稍後再試一次</string>
+    <string name="code5010011">accessKey不能為空</string>
+    <string name="code5010012">客戶端IP錯誤</string>
+    <string name="code5010013">撤單失敗</string>
+    <string name="code5010014">市價買入,買入總額不能為空</string>
+    <string name="code5020001">遊戲未註冊</string>
+    <string name="code5020002">請先設置遊戲暱稱</string>
+    <string name="code5030002">該數據已經刪除</string>
+
+    <!-- 首页 -->
+    <string name="foreContract">預測合約</string>
+    <string name="foreContractTips">高收益 低門檻 分鐘結算</string>
+    <string name="gameZone">遊戲專區</string>
+    <string name="gameZoneTips">最豐富 最好玩的網頁遊戲</string>
+    <string name="newRank">新幣榜</string>
+    <string name="riseRank">漲幅榜</string>
+    <string name="fallRank">跌幅榜</string>
+    <string name="coinPair">交易對</string>
+    <string name="newestPrice">最新價</string>
+    <string name="riseFall">漲跌幅</string>
+    <string name="setGameNameFirst">請先設置您的遊戲暱稱</string>
+    <string name="aliasHint12">請輸入12個字符以內的暱稱</string>
+    <string name="logoutGameQ">確認退出遊戲？</string>
+    <string name="returnColon">返水:</string>
+
+    <string name="systemNotify">系統公告</string>
+    <string name="notifyDetail">公告詳情</string>
+    <string name="browse">瀏覽</string>
+    <string name="versionTitle">%s版本閃亮登場，請下載體驗</string>
+    <string name="updateImm">立即升級</string>
+
+    <!-- 行情 -->
+    <string name="zoneMain">主流區</string>
+    <string name="zoneOpen">開放區</string>
+    <string name="zoneInnovate">創新區</string>
+    <string name="zoneSuperMine">DiBi Launch交易區</string>
+    <string name="favorite">自選</string>
+    <string name="market">市場</string>
+    <string name="rate24h">24H漲跌</string>
+    <string name="volume24h">24H量</string>
+    <string name="searchByKey">請輸入關鍵字搜索</string>
+    <string name="historyRecord">歷史記錄</string>
+    <string name="searchResult">搜索結果</string>
+    <string name="emptyHistory">暫無歷史記錄</string>
+    <string name="clearHistoryQ">確認清空歷史記錄？</string>
+
+    <!-- 币币 -->
+    <string name="buying">買入</string>
+    <string name="selling">賣出</string>
+    <string name="currentEntrust">當前委託</string>
+    <string name="historyEntrust">歷史委託</string>
+    <string name="historyTrade">歷史成交</string>
+    <string name="price">價格</string>
+    <string name="amount">數量</string>
+    <string name="limitPrice">限價</string>
+    <string name="marketPrice">市價</string>
+    <string name="targetProfit">止盈止損</string>
+    <string name="avail">可用</string>
+    <string name="total">總額</string>
+    <string name="newDeal">最新成交</string>
+    <string name="unfold">展開</string>
+    <string name="fold">收起</string>
+    <string name="time">時間</string>
+    <string name="targetTips">預先設置觸發價及觸發後的委託價和下單數量，當最新價達到觸發價時，即會按照設置的委託價掛單。</string>
+    <string name="check">查看</string>
+    <string name="targetHelpTitle">止盈止損介紹</string>
+    <string name="marketPriceHint">以當前最優價格交易</string>
+    <string name="touchPrice">觸發價</string>
+    <string name="inputTradeTotal">請輸入成交額</string>
+    <string name="buyingAfterLogin">登錄後買入</string>
+    <string name="sellingAfterLogin">登錄後賣出</string>
+    <string name="inputTouchPrice">請輸入觸發價</string>
+    <string name="inputPrice">請輸入委託價格</string>
+    <string name="inputAmount">請輸入委託數量</string>
+    <string name="touchPriceTips110">委託價不得高於觸發價的110%</string>
+    <string name="touchPriceTips90">委託價不得低於觸發價的90%</string>
+    <string name="availLess">可用餘額不足</string>
+    <string name="placeOrderSuc">下單成功</string>
+
+    <string name="all">全部</string>
+    <string name="buy">買</string>
+    <string name="sell">賣</string>
+    <string name="deal">成交</string>
+    <string name="retreat">撤單</string>
+    <string name="totalPrice">總價</string>
+    <string name="dealVolume">成交量</string>
+    <string name="touch">觸發</string>
+    <string name="login">登錄</string>
+    <string name="totalVolume">總量</string>
+    <string name="dealAverage">成交均價</string>
+    <string name="dealPercent">成交率</string>
+    <string name="touchCondition">觸發條件</string>
+    <string name="entrustTime">委託時間</string>
+    <string name="orderStatus1">已撤銷</string>
+    <string name="orderStatus2">掛單中</string>
+    <string name="orderStatus3">已完成</string>
+    <string name="orderStatus4">無對應掛單</string>
+    <string name="orderStatus5">部分成交</string>
+    <string name="orderStatusS">掛單中</string>
+    <string name="orderStatusP">部分成交</string>
+    <string name="orderStatusF">已完成</string>
+    <string name="orderStatusC">已撤銷</string>
+    <string name="orderStatusCP">部成已撤</string>
+    <string name="orderStatusE">錯誤</string>
+    <string name="orderStatusEP">部成錯誤</string>
+    <string name="orderStatusD">無對應掛單</string>
+    <string name="orderStatusDP">部分成交</string>
+    <string name="fee">手續費</string>
+
+    <!-- K线 -->
+    <string name="high">高</string>
+    <string name="low">低</string>
+    <string name="divideMin">分時</string>
+    <string name="min1">1分鐘</string>
+    <string name="min5">5分鐘</string>
+    <string name="min15">15分鐘</string>
+    <string name="min30">30分鐘</string>
+    <string name="hour1">1小時</string>
+    <string name="hour4">4小時</string>
+    <string name="day1">1天</string>
+    <string name="week1">1週</string>
+    <string name="month1">1月</string>
+    <string name="more">更多</string>
+    <string name="entrustOrder">委託訂單</string>
+    <string name="buyAmount">（買盤）數量</string>
+    <string name="sellAmount"> 數量（賣盤）</string>
+
+    <!-- 预测合约 -->
+    <string name="contractHelpTitle">預測合約解析與教程</string>
+    <string name="tradeGoing">正在交易</string>
+    <string name="tradeStop">停止交易</string>
+    <string name="preClose">前收價</string>
+    <string name="currentPrice">當前價</string>
+    <string name="trade">交易</string>
+    <string name="deliverAlready">已經交割</string>
+    <string name="deliverWaited">等待交割</string>
+    <string name="flow">流水</string>
+    <string name="analysis">分析</string>
+    <string name="getMoreAfterLogin">登錄賬戶後查看更多信息</string>
+    <string name="goLogin">前去登錄</string>
+    <string name="backCommission">返佣</string>
+    <string name="expectIncome">預期收益</string>
+    <string name="expectRise">看漲</string>
+    <string name="expectFall">看跌</string>
+    <string name="orderMoney">下單金額</string>
+    <string name="deliverMoney">已交割金額</string>
+    <string name="status">狀態</string>
+    <string name="deliverDone">已交割</string>
+    <string name="deliverPart">部分交割</string>
+    <string name="deliverWait">待交割</string>
+    <string name="inputAmo">請輸入下單數量</string>
+    <string name="contractStatusS">已提交</string>
+    <string name="contractStatusW">等待交割</string>
+    <string name="contractStatusP">部分交割</string>
+    <string name="contractStatusF">已交割</string>
+    <string name="contractStatusE">下單錯誤</string>
+    <string name="contractStatusR">被退回</string>
+    <string name="clickLoadMore">點擊加載更多</string>
+    <string name="closePre">收盤價/前收價</string>
+    <string name="deliveryEntrust">交割/委託</string>
+    <string name="directionResult">方向/結果</string>
+    <string name="flowStatusFB">買入鎖定</string>
+    <string name="flowStatusFR">返回本金</string>
+    <string name="flowStatusFS">成功交割</string>
+    <string name="flowStatusFU">合約返水</string>
+    <string name="flowStatusFC">合約返佣</string>
+    <string name="contractResult0">正確</string>
+    <string name="contractResult1">錯誤</string>
+    <string name="contractResult2">平盤</string>
+    <string name="contractResult3">未開盤</string>
+    <string name="contractResult4">--</string>
+    <string name="thisDay">一天</string>
+    <string name="thisWeek">一周</string>
+    <string name="thisMonth">一個月</string>
+    <string name="draw">平</string>
+    <string name="win">贏</string>
+    <string name="lose">輸</string>
+    <string name="xTimes">%d次</string>
+    <string name="income">收入</string>
+    <string name="outcome">支出</string>
+    <string name="amountTo">總計</string>
+
+    <!-- 个人中心 -->
+    <string name="retryAfterRefresh">請刷新後重試</string>
+    <string name="goIdentify">未認證</string>
+    <string name="idLevel1">C1認證</string>
+    <string name="idLevel2">C2認證</string>
+    <string name="idLevel3">C3認證</string>
+    <string name="idLevel2Ing">C1認證</string>
+    <string name="idLevel2Fail">C1認證</string>
+    <string name="junior">初級</string>
+    <string name="senior">高級</string>
+    <string name="juniorIdentify">初級認證</string>
+    <string name="seniorIdentify">高級認證</string>
+    <string name="securityTips">請不要透露密碼、短信、郵箱或谷歌驗證碼給任何人，包括DiBi工作人員</string>
+    <string name="identify">身份認證</string>
+    <string name="securityCenter">安全中心</string>
+    <string name="inviteFriend">邀請好友</string>
+    <string name="gatherAccount">收款方式</string>
+    <string name="setting">更多設置</string>
+    <string name="contactUs">聯繫我們</string>
+    <string name="helpCenter">幫助中心</string>
+    <string name="onlineChat">在線客服</string>
+    <string name="submit_the_repair_order">提交工單</string>
+
+    <string name="editAlias">編輯暱稱</string>
+    <string name="aliasHint">請輸入10個字符以內的暱稱</string>
+    <string name="confirm">確認</string>
+    <string name="changeAvatar">更換頭像</string>
+    <string name="takePicture">拍照</string>
+    <string name="chooseFromAlbum">從相冊中選取</string>
+    <string name="cancel">取消</string>
+    <string name="waitUploading">圖片正在上傳中，請稍候再試</string>
+
+    <!-- C1认证 -->
+    <string name="nation">國籍</string>
+    <string name="selectNation">選擇國籍</string>
+    <string name="china">中國</string>
+    <string name="name">姓名</string>
+    <string name="lastName">姓（拼音）</string>
+    <string name="firstName">名（拼音）</string>
+    <string name="inputName">請輸入姓名</string>
+    <string name="inputLastName">請輸入姓</string>
+    <string name="inputFirstName">請輸入名</string>
+    <string name="idType">證件類型</string>
+    <string name="idCard">身份證</string>
+    <string name="passport">護照</string>
+    <string name="idNumber">證件號碼</string>
+    <string name="inputIdNumber">請輸入證件號碼</string>
+    <string name="idNumberError">身份證號碼格式錯誤</string>
+    <string name="submit">提交</string>
+    <string name="c1Title">您的C1認證審核成功</string>
+    <string name="c1Tips">完成C2認證即可進行法幣交易、數字貨幣提幣操作（單日限額100萬RMB）</string>
+    <string name="c1Next">去進行C2認證</string>
+    <string name="juniorTitle">您的初級認證審核成功</string>
+    <string name="juniorTips">完成高級認證即可進行法幣交易、數字貨幣提幣操作（單日限額500萬RMB）、申請成為商家</string>
+    <string name="juniorNext">去進行高級認證</string>
+
+    <!-- C2、C3认证 -->
+    <string name="c2CardName0">上傳證件人像頁照片</string>
+    <string name="c2CardName1">上傳證件國徽頁照片</string>
+    <string name="c2CardName2">手持證件照+官方網址+日期</string>
+    <string name="c2PassName0">上傳證件人像頁照片</string>
+    <string name="c2PassName1">上傳證件國徽頁照片</string>
+    <string name="c2PassName2">手持證件照+官方網址+日期</string>
+    <string name="goBackTips">確認返回上一頁嗎？</string>
+    <string name="pleaseUploadId0">請先完成照片上傳</string>
+    <string name="pleaseUploadId1">請先完成照片上傳</string>
+    <string name="pleaseUploadId2">請先完成照片上傳</string>
+    <string name="c2sTitle">您的C2認證審核成功</string>
+    <string name="c2sTips">完成C3認證即可申請成為商家，單日提幣限額提至500萬RMB</string>
+    <string name="c2sNext">去進行C3認證</string>
+    <string name="c2fTitle">您的C2認證審核失敗</string>
+    <string name="c2fTips">請確保上傳您本人真實、清晰的認證照片，重新提交認證。</string>
+    <string name="c2fNext">重新認證</string>
+    <string name="c2lTitle">審核中，請耐心等待</string>
+    <string name="c2lTips">我們將在一個工作日內進行審核，請耐心等待</string>
+    <string name="c3Title">您的C3認證審核成功</string>
+    <string name="seniorTitle">您已完成高級認證</string>
+    <string name="notIdentify">未完成認證</string>
+    <string name="notIdentify_1">未完成認證，原因：用戶在認證過程中，主動退出。</string>
+    <string name="notIdentify_3001">未完成認證，原因：認證token無效或已過期。</string>
+    <string name="notIdentify_3101">未完成認證，原因：用戶姓名身份證實名校驗不匹配。</string>
+    <string name="notIdentify_3102">未完成認證，原因：實名校驗身份證號不存在。</string>
+    <string name="notIdentify_3103">未完成認證，原因：實名校驗身份證號不合法。</string>
+    <string name="notIdentify_3104">未完成認證，原因：認證已通過，重複提交</string>
+    <string name="notIdentify_3204">未完成認證，原因：非本人操作</string>
+    <string name="notIdentify_3206">未完成認證，原因：非本人操作</string>
+    <string name="notIdentify_3208">未完成認證，原因是：公安網無底照</string>
+
+    <!-- 安全中心 -->
+    <string name="phoneVerify">手機綁定</string>
+    <string name="emailVerify">郵箱綁定</string>
+    <string name="googleVerify">谷歌驗證</string>
+    <string name="loginPassword">登錄密碼</string>
+    <string name="antiFish">防釣魚碼</string>
+    <string name="bind">已綁定</string>
+    <string name="unbind">未綁定</string>
+    <string name="reset">重置</string>
+    <string name="set">設置</string>
+    <string name="update">修改</string>
+    <string name="inputNum6">請輸入6位數字驗證碼</string>
+
+    <!-- 手机绑定 -->
+    <string name="phoneBind">綁定手機</string>
+    <string name="phoneNumber">手機號碼</string>
+    <string name="inputPhoneNumber">請輸入手機號碼</string>
+    <string name="inputFormatPhone">請輸入正確的手機號碼</string>
+    <string name="smsCode">短信驗證碼</string>
+    <string name="inputSmsCode">請輸入短信驗證碼</string>
+    <string name="inputCorrectCode">請輸入正確的驗證碼</string>
+    <string name="sendCode">獲取驗證碼</string>
+    <string name="resend">重新獲取</string>
+    <string name="enable">綁定</string>
+    <string name="phoneBindSuc">手機綁定成功</string>
+
+    <!-- 邮箱绑定 -->
+    <string name="emailBind">綁定郵箱</string>
+    <string name="emailAddress">郵箱號碼</string>
+    <string name="inputEmailAddress">請輸入郵箱地址</string>
+    <string name="inputFormatEmail">請輸入正確的郵箱地址</string>
+    <string name="emailCode">郵箱驗證碼</string>
+    <string name="inputEmailCode">請輸入郵箱驗證碼</string>
+    <string name="emailBindSuc">郵箱綁定成功</string>
+
+    <!-- 谷歌验证 -->
+    <string name="download">下載</string>
+    <string name="open">打開</string>
+    <string name="bindGoogleTitle1">下載谷歌驗證器APP</string>
+    <string name="bindGoogleInfo1">點擊下載按鈕跳轉應用商店，下載谷歌驗證器，或在應用商店中搜索"Google Authenticator"進行下載。</string>
+    <string name="bindGoogleTitle2">在谷歌驗證器中添加密鑰並備份</string>
+    <string name="bindGoogleInfo2">打開谷歌驗證器點擊“+”選擇手動輸入下述密鑰添加驗證令牌。&lt;font color=#E86240&gt;密鑰用於手機更換或遺失時找回谷歌驗證器，綁定前請務必將下述密鑰備份保存。&lt;/font&gt;</string>
+    <string name="bindGoogleTitle3">輸入谷歌驗證器中6位驗證碼</string>
+    <string name="copy">複製</string>
+    <string name="inputGoogleCode">請輸入谷歌驗證碼</string>
+    <string name="copyDone">複製成功</string>
+    <string name="securityVerify">安全校驗</string>
+    <string name="numCode6">6位數字驗證碼</string>
+    <string name="googleBindSuc">谷歌認證綁定成功</string>
+    <string name="disableGoogle">關閉谷歌驗證</string>
+    <string name="inputLoginPassword">請輸入登錄密碼</string>
+    <string name="inputCorrectLoginPassword">請輸入正確的登錄密碼</string>
+    <string name="googleCode">谷歌驗證碼</string>
+    <string name="sure">確定</string>
+    <string name="googleUnbindSuc">谷歌認證解綁成功</string>
+
+    <!-- 登录密码、防钓鱼码 -->
+    <string name="resetNewPassword">重置登錄密碼</string>
+    <string name="newLoginPassword">新登錄密碼</string>
+    <string name="passwordTips">密碼為6&#8211;21位數字加字母組合</string>
+    <string name="confirmPassword">確認新密碼</string>
+    <string name="inputPassword">請輸入密碼</string>
+    <string name="inputConfirmPassword">請再次輸入新登錄密碼</string>
+    <string name="passwordNoMatch">兩次密碼輸入不一致，請重新輸入</string>
+    <string name="passwordResetSuc">密碼重置成功</string>
+    <string name="inputYourAntiFish">請輸入您想要設置的防釣魚碼</string>
+    <string name="antiFishTips">防釣魚碼為4&#8211;10位非特殊字符</string>
+    <string name="antiFishSetSuc">防釣魚碼設置成功</string>
+    <string name="antiFishUpdateSuc">防釣魚碼修改成功</string>
+    <string name="currentAntiFish">當前防釣魚碼</string>
+    <string name="newAntiFish">新防釣魚碼</string>
+
+    <!-- 邀请好友 -->
+    <string name="friendList">好友列表</string>
+    <string name="commissionRecord">返佣記錄</string>
+    <string name="inviteCodeColon">邀請碼:</string>
+    <string name="invitePoster">專屬邀請海報</string>
+    <string name="save2Album">保存至相冊</string>
+    <string name="saveSuc">保存成功</string>
+    <string name="saveFail">保存失敗</string>
+    <string name="comTodayUSD">今日返佣(USDT)</string>
+    <string name="comTotalUSD">累計返佣(USDT)</string>
+    <string name="comType_exchange">交易返佣</string>
+    <string name="comType_game">遊戲返佣</string>
+    <string name="comType_agent">代理返佣</string>
+    <string name="comType_future">預測合約返佣</string>
+
+    <!-- 设置 -->
+    <string name="language">語言</string>
+    <string name="clearCache">清理緩存</string>
+    <string name="currentVersion">當前版本</string>
+    <string name="openNotifyPerm">開啟通知權限</string>
+    <string name="logout">退出登錄</string>
+    <string name="clearCacheDone">緩存清理完成</string>
+    <string name="logoutMark">確認退出登錄？</string>
+
+    <!-- 工单 -->
+    <string name="vvbtc_messge">站內信</string>
+    <string name="myWorkOrder">我的工單</string>
+    <string name="submitWorkOrder">提交工單</string>
+    <string name="workOrderType">工單類型</string>
+    <string name="vvbtc_title_hint">請輸入不超過20字符的標題</string>
+    <string name="vvbtc_content_hint">請具體描述您遇到的問題，我們將會盡快為您解決</string>
+    <string name="vvbtc_commit_pic_hint">請上傳圖片，JPG/JPEG/PNG格式上傳，大小不超過5M，最多可上傳3張</string>
+    <string name="vvbtc_commit_sfz">手持證件照+原手機號/原郵箱地址</string>
+    <string name="vvbtc_sele_order_type">請選擇工單類型</string>
+    <string name="vvbtc_tost_input_title">請輸入工單標題</string>
+    <string name="vvbtc_toast_content">請輸入工單描述</string>
+    <string name="vvbtc_work_order_commit_sucess">工單提交成功</string>
+
+    <string name="replyWait">待回复</string>
+    <string name="replyDone">已回复</string>
+    <string name="tv_work_order_detail_title">工單詳情</string>
+    <string name="commonQuestion">常見問題</string>
+    <string name="vvbtc_q_to_commit">沒有找到想要的答案？您可以</string>
+    <string name="vvbtc_is_help">這篇文章有幫助嗎？</string>
+    <string name="vvbtc_yes">是</string>
+    <string name="NO">否</string>
+    <string name="vvbtc_help_num">%1$d 人中有 %2$d 人覺得有幫助</string>
+
+
+    <!--登录 开始-->
+    <string name="str_login_title">登錄DiBi</string>
+    <string name="str_edit_phone_number_or_email">請輸入手機號碼或郵箱地址</string>
+    <string name="str_edit_password">請輸入登錄密碼</string>
+    <string name="str_login">登錄</string>
+    <string name="str_login_hint">您的信息通過256位SGC加密保護安全傳輸</string>
+    <string name="str_forget_psw">忘記密碼</string>
+    <string name="str_phone_regist">手機註冊</string>
+    <string name="str_email_regist">郵箱註冊</string>
+    <string name="str_edit_phone_number">請輸入手機號碼</string>
+    <string name="str_edit_msg_code">請輸入驗證碼</string>
+    <string name="str_get_msg_code">獲取驗證碼</string>
+    <string name="str_edit_6_to_21_psw">請設置6-21位數字加字母組合的密碼</string>
+    <string name="str_edit_comfirm_psw">請確認密碼</string>
+    <string name="str_invite_code">邀請碼（選填）</string>
+    <string name="str_register">註冊</string>
+    <string name="str_edit_email_account">請輸入郵箱地址</string>
+    <string name="str_edit_email_code">請輸入郵箱驗證碼</string>
+    <string name="str_edit_correct_email">請輸入格式正確的郵箱地址</string>
+    <string name="str_comfirm">確認</string>
+    <string name="str_find_by_email">郵箱找回</string>
+    <string name="str_find_by_phone">手機找回</string>
+    <string name="str_find_password">找回密碼</string>
+    <string name="str_login_right_now">立即登錄</string>
+    <string name="str_login_vvbtc">登錄DiBi</string>
+    <string name="str_edit_two_validation">請輸入兩步驗證碼</string>
+    <string name="str_edit_two_validation_hint">您已經開啟兩步驗證\n請輸入您的Authy/Google Authentication 驗證碼</string>
+    <string name="lostGoogleVerifyQ">谷歌驗證丟失怎麼辦？</string>
+    <string name="str_not_recieve_code">收不到驗證碼怎麼辦？</string>
+    <string name="str_edit_correct_email_or_phone">請輸入正確的手機號碼或郵箱地址</string>
+    <string name="str_edit_correct_psw">密碼不正確，請重新輸入</string>
+    <string name="str_edit_correct_phone">請輸入正確的手機號碼</string>
+    <string name="str_psw_6_to_21">密碼為6-21位數字加字母組合</string>
+    <string name="str_psw_diffrent">兩次密碼輸入不一致，請重新輸入</string>
+    <string name="str_resend">重新發送</string>
+    <string name="str_edit_phone_code">請輸入短信驗證碼</string>
+    <string name="str_edit_phone_code_two">驗證碼已發送至您的手機，請注意查收！</string>
+    <string name="str_edit_email_code_two">驗證碼已發送至您的郵箱，請注意查收！</string>
+    <string name="str_phone_distrct">選擇手機號歸屬地</string>
+    <string name="str_use_protocol">《服務協議》</string>
+    <string name="str_use_protocol_two">服務協議</string>
+    <string name="str_secret_protocol">《隱私聲明》</string>
+    <string name="str_secret_protocol_two">隱私聲明</string>
+    <string name="str_read_and_agree">請閱讀並同意</string>
+    <string name="str_have_account">已有賬號?</string>
+    <string name="str_go_login"> 去登錄</string>
+    <string name="str_and">和</string>
+    <string name="str_manage_address">地址管理</string>
+    <string name="str_account_order">賬單</string>
+    <string name="str_search_coin">搜索幣種</string>
+    <string name="str_hide_small_amount_coin">隐藏＜0.0001BTC的資產</string>
+    <string name="str_charge_coin">充幣</string>
+    <string name="str_get_coin">提幣</string>
+    <string name="str_transfer_accounts">轉賬</string>
+    <string name="str_charge_coin_record">充幣記錄</string>
+    <string name="str_save_photo">保存圖片到相冊</string>
+    <string name="str_copy_address">複製地址</string>
+
+    <string name="str_copy_memo">複製Memo</string>
+
+    <string name="str_get_coin_record">提幣記錄</string>
+    <string name="str_charge_get_coin_record">充提記錄</string>
+
+    <string name="str_address_list">地址列表</string>
+    <string name="str_add_address">添加地址</string>
+    <string name="str_coin_type">幣種</string>
+    <string name="str_note">備註名稱</string>
+    <string name="str_get_coin_address">提幣地址</string>
+    <string name="str_memo">Memo</string>
+    <string name="str_delete">刪除</string>
+    <string name="str_comfir_delete_address">確認刪除該提幣地址？</string>
+    <string name="confirm_two">確定</string>
+    <string name="str_please_edit_key">請輸入關鍵字搜索</string>
+    <string name="str_bank">銀行卡</string>
+    <string name="str_un_bind">未綁定</string>
+    <string name="str_wechat">微信</string>
+    <string name="str_alipay">支付寶</string>
+    <string name="str_auth_hint">進行提幣操作之前需完成C2等級實名認證,請先完成實名認證！</string>
+    <string name="str_auth_hint1">進行轉賬操作之前需完成C2等級實名認證,請先完成實名認證！</string>
+    <string name="transferNeedSeniorPrimary">進行轉賬操作之前需完成初級認證，請先完成初級認證！</string>
+    <string name="withdrawNeedSenior">進行提幣操作之前需完成高級認證，請先完成高級認證！</string>
+    <string name="transferNeedSenior">進行轉賬操作之前需完成高級認證，請先完成高級認證！</string>
+    <string name="str_go_auth">去認證</string>
+    <string name="thinkAgain">再想想</string>
+    <string name="str_collect_money_hint">進行收款設置之前需完成C1等級實名認證，請先完成實名認證！</string>
+    <string name="str_account">賬號</string>
+    <string name="str_edit_account">請輸入賬號</string>
+    <string name="str_upload_pic_hint">請上傳標準收款二維碼，JPG/JPEG/PNG格式上傳，大小不超過5M</string>
+    <string name="str_account_bank">開戶銀行</string>
+    <string name="str_edit_account_bank">請輸入開戶銀行(必填)</string>
+    <string name="str_edit_account_branch_bank">請輸入開戶支行</string>
+    <string name="str_bank_number">銀行卡賬號</string>
+    <string name="str_account_branch_bank">開戶支行</string>
+    <string name="str_edit_bank_number">請輸入銀行卡賬號(必填)</string>
+    <string name="str_collet_type">收款方式</string>
+    <string name="str_bank_bind">銀行卡綁定</string>
+    <string name="str_alipay_bind">支付寶綁定</string>
+    <string name="str_wechat_bind">微信綁定</string>
+    <string name="str_add_photo">添加圖片</string>
+    <string name="str_enable_edit_hint">該收款賬戶存在進行中訂單，請先完成所有訂單再編輯收款信息！</string>
+    <string name="str_go_handle">去處理</string>
+    <string name="str_fiat_trade">法幣交易</string>
+    <string name="str_current_order">當前訂單</string>
+    <string name="str_history_order">歷史訂單</string>
+    <string name="str_report_order">申訴訂單</string>
+    <string name="str_sell">出售</string>
+    <string name="str_buy">購買</string>
+    <string name="str_all">全部</string>
+    <string name="str_buy_usdt">購買USDT</string>
+    <string name="str_sell_usdt">出售USDT</string>
+    <string name="str_my_order">我的訂單</string>
+    <string name="str_my_advance">我的廣告</string>
+    <string name="str_up">上架</string>
+    <string name="str_down">下架</string>
+    <string name="str_edit">編輯</string>
+    <string name="str_c2c_coin_type">法幣幣種</string>
+    <string name="str_pay_type">支付方式</string>
+    <string name="str_edit_money">請輸入金額</string>
+    <string name="str_edit_amount">請輸入數量</string>
+    <string name="str_select_pay_way">請選擇支付方式</string>
+    <string name="str_wechat_pay">微信支付</string>
+    <string name="str_buy_info">購買信息</string>
+    <string name="str_bussiness">商  家</string>
+    <string name="str_c2c_price">單  價</string>
+    <string name="str_c2c_rest_nums">剩餘數量</string>
+    <string name="str_c2c_limit_amount">限  額</string>
+    <string name="str_bussiness_note">商家備註</string>
+    <string name="str_comfirm_order">確定下單</string>
+    <string name="publish_advance">發佈廣告</string>
+    <string name="str_c2c_coin">法幣類型</string>
+    <string name="str_amount">數量</string>
+    <string name="str_edit_min_success_amount">請輸入最小成交數量</string>
+    <string name="str_single_amount">單筆限額</string>
+    <string name="str_edit_max_success_amount">請輸入最大成交數量</string>
+    <string name="str_note_none">備註</string>
+    <string name="str_edit_note_info">請輸入備註信息</string>
+    <string name="str_collect_money_type">收款方式</string>
+    <string name="str_set_edit">設置/編輯</string>
+    <string name="str_apply_complaint">發起申訴</string>
+    <string name="str_complaint_info">申訴信息</string>
+    <string name="str_edit_less_than_50">請輸入不超過50字符的標題</string>
+    <string name="str_edit_less_than_500">描述您的問題，越詳細越好（100字以內）</string>
+    <string name="str_upload_pic_hint_two">請上傳申訴材料，JPG/JPEG/PNG格式上傳，大小不超過5M，最多可上傳3張</string>
+    <string name="comfirm_submit">確認提交</string>
+    <string name="str_order_info">訂單信息</string>
+    <string name="str_order_nmber">訂單編號</string>
+    <string name="str_trade_money">交易金額</string>
+    <string name="str_order_time">訂單時間</string>
+    <string name="str_title">標  題</string>
+    <string name="str_sumary">描  述</string>
+    <string name="str_compalint_result">申訴結果</string>
+    <string name="str_compalint_order">申訴訂單</string>
+    <string name="str_c2c_trade_hint">進行法幣交易前請綁定您的手機號碼綁定手機號碼將用於接收法幣交易通知信息，避免因信息接收不及時給您造成不必要的麻煩。</string>
+    <string name="str_go_bind">去綁定</string>
+    <string name="str_c2c_trade_hint_two">進行法幣交易之前需完成C2等級實名認證，請先完成實名認證！</string>
+    <string name="c2cTradeNeedSenior">進行法幣交易之前需完成高級認證，請先完成高級認證！</string>
+    <string name="str_my_think_argin">我再想想</string>
+    <string name="str_trade_kown">交易須知</string>
+    <string name="str_wait_pay">待支付</string>
+    <string name="str_order_wait_pay">訂單待支付</string>
+    <string name="str_contract_business">聯系商家</string>
+    <string name="str_order_total_amount">訂單總額</string>
+    <string name="str_trade_amount">交易數量</string>
+    <string name="str_trade_price">交易單價</string>
+    <string name="str_name">姓  名</string>
+    <string name="str_c2c_bank">銀  行</string>
+    <string name="str_c2c_branch_bank">支  行</string>
+    <string name="str_c2c_bank_number">卡  號</string>
+    <string name="str_cancel_order">取消訂單</string>
+    <string name="str_payed_money">我已付款</string>
+    <string name="str_c2c_qrcode">收款碼</string>
+    <string name="str_c2c_collect_qrcode">查看收款碼</string>
+    <string name="str_wait_comfirm">待確認</string>
+    <string name="str_order_wait_comfirm">訂單等待確認</string>
+    <string name="str_commit_complaint">提起申訴</string>
+    <string name="str_attetion">注意</string>
+    <string name="str_wait_comfirm_hint">1. 若收款方在15分鐘內仍未確認收款，您將有權提起申訴\n2. 若您未向收款方轉款,收款方將有權對您提起申訴</string>
+    <string name="str_completed">已完成</string>
+    <string name="str_order_completed">訂單已完成</string>
+    <string name="str_collected_money">我已收款</string>
+    <string name="str_comfir_pay_money">您確認已收款嗎?</string>
+    <string name="str_comfir_collect_money">您確認已收到買家轉款嗎</string>
+    <string name="_str_add_address_suc">地址添加成功</string>
+    <string name="str_search_keyword">請輸入關鍵字搜索</string>
+    <string name="str_other_none">其他：無</string>
+    <string name="str_address">地址 ：</string>
+    <string name="_str_delete_address_suc">刪除地址成功</string>
+    <string name="str_chager_qrcode">充幣地址</string>
+    <string name="str_saved">已保存</string>
+    <string name="str_save_failure">保存失敗</string>
+    <string name="str_copyed">已複製</string>
+    <string name="str_charge">充幣</string>
+    <string name="str_get_coin_amount">提幣數量</string>
+    <string name="str_paste_address">輸入或長按粘貼地址</string>
+    <string name="str_actual_account">實際到賬</string>
+    <string name="str_fee">礦工費</string>
+    <string name="str_avlible_amount">可用餘額 ：</string>
+    <string name="_str_get_coin_suc">提幣成功</string>
+    <string name="str_update">修改</string>
+    <string name="str_copy">複製</string>
+    <string name="str_delete_this_picture">確認刪除這張圖片嗎？</string>
+    <string name="str_alipay_qrcode">支付寶收款碼</string>
+    <string name="str_wechat_qrcode">微信收款碼</string>
+    <string name="str_suc_create_nums">成交</string>
+    <string name="str_suc_use_time">用時%s分</string>
+    <string name="str_c2c_limit_amount_two">限額</string>
+    <string name="str_canceled">已取消</string>
+    <string name="str_finished">已完成</string>
+    <string name="str_complainting">申訴中</string>
+    <string name="str_nick">暱稱</string>
+    <string name="str_order_canceled">訂單已取消</string>
+    <string name="str_c2c_account_number">賬  號</string>
+    <string name="str_comfir_cancel_order">確認取消訂單嗎</string>
+    <string name="str_buy_comfirm_info">已支付，請等待收款方確認收款并放幣</string>
+    <string name="str_complaint">提起申訴</string>
+    <string name="str_comfirm_collected_money">確認收款</string>
+    <string name="str_compalinting">申訴中</string>
+    <string name="str_compalinting_info">申訴處理中，請耐心等待</string>
+    <string name="str_buy_win">買房勝訴，訂單完成</string>
+    <string name="str_buy_win_info">買房勝訴，訂單完成</string>
+    <string name="str_sell_win_info">賣方勝訴，訂單取消</string>
+    <string name="str_sell_win">賣方勝訴</string>
+    <string name="str_c2c_coin_selected">法幣幣種選擇</string>
+    <string name="str_uping">上架中</string>
+    <string name="str_downed">已下架</string>
+    <string name="str_ck_price">參考單價</string>
+    <string name="edit_advance">編輯廣告</string>
+    <string name="str_wait_check">待審核</string>
+    <string name="str_suc">成功</string>
+    <string name="str_not_check">審核不通過</string>
+    <string name="str_dist_comfirm">區塊確認中</string>
+    <string name="str_dist_comfirm_suc">區塊確認成功</string>
+    <string name="str_dist_comfirm_fail">區塊確認失敗</string>
+
+
+    <string name="str_cancel_order_hint">今日已取消%s筆訂單，取消此筆訂單后您今天無法進行法幣交易，請確認您需要取消此筆訂單。</string>
+    <string name="my_message">我的消息</string>
+    <string name="str_contract_buy">聯系買家</string>
+    <string name="str_code_hint_601">您已成功下單，請盡快完成付款</string>
+    <string name="str_code_hint_602">買家下單成功，請等待買家付款</string>
+    <string name="str_code_hint_603">您已成功下單，請等待買家付款</string>
+    <string name="str_code_hint_604">賣家下單成功，請盡快完成付款</string>
+    <string name="str_code_hint_605">您已完成付款，請等待賣方確認收款</string>
+    <string name="str_code_hint_606">買家已完成付款，請盡快確認收款</string>
+    <string name="str_code_hint_607">買家已完成付款，請盡快確認收款</string>
+    <string name="str_code_hint_608">您已完成付款，請等待賣家收款</string>
+    <string name="str_code_hint_609">交易完成</string>
+    <string name="str_code_hint_610">訂單已取消</string>
+    <string name="str_code_hint_611">訂單已被買房取消</string>
+    <string name="str_code_hint_612">超時未支付，訂單已取消</string>
+    <string name="str_code_hint_613">買方超時未支付，訂單已取消</string>
+
+    <string name="str_scan">掃一掃</string>
+    <string name="str_look_order_detail">查看訂單詳情＞</string>
+    <string name="_str_register_suc">註冊成功</string>
+    <string name="_str_agree_protocol">請先同意《服務協議》和《隱私聲明》</string>
+    <string name="str_small_coin_hint">估值＜0.0001BTC的資產</string>
+    <string name="str_edit_pay_account">請輸入您的賬號</string>
+    <string name="str_edit_pay_name">請輸入姓名</string>
+    <string name="str_edit_pay_pic">請上傳您的收款二維碼</string>
+    <string name="str_update_suc">收款信息修改成功</string>
+    <string name="str_wechat_bind_suc">微信支付綁定成功</string>
+    <string name="str_alipay_bind_suc">支付寶綁定成功</string>
+    <string name="str_edit_pay_bank">請輸入開戶銀行</string>
+    <string name="str_edit_pay_accountNumber">請輸入銀行卡賬號</string>
+    <string name="str_bank_update_suc">銀行卡信息修改成功</string>
+    <string name="str_bank_bind_suc">銀行卡信息綁定成功</string>
+    <string name="str_sell_info">出售信息</string>
+    <string name="str_bind_pay_hint">收款信息不匹配，請先設置廣告對應的收款方式信息</string>
+    <string name="str_code_hint_614">訂單申訴中，請等待申訴結果</string>
+    <string name="str_code_hint_615">買方勝訴，訂單完成</string>
+    <string name="str_code_hint_616">賣方勝訴，訂單取消</string>
+    <string name="str_edit_order_hint">輸入數量或金額不在限額內，請重新輸入</string>
+    <string name="str_upload_complaint_info">請上傳申訴材料</string>
+    <string name="str_edit_title">請輸入標題</string>
+    <string name="str_edit_summary">請輸入描述</string>
+    <string name="str_complaint_suc">申訴提交成功</string>
+    <string name="str_edit_price">請輸入單價</string>
+    <string name="str_publish_max">數量超過可用餘額</string>
+    <string name="str_edit_correct_money">請輸入正確的單筆限額</string>
+    <string name="str_edit_get_amount">請輸入提幣數量</string>
+    <string name="str_edit_get_address">請輸入提幣地址</string>
+    <string name="str_not_enough_money">可用餘額不足</string>
+    <string name="str_ad_edit_suc">廣告編輯成功</string>
+    <string name="str_ad_publish_suc">廣告發佈成功</string>
+    <string name="str_not_empty_coin">請選擇幣種</string>
+    <string name="str_edit_note_name">請輸入備註名稱</string>
+    <string name="str_edit_address">請輸入地址</string>
+    <string name="str_memo_hint">請輸入Memo</string>
+    <string name="str_tag_hint">請輸入Tag</string>
+    <string name="str_payment_hint">請輸入%s</string>
+    <string name="str_not_enough_amount">剩餘數量不足</string>
+    <string name="str_select_get_coin">選擇提幣幣種</string>
+    <string name="str_select_transfer_coin">選擇轉賬幣種</string>
+    <string name="str_select_charge_coin">選擇充幣幣種</string>
+    <string name="str_slider_verify">您還沒有通過滑動驗證</string>
+    <string name="str_select_one_pay">請選擇一種支付方式</string>
+    <string name="str_select_one_collecty">請選擇收款方式</string>
+    <string name="str_no_accout">沒有賬號</string>
+    <string name="str_register_now">立即註冊</string>
+    <string name="str_have">持有</string>
+    <string name="str_useable">可用</string>
+    <string name="str_frozen">鎖定</string>
+    <string name="str_get_coin_two">提現</string>
+    <string name="str_buy_collect_info">買家收款信息</string>
+    <string name="str_sell_collect_info">賣家收款信息</string>
+    <string name="str_day">天</string>
+    <string name="str_hour">時</string>
+    <string name="str_minutes">分</string>
+    <string name="str_seconds">秒</string>
+    <string name="str_bind">已綁定</string>
+    <string name="str_comfirm_hint">買家已轉款，請于</string>
+    <string name="str_comfirm_hint_two">内確認您是否收到買家轉款</string>
+    <string name="str_comfirm_hint_three"></string>
+    <string name="str_get_coin_1210012_hint">提幣數量超過今日提幣限額，建議提幣數量:</string>
+    <string name="str_amount_less_than_minAmount">提幣數量不得低于幣種最小提幣數量</string>
+    <string name="_str_look">查看</string>
+    <string name="str_edit_buy_hint">廣告數量不得低於單筆限額最小值</string>
+    <string name="str_edit_ad_sell_hint">廣告總額不得低於單筆限額最小值</string>
+    <string name="str_add_address_hint">請輸入備註名稱，長度不超過20個字符</string>
+    <string name="str_code_resend">%s秒後重新獲取</string>
+    <string name="str_edit_order_hint_two">輸入數量或金額不在限額內，請重新輸入</string>
+
+    <string name="waitPayCountBuyHead">待支付，請於%s</string>
+    <string name="waitPayCountBuyFoot">內向賣家支付%s</string>
+    <string name="waitPayCountSellHead">待買家付款，付款方將於%s</string>
+    <string name="waitPayCountSellFoot">內向您支付%s，請耐心等待。</string>
+    <string name="waitPayBuyTips">轉賬時請務&lt;font color=#E89940&gt;備註任何信息&lt;/font&gt;！完成轉賬後請務必&lt;font color=#E89940&gt;點擊下方我已轉款&lt;/font&gt;，完成付款。</string>
+
+    <string name="assetTotal">總賬戶資產折合(BTC)</string>
+    <string name="warmTipsColon">溫馨提示：</string>
+    <string name="c2cTips1">（1）為防止不法分子洗錢行為，用戶法幣購買的資產若需在24小時內發起提幣或出售，其錢包資產餘額需高於法幣交易購買的等額資產，24小時後無限制。</string>
+    <string name="c2cTips2">（2）切記：轉賬的時候請不要備註購買USDT或DIC，否則您和商家的賬戶都有可能被凍結！</string>
+    <string name="c2cTips3">（3）法幣交易商家在線時間：9:00~23:00</string>
+    <string name="chainTypeInfo">鏈類型：</string>
+    <string name="coinCannotRecharge">該幣種暫不支持充值</string>
+    <string name="coinCannotWithdraw">該幣種暫不支持提現</string>
+
+    <!--登录 结束-->
+
+    <string name="assetManagement">資產管理</string>
+    <string name="consensusExchange">共識兌換</string>
+    <string name="consensusExchangeText">Consensus Exchange</string>
+    <string name="coinIntro">幣種簡介</string>
+    <string name="payment_account">收款賬號</string>
+    <string name="enter_account">請輸入轉賬賬號</string>
+    <string name="enter_transfer_number">請輸入轉賬數量</string>
+    <string name="transfer_number">轉賬數量</string>
+    <string name="str_transfer_record">轉賬記錄</string>
+    <string name="str_transfer_check_code">驗證碼</string>
+    <string name="transfer_success">轉賬成功</string>
+    <string name="str_transfer_c2c">內部轉賬</string>
+    <string name="str_transfer_record_title">內部轉賬記錄</string>
+    <string name="str_transfer_tip1">1、為了您的資金安全，請仔細檢查您的轉賬信息是否正確；</string>
+    <string name="str_transfer_tip2">2、請勿將您的賬戶、密碼等重要信息泄露；</string>
+    <string name="str_transfer_tip3">3、壹旦確認轉賬將無法撤銷！若發生資產損失本平臺概不負責；</string>
+    <string name="str_transfer_tip4">4、限制轉賬次數達到上限後，您仍可以通過提幣等方式進行轉賬。</string>
+    <string name="find_target_account">查找賬號</string>
+    <string name="transfer_d">轉入</string>
+    <string name="transfer_w">轉出</string>
+
+    <string name="c2c_buy">購買</string>
+    <string name="c2c_sell">出售</string>
+    <string name="c2c_orders">訂單</string>
+    <string name="c2c_advert">廣告</string>
+
+    <string name="coinIntro_date">發行時間</string>
+    <string name="coinIntro_quantity">發行總量</string>
+    <string name="coinIntro_circulate_quantity">流通總量</string>
+    <string name="coinIntro_price">眾籌價格</string>
+    <string name="coinIntro_white_paper">白皮書</string>
+    <string name="coinIntro_website">官網</string>
+    <string name="coinIntro_blockchain_explorer">區塊查詢</string>
+
+    <string name="consensus_exchange_not_open">該功能暫未開放</string>
+
+    <string name="code3020011">需要先下架廣告才能進行編輯</string>
+    <string name="code3020010">不能自己轉賬給自己</string>
+    <string name="code1010017">用戶不存在</string>
+    <string name="code1080007">轉入賬戶必須完成C1認證</string>
+    <string name="code3020007">您已提交申請,請耐心等待</string>
+    <string name="code3020008">您已經是商戶,請勿重復申請</string>
+    <string name="code3020009">您不是商家,無權限操作</string>
+
+    <string name="iir1">時間</string>
+    <string name="iir2">被邀請人</string>
+    <string name="iir3">獎勵數量</string>
+    <string name="iir4">狀態</string>
+
+    <string name="tra_ada_1">用戶</string>
+    <string name="tra_ada_2">轉賬數量</string>
+
+    <string name="consensus_details">共識詳情</string>
+    <string name="apply_for_progress">申購進度</string>
+    <string name="unit_price">單價</string>
+    <string name="purchase_amount">申購總量</string>
+    <string name="number_of_participants">總參與人數</string>
+    <string name="apply_amount">申購金額</string>
+    <string name="apply_coin">申購幣種</string>
+    <string name="number_of_applications">申購數量</string>
+    <string name="number_of_applications_hint">請輸入申購數量</string>
+    <string name="amout_of_applications_hint">請輸入申購金額</string>
+    <string name="available">可用</string>
+    <string name="min_apply">最小申購量</string>
+    <string name="total_amount_of_personal">個人申購總量</string>
+    <string name="quantity_available_for_purchase">剩余可申購量</string>
+    <string name="rules">活動規則</string>
+    <string name="invite_record">邀請記錄</string>
+    <string name="ieo_intro">項目簡介</string>
+    <string name="ieo_danger_intro">風險說明</string>
+
+    <string name="aao_1">交易記錄</string>
+    <string name="aao_2">幣幣記錄</string>
+    <string name="aao_3">法幣記錄</string>
+    <string name="aao_4">推薦返傭</string>
+    <string name="aao_5">兌換記錄</string>
+    <string name="aao_6">代理獎勵</string>
+
+    <string name="cel_1">申購</string>
+    <string name="cel_2">即將開始</string>
+    <string name="cel_3">開始時間</string>
+    <string name="cel_4">進行中</string>
+    <string name="cel_5">結束時間</string>
+    <string name="cel_6">活動已結束</string>
+    <string name="cel_7">結算中</string>
+    <string name="cel_8">結算完畢</string>
+    <string name="cel_9">已結束</string>
+    <string name="cel_10">總申購資金</string>
+    <string name="cel_11">查看項目</string>
+    <string name="cel_12">立即申購</string>
+    <string name="cel_13">距離開始還有</string>
+    <string name="cel_14">距離結束還有</string>
+
+    <string name="showTips">提示</string>
+    <string name="goApply">確定申購嗎？</string>
+    <string name="cannotApply">當前時間段無法申購</string>
+    <string name="apply_success">申購成功</string>
+
+    <string name="accountRecord">資產記錄</string>
+
+    <string name="flow_coin_name">幣種名稱：</string>
+    <string name="flow_amout">數量：</string>
+    <string name="flow_reason">資產變動原因：</string>
+    <string name="flow_type">資產變動類型：</string>
+    <string name="flow_cdate">日期：</string>
+
+    <string name="flow_type_F">凍結</string>
+    <string name="flow_type_U">解凍</string>
+    <string name="flow_type_IA">增資</string>
+    <string name="flow_type_DF">減凍</string>
+    <string name="flow_type_DA">減資</string>
+
+    <!-- 資產變更原因 -->
+    <string name="flow_reason_D">入金</string>
+
+    <string name="flow_reason_WF">出金鎖定</string>
+    <string name="flow_reason_WC">出金取消</string>
+    <string name="flow_reason_WS">出金完成</string>
+    <string name="flow_reason_WE">出金失敗回滾</string>
+
+    <string name="flow_reason_BF">買入下單鎖定</string>
+    <string name="flow_reason_BS">買入成交</string>
+    <string name="flow_reason_BC">買入取消</string>
+    <string name="flow_reason_BE">買入回滾失敗</string>
+
+    <string name="flow_reason_SF">賣出下單鎖定</string>
+    <string name="flow_reason_SS">賣出成交</string>
+    <string name="flow_reason_SC">賣出取消</string>
+    <string name="flow_reason_SE">賣出回滾失敗</string>
+
+    <string name="flow_reason_TF">轉出鎖定</string>
+    <string name="flow_reason_TS">轉出成功</string>
+    <string name="flow_reason_TC">轉出取消</string>
+    <string name="flow_reason_TE">轉出失敗回滾</string>
+
+    <string name="flow_reason_TI">轉入</string>
+    <string name="flow_reason_EP">活動獎金</string>
+    <string name="flow_reason_AD">空投</string>
+    <string name="flow_reason_LW">中獎</string>
+    <string name="flow_reason_CR">返傭</string>
+
+    <string name="flow_reason_CI">C2C入金</string>
+    <string name="flow_reason_CO">C2C出金</string>
+    <string name="flow_reason_CF">C2C賣出鎖定</string>
+    <string name="flow_reason_CC">C2C賣出取消</string>
+
+    <string name="flow_reason_FB">買入鎖定</string>
+    <string name="flow_reason_FR">返回本金</string>
+    <string name="flow_reason_FS">成功交割</string>
+    <string name="flow_reason_FC">合約返傭</string>
+    <string name="flow_reason_FU">合約返水</string>
+    <string name="flow_reason_FT">返傭解凍</string>
+    <string name="flow_reason_FD">存入待返</string>
+    <string name="flow_reason_FM">扣減待返</string>
+
+    <string name="flow_reason_VS">VVBANK買入成交</string>
+    <string name="flow_reason_VC">VVBANK買入取消</string>
+    <string name="flow_reason_VE">VVBANK收益</string>
+    <string name="flow_reason_VL">VVBANK虧損</string>
+    <string name="flow_reason_VR">VVBANK返還本金</string>
+    <string name="flow_reason_VB">VVBANK返傭</string>
+
+    <string name="flow_reason_OI">機構入幣</string>
+    <string name="flow_reason_OO">機構出幣</string>
+
+    <string name="flow_reason_OT">OTC轉出</string>
+    <string name="flow_reason_OC">OTC轉出取消</string>
+    <string name="flow_reason_OD">OTC轉出拒絕</string>
+    <string name="flow_reason_OF">OTC轉出確認</string>
+
+    <string name="flow_reason_IP">IEO搶購支付</string>
+    <string name="flow_reason_IFR">IEO兌換凍結</string>
+    <string name="flow_reason_IS">IEO搶購成功</string>
+    <string name="flow_reason_IR">IEO返傭</string>
+    <string name="flow_reason_IF">IEO搶購失敗退回</string>
+
+    <string name="flow_reason_US">C2C用戶出售</string>
+    <string name="flow_reason_UC">C2C用戶取消訂單</string>
+
+    <string name="flow_reason_AT">C2C賬戶劃轉</string>
+
+    <string name="flow_reason_STR">止盈單返還凍結</string>
+    <string name="flow_reason_BAD">後臺入金</string>
+
+    <string name="flow_reason_CAF">C2C申請商戶凍結</string>
+    <string name="flow_reason_CAUF">C2C申請取消商戶解凍</string>
+    <string name="flow_reason_CAC">C2C下架廣告解凍</string>
+    <string name="flow_reason_CCA">C2C發布廣告凍結</string>
+    <string name="flow_reason_UTF">USDT劃轉</string>
+
+    <string name="ieo_transfer_in">轉入交易區</string>
+    <string name="ieo_transfer_out">轉出交易區</string>
+    <string name="ieo_transfer_selected">選擇轉賬幣種</string>
+    <string name="ieo_transfer_title">DiBi Launch轉賬</string>
+    <string name="ieo_transfer_get_failed">獲取DiBi Launch信息失敗</string>
+    <string name="code1260008">DiBi Launch幣種不匹配</string>
+
+    <string name="flow_reason_STF">DiBi Launch劃轉</string>
+    <string name="flow_reason_SFD">DiBi Launch凍結</string>
+    <string name="flow_reason_SUF">DiBi Launch解凍</string>
+
+    <string name="wallet_ieo_transfer">劃轉</string>
+    <string name="mto">L</string>
+    <string name="ieo_t_f">鎖定中：</string>
+
+    <string name="maxR">最高成交價：</string>
+    <string name="maxF">最低成交價：</string>
+    <string name="RFHint">價格必須在成交價區間內</string>
+
+    <string name="code2010028">當前剩余買入量為%s</string>
+    <string name="code1260009">需持有DiBi Launch賬戶鎖倉</string>
+
+    <string name="every_week_vote">周周投</string>
+    <string name="dibi_ieo">DiBi Future</string>
+    <string name="vote_coin">投票上幣</string>
+    <string name="currency_application">上幣申請</string>
+    <string name="sign_in">簽到</string>
+
+    <string name="dibi_launch_tip">
+        1、DiBi Launch為本交易平臺創新交易區，請在詳細了解交易規則後再進行資金劃轉；\n\n
+        2、數字貨幣資產壹旦轉入Launch創新交易區，將默認您已允許對資產進行鎖定，鎖定資產將無法直接轉出，必須通過Launch交易區進行交易解鎖；\n\n
+        3、通過Launch交易解鎖的數字貨幣資產可以進行轉出；\n\n
+        4、為了您的資金安全，請仔細檢查您的轉賬信息是否正確，壹旦確認轉賬將無法撤銷！因為錯誤操作產生的資產損失本平臺概不負責；\n\n
+        5、請勿將您的賬戶密碼等重要信息泄露，因個人行為造成資產泄露的損失自行承擔。
+    </string>
+
+    <string name="wsl">幣種資產</string>
+    <string name="wsr">Launch資產</string>
+
+    <string name="now_votes">當前票數</string>
+    <string name="coin_intro">幣種介紹</string>
+    <string name="do_vote">投票</string>
+    <string name="vote_ranks">熱力值</string>
+
+    <string name="vote_page_top1">為您支持的幣種投票</string>
+
+    <string name="vote_status1">投票尚未開始</string>
+    <string name="vote_status2">投票進行中</string>
+    <string name="vote_status3">投票已結束</string>
+    <string name="vote_status4">投票已結算</string>
+
+    <string name="vote_num">第</string>
+    <string name="vote_end">期</string>
+
+    <string name="dg_vote_dialog_title">当前投票的币种：</string>
+    <string name="dg_vote_dialog_edit_hint">请输入投票票数</string>
+    <string name="dg_vote_dialog_tip">您的剩余票数：</string>
+
+    <string name="vote_show_1">您未參與投票</string>
+    <string name="vote_show_2">投票進行中，請持續關註</string>
+    <string name="vote_show_3">恭喜您！您參與的項目獲勝！</string>
+    <string name="vote_show_winner">本期獲勝的幣是：</string>
+    <string name="vote_show_winner_votes">獲勝票數為：</string>
+
+    <string name="flow_reason_VFD">投票凍結</string>
+    <string name="flow_reason_VUF">投票解凍</string>
+    <string name="flow_reason_VOS">投票勝出</string>
+
+    <string name="vote_history_records">銷毀記錄</string>
+
+    <string name="vote_history_take_part">參與人數：</string>
+    <string name="vote_history_get_votes">獲得票數：</string>
+    <string name="vote_history_end_time">結算時間：</string>
+
+    <string name="vote_history_details_title">往期詳情</string>
+
+    <string name="vote_vote_rules">1、DiBi社區投票統壹使用DiBi token；\n\n
+        2、通過將您手中可流通的DiBi token投給您所支持的項目，該項目將獲得熱力值；\n\n
+        3、1個DiBi token對應1點熱力值，熱力值越高，項目的排名越高；\n\n
+        4、每周熱力值排名第壹的項目，將於次周獲得該交易區手續費收益的40%；\n\n
+        5、熱力值排名第壹的項目所對應的DiBi token將進行銷毀；\n\n
+        6、DiBi保留最終解釋權。
+    </string>
+
+</resources>

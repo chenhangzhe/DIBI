@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gyF9"
+    android:orientation="vertical"
+    tools:context="cn.suozhi.DiBi.home.view.AlipayActivity">
+
+    <include layout="@layout/toolbar_left" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/x_15dp"
+        android:layout_marginTop="14dp"
+        android:layout_marginRight="@dimen/x_15dp"
+        android:background="@mipmap/qrcode_bg">
+
+        <ImageView
+            android:id="@+id/iv_wechat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="14dp"
+            android:layout_marginTop="13dp"
+            android:src="@mipmap/bind_wechat" />
+
+        <TextView
+            android:id="@+id/tv_pay_type"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="3dp"
+            android:layout_marginTop="15dp"
+            android:layout_toRightOf="@+id/iv_wechat"
+            android:textColor="@color/text_color_dark"
+            android:textSize="17sp"
+            tools:text="@string/str_wechat" />
+
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/x_15dp"
+        android:layout_marginRight="@dimen/x_15dp"
+        android:background="@drawable/charge_coin_radius_8dp_bg"
+        android:orientation="vertical"
+        android:paddingBottom="33dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginLeft="@dimen/x_15dp"
+            android:layout_marginTop="@dimen/x_15dp"
+            android:layout_marginRight="@dimen/x_15dp"
+            android:background="@drawable/login_edit_bg">
+            <TextView
+                android:id="@+id/tv_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="15dp"
+                android:text="@string/name"
+                android:textColor="@color/text_color_dark"
+                android:textSize="15sp" />
+            <EditText
+                android:id="@+id/et_name"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_toEndOf="@id/tv_name"
+                android:background="@null"
+                android:gravity="end|center_vertical"
+                android:paddingStart="15dp"
+                android:paddingEnd="15dp"
+                android:hint="@string/inputName"
+                android:maxLength="40"
+                android:textColor="@color/text_color_dark"
+                android:textColorHint="@color/gy8A"
+                android:textSize="14sp" />
+        </RelativeLayout>
+        <TextView
+            android:id="@+id/tv_hint_one"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/x_15dp"
+            android:layout_marginRight="@dimen/x_25dp"
+            android:text="@string/str_edit_pay_name"
+            android:textColor="@color/redE0"
+            android:textSize="12sp"
+            android:visibility="gone" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginLeft="@dimen/x_15dp"
+            android:layout_marginTop="@dimen/x_15dp"
+            android:layout_marginRight="@dimen/x_15dp"
+            android:background="@drawable/login_edit_bg">
+            <TextView
+                android:id="@+id/tv_account"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="15dp"
+                android:text="@string/str_account"
+                android:textColor="@color/text_color_dark"
+                android:textSize="15sp" />
+            <EditText
+                android:id="@+id/et_account"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_toEndOf="@id/tv_account"
+                android:background="@null"
+                android:gravity="end|center_vertical"
+                android:paddingStart="15dp"
+                android:paddingEnd="15dp"
+                android:hint="@string/str_edit_account"
+                android:maxLength="40"
+                android:textColor="@color/text_color_dark"
+                android:textColorHint="@color/gy8A"
+                android:textSize="14sp" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/tv_hint_two"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/x_15dp"
+            android:layout_marginRight="@dimen/x_25dp"
+            android:text="@string/str_edit_pay_account"
+            android:textColor="@color/redE0"
+            android:textSize="12sp"
+            android:visibility="gone" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/x_15dp"
+            android:layout_marginTop="@dimen/x_15dp"
+            android:layout_marginRight="@dimen/x_15dp">
+
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:id="@+id/lly_add_photo"
+                    android:layout_width="88dp"
+                    android:layout_height="88dp"
+                    android:background="@drawable/login_edit_bg"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:visibility="visible">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@mipmap/add" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/y_10dp"
+                        android:text="@string/str_add_photo"
+                        android:textColor="@color/gy8A"
+                        android:textSize="12sp" />
+
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:visibility="gone"
+                    android:id="@+id/rly_photo"
+                    android:layout_width="88dp"
+                    android:layout_height="88dp">
+
+                    <ImageView
+                        android:scaleType="fitXY"
+                        android:id="@+id/iv_upload_pic"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" />
+
+                    <ImageView
+                        android:id="@+id/iv_delete"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:src="@mipmap/delete" />
+
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="12dp"
+                android:layout_marginRight="8dp"
+                android:lineSpacingExtra="5dp"
+                android:text="@string/str_upload_pic_hint"
+                android:textColor="@color/gy8A"
+                android:textSize="12sp" />
+
+        </LinearLayout>
+        <TextView
+            android:id="@+id/tv_hint_three"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/x_15dp"
+            android:layout_marginRight="@dimen/x_25dp"
+            android:text="@string/str_edit_pay_pic"
+            android:textColor="@color/redE0"
+            android:textSize="12sp"
+            android:visibility="gone" />
+
+        <TextView
+
+            android:id="@+id/tv_commit"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/login_edit_height"
+            android:layout_marginLeft="@dimen/x_25dp"
+            android:layout_marginTop="34dp"
+            android:layout_marginRight="@dimen/x_25dp"
+            android:background="@drawable/drawable_dibi"
+            android:gravity="center"
+            android:text="@string/submit"
+            android:textColor="@color/white"
+            android:textSize="17sp" />
+
+    </LinearLayout>
+
+
+</LinearLayout>
